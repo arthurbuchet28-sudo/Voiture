@@ -33,7 +33,14 @@ export interface WdExport {
   modeles: WdModele[];
   marques: WdMarque[];
   libellesClasses: Record<string, string>;
+  logosParNom: Record<string, string>;
 }
+
+/**
+ * Ne garde que les vrais logos : SVG/PNG, ou photo dont le nom indique un logo/un badge.
+ * (Certaines marques, comme Peugeot, ont une photo de voiture en P154.)
+ */
+const estLogo = (f: string | undefined) => (f && (/\.(svg|png)$/i.test(f) || /logo|badge|emblem|embl[eè]me|wordmark/i.test(f)) ? f : null);
 
 const annee = (d?: string) => (d ? Number(d.slice(0, d.startsWith("-") ? 5 : 4)) || null : null);
 
@@ -141,17 +148,44 @@ export async function collecterWikidata(): Promise<WdExport> {
       OPTIONAL { ?b wdt:P154 ?logo }
     }`);
     for (const r of res) {
-      const id = qid(r.b)!;
-      const nom = r.fr ?? r.en;
-      if (!nom) continue;
+      const id = qid(r.b);
+      // Libellé anglais d'abord : en français, Wikidata nomme parfois la marque « Groupe BMW ».
+      const nom = r.en ?? r.fr;
+      if (!id || !nom) continue;
+      const logo = estLogo(fichierCommons(r.logo));
       const e = marques.get(id);
-      if (!e) marques.set(id, { qid: id, nom, pays: r.paysLabel ?? null, logo: fichierCommons(r.logo) ?? null });
+      if (!e) marques.set(id, { qid: id, nom, pays: r.paysLabel ?? null, logo });
       else {
         e.pays ??= r.paysLabel ?? null;
-        e.logo ??= fichierCommons(r.logo) ?? null;
+        if (logo && (!e.logo || (/\.svg$/i.test(logo) && !/\.svg$/i.test(e.logo)))) e.logo = logo;
       }
     }
   }
+
+  // Logos manquants : recherche par nom de marque parmi les entreprises et marques ayant un logo (P154).
+  const { lireSpecs } = await import("./lire-specs.ts");
+  const nomsSansLogo = new Set<string>(lireSpecs().map((s) => s.marque));
+  for (const m of marques.values()) if (!m.logo) nomsSansLogo.add(m.nom);
+  for (const m of marques.values()) if (m.logo) nomsSansLogo.delete(m.nom);
+  const logosParNom: Record<string, string> = {};
+  const nomsListe = [...nomsSansLogo];
+  for (let i = 0; i < nomsListe.length; i += 60) {
+    const valeurs = nomsListe.slice(i, i + 60).map((n) => `${JSON.stringify(n)}@en`).join(" ");
+    try {
+      const res = await sparql(`SELECT ?l ?logo WHERE {
+        VALUES ?l { ${valeurs} }
+        ?b rdfs:label ?l ; wdt:P154 ?logo .
+        { ?b wdt:P31/wdt:P279* wd:Q4830453 } UNION { ?b wdt:P31/wdt:P279* wd:Q431289 }
+      }`);
+      for (const r of res) {
+        const logo = estLogo(fichierCommons(r.logo));
+        if (logo && (!logosParNom[r.l] || /\.svg$/i.test(logo))) logosParNom[r.l] = logo;
+      }
+    } catch (e) {
+      console.warn(`[wikidata] recherche de logos échouée : ${(e as Error).message.slice(0, 120)}`);
+    }
+  }
+  console.log(`[wikidata] ${Object.keys(logosParNom).length} logos retrouvés par nom de marque`);
   console.log(`[wikidata] ${marques.size} marques/constructeurs`);
 
   const resultat: WdExport = {
@@ -159,6 +193,7 @@ export async function collecterWikidata(): Promise<WdExport> {
     modeles: [...modeles.values()],
     marques: [...marques.values()],
     libellesClasses,
+    logosParNom,
   };
   ecrireJson(join(CACHE, "wikidata.json"), resultat);
   return resultat;

@@ -2,7 +2,7 @@
 import type { Carrosserie, Segment } from "../../src/types.ts";
 import type { WdExport, WdModele } from "../fetch-wikidata.ts";
 import type { SpecModele } from "../lire-specs.ts";
-import { cleModele, idMarque, nomModeleSansMarque } from "./normaliser.ts";
+import { cle, cleModele, idMarque, nomMarque as nomMarqueCourt, nomModeleSansMarque } from "./normaliser.ts";
 
 /** Classes Wikidata (P279) -> carrosserie. L'ordre de priorité est donné par PRIORITE. */
 const CARROSSERIE_PAR_CLASSE: Record<string, Carrosserie> = {
@@ -84,14 +84,22 @@ export interface WdResolu extends WdModele {
 /** Associe à chaque modèle Wikidata sa marque (P1716, sinon constructeur P176) et sa clé de dédoublonnage. */
 export function resoudreWikidata(wd: WdExport): WdResolu[] {
   const marques = new Map(wd.marques.map((m) => [m.qid, m]));
+  const prefixe = (libelle: string, nom: string) => cle(libelle).startsWith(cle(nom)) && cle(nom).length > 0;
+  // Noms de marques connus, du plus long au plus court, pour retrouver la marque écrite en tête du libellé.
+  const nomsConnus = [...new Set(wd.marques.map((m) => m.nom))].sort((a, b) => b.length - a.length);
   const res: WdResolu[] = [];
   for (const m of wd.modeles) {
-    const marque = (m.marqueQid && marques.get(m.marqueQid)) || (m.constructeurQid && marques.get(m.constructeurQid));
-    if (!marque) continue;
-    const marqueId = idMarque(marque.nom);
-    const nomCourt = nomModeleSansMarque(m.libelle, marque.nom);
+    const candidates = [m.marqueQid, m.constructeurQid].map((q) => (q ? marques.get(q) : undefined)).filter((x) => x !== undefined);
+    if (!candidates.length) continue;
+    // La marque retenue est celle dont le nom figure en tête du libellé (« BMW X1 » -> BMW, pas « BMW M »).
+    let nomMarque = candidates.find((c) => prefixe(m.libelle, c.nom))?.nom;
+    nomMarque ??= nomsConnus.find((n) => n.length > 2 && prefixe(m.libelle, n));
+    nomMarque ??= candidates[0].nom;
+    nomMarque = nomMarqueCourt(nomMarque);
+    const marqueId = idMarque(nomMarque);
+    const nomCourt = nomModeleSansMarque(m.libelle, nomMarque);
     if (!nomCourt) continue;
-    res.push({ ...m, marqueId, marqueNom: marque.nom, nomCourt, cle: cleModele(marqueId, nomCourt) });
+    res.push({ ...m, marqueId, marqueNom: nomMarque, nomCourt, cle: cleModele(marqueId, nomCourt) });
   }
   return res;
 }

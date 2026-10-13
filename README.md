@@ -47,7 +47,9 @@ modifiez ces fichiers puis lancez `npm run data:merge`.
 
 Règles appliquées :
 - une valeur inconnue s'écrit `-` et devient `null` : aucune valeur n'est inventée ;
-- les prix sont des prix catalogue indicatifs et les consommations sont des valeurs WLTP ;
+- les prix sont des prix catalogue indicatifs et les consommations sont des valeurs WLTP ; pour les
+  générations antérieures à 2018 (fichier `complements.txt`), ce sont souvent des valeurs NEDC et le
+  prix est le dernier prix catalogue connu, ou `-` s'il est inconnu ;
 - la vignette Crit'Air se déduit de la réglementation (électrique = 0 ; essence, hybride, GPL ou E85
   vendu neuf depuis 2011 = 1 ; diesel = 2) ;
 - chaque modèle porte un champ `source` et un champ `dateMiseAJour`.
@@ -65,6 +67,13 @@ Règles appliquées :
 - NHTSA vPIC complète la liste des marques et sert à recouper les modèles. Ses modèles ne sont pas
   ajoutés seuls, car l'API ne donne pas de type de carrosserie fiable : il faudrait l'inventer.
 
+### Logos
+
+Les logos viennent de la propriété P154 de Wikidata. Seuls les SVG/PNG, ou les fichiers dont le nom
+indique un logo ou un badge, sont retenus, car certaines marques ont une photo de voiture en P154.
+À défaut, le script cherche « Marque logo.svg » sur Commons. Le logo de la marque passe avant celui
+du groupe (« BMW » plutôt que « BMW Group »).
+
 ### Photos
 
 Toutes les photos viennent de Wikimedia Commons et seules celles sous licence libre sont gardées
@@ -72,13 +81,17 @@ Toutes les photos viennent de Wikimedia Commons et seules celles sous licence li
 stockés, et le crédit s'affiche sous chaque photo. Un modèle sans photo s'affiche avec une
 silhouette générique qui dépend de sa carrosserie.
 
+Pour ne pas illustrer une fiche avec une autre génération, une photo de galerie n'est retenue que si
+son titre contient une année comprise dans la période de production, sans année antérieure ni mention
+de génération (« Mk2 », « 3rd generation »). Les concept-cars et les photos de détail sont exclus.
+
 ## État actuel de la base
 
 D'après `public/data/stats.json` (collecte du 13/10/2026) :
 
-- 503 marques, dont 381 avec au moins un modèle, 283 avec un logo et 122 apportées par NHTSA seulement ;
-- 2 916 modèles, dont 439 avec fiche technique (799 versions) et 2 477 issus de Wikidata seulement ;
-- 2 781 modèles avec au moins une photo (418 des 439 fiches techniques), soit 3 769 photos.
+- 465 marques, dont 351 avec au moins un modèle et 251 avec un logo ;
+- 2 950 modèles, dont 520 avec fiche technique (918 versions) et 2 430 issus de Wikidata seulement ;
+- 2 830 modèles avec au moins une photo (513 des 520 fiches techniques), soit 4 015 photos.
 
 ## Fonctionnalités
 

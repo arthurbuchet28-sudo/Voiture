@@ -91,9 +91,28 @@ const ALIAS_MARQUES: Record<string, string> = {
   "zhejiang-leapmotor-technology": "leapmotor",
 };
 
+/** Noms où « Motors », « Group »… font partie de la marque elle-même. */
+const NOMS_COMPOSES = new Set(["general-motors", "american-motors-corporation", "british-motor-corporation", "w-motors", "abc-motors", "gta-motor"]);
+const SUFFIXE_SOCIETE =
+  /[\s,]+(motors?(\s+(company|corporation|co\.?))?|motor\s+company(\s+limited)?|automobiles?(\s+technology)?(\s+co\.?,?\s+ltd\.?)?|automotive|car\s+company|group|company(\s+limited)?|corporation|limited|ltd\.?|inc\.?|ag|s\.?p\.?a\.?|gmbh|passenger\s+vehicles|\(automobile\))$/i;
+
+/** Nom de marque sans forme juridique : « Lincoln Motor Company » -> « Lincoln », « Nio Inc. » -> « Nio ». */
+export function nomMarque(nom: string): string {
+  if (NOMS_COMPOSES.has(slug(nom))) return nom;
+  let n = nom.trim();
+  for (let i = 0; i < 3; i++) {
+    const court = n.replace(SUFFIXE_SOCIETE, "").trim();
+    if (court.length < 2 || court === n) break;
+    n = court;
+  }
+  return n;
+}
+
 export function idMarque(nom: string): string {
   const s = slug(nom);
-  return ALIAS_MARQUES[s] ?? s;
+  if (ALIAS_MARQUES[s]) return ALIAS_MARQUES[s];
+  const n = slug(nomMarque(nom));
+  return ALIAS_MARQUES[n] ?? n;
 }
 
 /**

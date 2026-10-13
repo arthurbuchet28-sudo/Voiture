@@ -21,6 +21,8 @@ export interface CommonsExport {
   date: string;
   fichiers: Record<string, Photo | null>;
   logos: Record<string, string | null>;
+  /** Logos trouvés directement sur Commons (« Peugeot logo.svg ») pour les marques des fiches. */
+  logosParMarque?: Record<string, string>;
   galeries: Record<string, Photo[]>;
 }
 
@@ -86,36 +88,59 @@ async function infosFichiers(noms: string[], largeur = LARGEUR): Promise<Map<str
 }
 
 /** Termes de recherche anglais pour les noms français (« Série 3 » -> « 3 Series », « Classe A » -> « A-Class »). */
-const ALIAS_RECHERCHE: Record<string, string> = {
-  "Classe C Break": "C-Class Estate",
-  "Classe E Break": "E-Class Estate",
-  "Classe CLE Cabriolet": "CLE Cabriolet",
-  "Classe CLE": "CLE Coupé",
-  "A3 Berline": "A3 Sedan",
-  "Golf SW": "Golf Variant",
-  "Série 3 Touring": "3 Series Touring",
-  "Série 5 Touring": "5 Series Touring",
-  "Twingo E-Tech électrique": "Twingo E-Tech",
-  "Mazda2 Hybrid": "Mazda2 Hybrid",
+// Termes de recherche alternatifs (noms anglais/allemands utilisés dans les titres Commons).
+const ALIAS_RECHERCHE: Record<string, string[]> = {
+  "Classe C Break": ["C-Class Estate", "C-Klasse T-Modell", "C-Class Wagon"],
+  "Classe E Break": ["E-Class Estate", "E-Klasse T-Modell", "E-Class Wagon"],
+  "Classe CLE Cabriolet": ["CLE Cabriolet"],
+  "Classe CLE": ["CLE Coupé", "CLE Coupe", "CLE"],
+  "CLA Shooting Brake": ["CLA Shooting Brake"],
+  "GLC Coupé": ["GLC Coupé", "GLC Coupe"],
+  "A3 Berline": ["A3 Sedan", "A3 Limousine"],
+  "A4 Berline": ["A4 Limousine", "A4 Sedan", "A4"],
+  "A6": ["A6 Limousine", "A6 Sedan", "A6"],
+  "A6 Sportback e-tron": ["A6 Sportback e-tron", "A6 e-tron"],
+  "A3 Sportback 8V": ["A3 Sportback", "A3 8V"],
+  "Série 2 Gran Coupé": ["2 Series Gran Coupé", "2 Series Gran Coupe", "2er Gran Coupé"],
+  "Golf SW": ["Golf Variant"],
+  "Leon Sportstourer": ["Leon Sportstourer", "Leon ST"],
+  "Astra Sports Tourer": ["Astra Sports Tourer"],
+  "Focus SW": ["Focus Turnier", "Focus Estate", "Focus Wagon"],
+  "i30 SW": ["i30 Kombi", "i30 Wagon", "i30 Estate"],
+  "Mégane IV Estate": ["Megane Estate", "Mégane Estate", "Megane Grandtour"],
+  "Twingo E-Tech électrique": ["Twingo E-Tech", "Twingo"],
+  "Scenic E-Tech electric": ["Scenic E-Tech", "Scénic E-Tech"],
+  "Mazda2 Hybrid": ["Mazda2 Hybrid"],
+  "GR Supra": ["GR Supra", "Supra"],
+  "Proace City Verso": ["Proace City Verso", "Proace City"],
+  "Tourneo Courier": ["Tourneo Courier"],
+  "Grand C4 SpaceTourer": ["Grand C4 SpaceTourer", "C4 SpaceTourer"],
+  "Rocks Electric": ["Rocks-e", "Rocks Electric"],
+  "N°8": ["N°8", "No8", "N8"],
+  "DS 3": ["DS 3", "DS3"],
+  "Range Rover": ["Range Rover L460", "Range Rover (L460)", "Range Rover"],
+  Ioniq: ["Ioniq Hybrid", "Ioniq Electric", "Ioniq"],
 };
 
-function termeRecherche(s: SpecModele): string {
-  const nom = (ALIAS_RECHERCHE[s.nom] ?? s.nom)
-    .replace(/^Série (\d)/, "$1 Series")
-    .replace(/^Classe ([A-Z]+)/, "$1-Class")
-    .replace(/\s*\(.*\)$/, "")
-    .replace(/\s+(I|II|III|IV|V|VI|VII)$/, "");
-  // « DS DS 3 », « Polestar Polestar 2 », « Microlino Microlino » : pas de double préfixe.
-  const marqueEnTete = cle(nom).startsWith(cle(s.marque.split(" ")[0]));
-  return marqueEnTete ? nom : `${s.marque} ${nom}`;
+function termesRecherche(s: SpecModele): string[] {
+  return (ALIAS_RECHERCHE[s.nom] ?? [s.nom]).map((brut) => {
+    const nom = brut
+      .replace(/^Série (\d)/, "$1 Series")
+      .replace(/^Classe ([A-Z]+)/, "$1-Class")
+      .replace(/\s*\(.*\)$/, "")
+      .replace(/\s+(I|II|III|IV|V|VI|VII)$/, "");
+    // « DS DS 3 », « Polestar Polestar 2 », « Microlino Microlino » : pas de double préfixe.
+    const marqueEnTete = cle(nom).startsWith(cle(s.marque.split(" ")[0]));
+    return marqueEnTete ? nom : `${s.marque} ${nom}`;
+  });
 }
+const termeRecherche = (s: SpecModele) => termesRecherche(s)[0];
 
-const EXCLURE_TITRE = /\b(interior|int[ée]rieur|innenraum|cockpit|dashboard|armaturenbrett|engine|moteur|motorraum|badge|logo|emblem|wheel|felge|seats|sitze|kofferraum|trunk|boot|steering|detail|taillight|tail light|scale model|toy|miniature|modell?auto|diecast|lego|powertrain|cutaway|wrc|rally|rallye|race|racing|gt3|gt4|police|polizei|patrol|military|militär|militärischer|crash|accident|unfall|wreck)\b/i;
+const EXCLURE_TITRE = /\b(interior|int[ée]rieur|innenraum|cockpit|dashboard|armaturenbrett|engine|moteur|motorraum|badge|logo|emblem|wheel|felge|seats|sitze|kofferraum|trunk|boot|steering|detail|taillight|tail light|scale model|toy|miniature|modell?auto|diecast|lego|powertrain|cutaway|wrc|rally|rallye|race|racing|gt3|gt4|police|polizei|patrol|military|militär|militärischer|crash|accident|unfall|wreck|concept|prototype|studie|study|show car)\b/i;
 
 const VARIANTE = /^(?:\+|(?:st|cross|verso|sedan|saloon|sportback|touring|sw|combi|estate|break|wagon|variant|cabrio|cabriolet|convertible|roadster|coupe|coupé|x|sport ?tourer|sportstourer|sports tourer|shooting|van|cargo|grand|life|space|aircross|crossback|allroad|avant|limousine|gran|active|xl|l)\b)/i;
 
-export async function rechercherGalerie(s: SpecModele, dejaVus: Set<string>, freres: string[]): Promise<Photo[]> {
-  const terme = termeRecherche(s);
+async function chercherTitres(terme: string, recents: boolean) {
   const params = new URLSearchParams({
     action: "query",
     format: "json",
@@ -125,36 +150,49 @@ export async function rechercherGalerie(s: SpecModele, dejaVus: Set<string>, fre
     gsrnamespace: "6",
     gsrlimit: "50",
     // Pour un modèle encore produit, les fichiers les plus récents montrent la génération actuelle.
-    ...(s.anneeFin === null ? { gsrsort: "create_timestamp_desc" } : {}),
+    ...(recents ? { gsrsort: "create_timestamp_desc" } : {}),
     prop: "imageinfo",
     iiprop: "url|extmetadata",
     iiurlwidth: String(LARGEUR),
     iiextmetadatafilter: "Artist|LicenseShortName",
   });
   const r = await fetchJson<{ query?: { pages: (PageImage & { index?: number })[] } }>(`${API}?${params}`);
-  const pages = (r.query?.pages ?? []).sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
-  const cleCherchee = cle(terme);
-  const debut = s.anneeDebut ?? 0;
+  return (r.query?.pages ?? []).sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
+}
+
+export async function rechercherGalerie(s: SpecModele, dejaVus: Set<string>, freres: string[]): Promise<Photo[]> {
+  // Une génération est souvent présentée l'année précédant sa commercialisation.
+  const debut = (s.anneeDebut ?? 0) - 1;
   const fin = s.anneeFin ?? 9999;
-  const candidats: { photo: Photo; bonus: number }[] = [];
-  for (const p of pages) {
-    const titre = p.title.replace(/^File:/, "");
-    if (dejaVus.has(titre) || EXCLURE_TITRE.test(titre) || !cle(titre).includes(cleCherchee)) continue;
-    // Écarte les variantes (« Yaris Cross » pour « Yaris », « 308 SW » pour « 308 ») et les générations nommées.
-    if (freres.some((f) => cle(titre).includes(f))) continue;
-    const idx = sansAccents(titre).toLowerCase().indexOf(sansAccents(terme).toLowerCase());
-    if (idx >= 0 && VARIANTE.test(titre.slice(idx + terme.length).replace(/^[\s_,-]+/, "")) && !VARIANTE.test(s.nom.split(" ").pop() ?? "")) continue;
-    if (/\b(mk|mark)\s?[0-9ivx]+\b/i.test(titre)) continue;
-    // Pour éviter d'illustrer une autre génération, le titre doit contenir une année comprise dans la
-    // période de production (année-modèle ou date de prise de vue) et aucune année antérieure.
-    const annees = [...titre.matchAll(/(?<!\d)(19[5-9]\d|20[0-3]\d)(?!\d)/g)].map((m) => Number(m[1]));
-    if (s.anneeDebut !== null) {
-      if (!annees.length || annees.some((a) => a < debut) || !annees.some((a) => a <= fin + 1)) continue;
+  for (const terme of termesRecherche(s)) {
+    const pages = await chercherTitres(terme, s.anneeFin === null);
+    const cleCherchee = cle(terme);
+    const retenus: { photo: Photo; annee: boolean }[] = [];
+    for (const p of pages) {
+      const titre = p.title.replace(/^File:/, "");
+      if (dejaVus.has(titre) || EXCLURE_TITRE.test(titre) || !cle(titre).includes(cleCherchee)) continue;
+      // Écarte les variantes (« Yaris Cross » pour « Yaris », « 308 SW » pour « 308 ») et les générations nommées.
+      if (freres.some((f) => cle(titre).includes(f))) continue;
+      const idx = sansAccents(titre).toLowerCase().indexOf(sansAccents(terme).toLowerCase());
+      if (idx >= 0 && VARIANTE.test(titre.slice(idx + terme.length).replace(/^[\s_,-]+/, "")) && !VARIANTE.test(s.nom.split(" ").pop() ?? "")) continue;
+      if (/\b(mk|mark)\s?[0-9ivx]+\b/i.test(titre)) continue;
+      // « (3rd generation) » : génération nommée qu'on ne sait pas rapprocher de la fiche.
+      if (/\b(\d+(st|nd|rd|th)|first|second|third|fourth|fifth|sixth)[\s_-]+generation\b/i.test(titre)) continue;
+      // Pour éviter d'illustrer une autre génération : aucune année antérieure à la période de production,
+      // et de préférence une année comprise dans cette période (année-modèle ou date de prise de vue).
+      const annees = [...titre.matchAll(/(?<!\d)(19[5-9]\d|20[0-3]\d)(?!\d)/g)].map((m) => Number(m[1]));
+      if (s.anneeDebut !== null && annees.some((a) => a < debut)) continue;
+      const dansPeriode = annees.some((a) => a >= debut && a <= fin + 1);
+      if (s.anneeDebut !== null && annees.length && !dansPeriode) continue;
+      const photo = versPhoto(p);
+      if (photo) retenus.push({ photo, annee: dansPeriode || s.anneeDebut === null });
     }
-    const photo = versPhoto(p);
-    if (photo) candidats.push({ photo, bonus: 0 });
+    // Seules les photos datées dans la période sont retenues pour les modèles datés :
+    // une silhouette vaut mieux qu'une photo d'une autre génération.
+    const choix = retenus.filter((r) => r.annee);
+    if (choix.length) return choix.slice(0, 3).map((c) => c.photo);
   }
-  return candidats.slice(0, 3).map((c) => c.photo);
+  return [];
 }
 
 export async function collecterCommons(): Promise<CommonsExport> {
@@ -174,11 +212,25 @@ export async function collecterCommons(): Promise<CommonsExport> {
   console.log(`[commons] ${noms.size} images de modèles à documenter`);
   const fichiers = await infosFichiers([...noms]);
 
-  const logosNoms = [...new Set(wd.marques.map((m) => m.logo).filter((l): l is string => !!l))];
+  const logosNoms = [
+    ...new Set([...wd.marques.map((m) => m.logo), ...Object.values(wd.logosParNom ?? {})].filter((l): l is string => !!l)),
+  ];
   console.log(`[commons] ${logosNoms.length} logos`);
   const logosInfos = await infosFichiers(logosNoms, 120);
   const logos: Record<string, string | null> = {};
   for (const [n, p] of logosInfos) logos[n] = p?.url ?? null;
+
+  // Logos des marques des fiches cherchés par nom de fichier usuel sur Commons (sous licence libre uniquement).
+  const marquesFiches = [...new Set(specs.map((s) => s.marque))];
+  const candidatsLogo = new Map<string, string[]>();
+  for (const m of marquesFiches) candidatsLogo.set(m, [`${m} logo.svg`, `${m} Logo.svg`, `Logo ${m}.svg`, `${m} logo.png`]);
+  const infosLogos = await infosFichiers([...candidatsLogo.values()].flat(), 120);
+  const logosParMarque: Record<string, string> = {};
+  for (const [m, fichiers] of candidatsLogo) {
+    const trouve = fichiers.map((f) => infosLogos.get(f)).find((p) => p);
+    if (trouve) logosParMarque[idMarque(m)] = trouve.url;
+  }
+  console.log(`[commons] ${Object.keys(logosParMarque).length} logos trouvés par nom de fichier`);
 
   console.log(`[commons] recherche de galeries pour ${specs.length} fiches…`);
   const galeries: Record<string, Photo[]> = {};
@@ -199,6 +251,7 @@ export async function collecterCommons(): Promise<CommonsExport> {
     date: new Date().toISOString().slice(0, 10),
     fichiers: Object.fromEntries(fichiers),
     logos,
+    logosParMarque,
     galeries,
   };
   ecrireJson(join(CACHE, "commons.json"), resultat);

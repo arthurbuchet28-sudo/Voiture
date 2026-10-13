@@ -1,0 +1,207 @@
+# Compléments : modèles actuels manquants et générations précédentes très diffusées en France.
+# Pour les modèles plus produits, le prix est le dernier prix catalogue neuf connu ; « - » si inconnu.
+# Pour les générations antérieures à 2018, consommation et CO2 sont souvent des valeurs NEDC (ancien cycle).
+
+# ===================== MODÈLES ACTUELS =====================
+@ Peugeot | Boxer | utilitaire | - | 2006- | B G | 3 4 13000
+2.2 BlueHDi 140 BVM6 | D | 140 | M | T | 38500 | 8.4 | 220 | - | - | 155 | 2050
+e-Boxer 270 | EV | 270 | A | T | 62000 | 27.0 | 0 | 420 | - | 120 | 2500
+@ DS | DS 9 | berline | E | 2021-2025 | B N G Bl | 5 4 510
+E-Tense 250 | PHEV | 250 | A | T | 55000 | 1.4 | 32 | 56 | 8.3 | 240 | 1839
+PureTech 225 EAT8 | E | 225 | A | T | 49000 | 6.6 | 150 | - | 8.1 | 240 | 1610
+@ Opel | Combo | utilitaire | - | 2018- | B G A | 2 4 3300
+1.5 Diesel 100 BVM6 | D | 100 | M | T | 25000 | 5.6 | 146 | - | - | 160 | 1450
+Combo Electric 136 | EV | 136 | A | T | 37000 | 22.0 | 0 | 330 | 11.2 | 135 | 1750
+@ Opel | Vivaro | utilitaire | - | 2019- | B G A | 3 4 5100
+2.0 Diesel 145 BVM6 | D | 145 | M | T | 35000 | 6.7 | 177 | - | - | 170 | 1800
+Vivaro Electric 136 | EV | 136 | A | T | 48000 | 26.0 | 0 | 350 | 12.1 | 130 | 2100
+@ Opel | Rocks Electric | citadine | A | 2021- | B N G V | 2 3 63
+Rocks Electric 8 kW | EV | 8 | A | P | 7990 | 5.5 | 0 | 75 | - | 45 | 471
+@ Fiat | Topolino | citadine | A | 2023- | B V Bl | 2 3 63
+Topolino 8 kW | EV | 8 | A | P | 9890 | 5.5 | 0 | 75 | - | 45 | 471
+@ Toyota | Proace | utilitaire | - | 2016- | B G A | 3 4 5100
+2.0 D-4D 145 BVM6 | D | 145 | M | T | 36000 | 6.7 | 177 | - | - | 170 | 1800
+@ Toyota | Proace Verso | monospace | - | 2016- | B N G | 8 5 640
+2.0 D-4D 145 BVA8 | D | 145 | A | T | 48000 | 7.1 | 187 | - | 12.0 | 170 | 1900
+Électrique 136 | EV | 136 | A | T | 60000 | 26.6 | 0 | 350 | 13.1 | 130 | 2250
+@ Toyota | Urban Cruiser | SUV | B | 2025- | B N G Bl V | 5 5 310
+49 kWh FWD 144 | EV | 144 | A | T | 33900 | - | 0 | 344 | 9.6 | 150 | 1700
+61 kWh AWD 184 | EV | 184 | A | 4 | 40900 | - | 0 | 395 | 7.4 | 150 | 1850
+@ Toyota | C-HR+ | SUV | C | 2025- | B N G A | 5 5 416
+57,7 kWh FWD 167 | EV | 167 | A | T | 39900 | - | 0 | 456 | 8.4 | 160 | 1855
+74,7 kWh AWD 343 | EV | 343 | A | 4 | 49900 | - | 0 | 525 | 5.2 | 160 | 2025
+@ Volkswagen | Touareg | SUV | E | 2018- | B N G A Bl | 5 5 810
+3.0 V6 TDI 231 4Motion | D | 231 | A | 4 | 79990 | 7.9 | 207 | - | 7.4 | 229 | 2070
+eHybrid 381 4Motion | PHEV | 381 | A | 4 | 89990 | 2.7 | 61 | 47 | 5.1 | 250 | 2385 | c=665
+@ Volkswagen | T-Roc Cabriolet | cabriolet | C | 2020-2025 | B N G A R Bl | 4 2 284
+1.0 TSI 110 BVM6 | E | 110 | M | T | 33990 | 6.3 | 143 | - | 11.6 | 187 | 1416
+1.5 TSI 150 DSG7 | E | 150 | A | T | 38990 | 6.5 | 148 | - | 9.6 | 205 | 1478
+@ Volkswagen | up! | citadine | A | 2011-2023 | B N G R Bl J | 4 5 251
+1.0 MPI 65 BVM5 | E | 65 | M | T | 13500 | 4.9 | 111 | - | 14.4 | 171 | 926
+e-up! 83 | EV | 83 | A | T | 24000 | 14.5 | 0 | 258 | 11.9 | 130 | 1235
+@ Audi | A4 Berline | berline | D | 2015-2024 | B N G A Bl | 5 4 460
+35 TFSI 150 S tronic | E | 150 | A | T | 45000 | 6.1 | 139 | - | 8.9 | 225 | 1510
+35 TDI 163 S tronic | D | 163 | A | T | 47500 | 4.7 | 122 | - | 8.4 | 228 | 1590
+@ Audi | A6 | berline | E | 2025- | B N G A Bl | 5 4 492
+TFSI 204 S tronic | E | 204 | A | T | 62000 | 6.5 | 147 | - | 7.4 | 246 | 1770
+TDI 204 S tronic | D | 204 | A | T | 63000 | 5.1 | 133 | - | 7.3 | 238 | 1845
+@ Audi | Q5 Sportback | SUV | D | 2024- | B N G A Bl | 5 5 515
+TFSI 204 quattro S tronic | E | 204 | A | 4 | 62400 | 7.6 | 173 | - | 7.6 | 220 | 1910
+TDI 204 quattro S tronic | D | 204 | A | 4 | 64400 | 6.0 | 158 | - | 7.5 | 222 | 1995
+@ Audi | Q8 e-tron | SUV | F | 2023-2024 | B N G A Bl | 5 5 569
+50 e-tron quattro 340 | EV | 340 | A | 4 | 82000 | 22.0 | 0 | 491 | 6.0 | 200 | 2585
+55 e-tron quattro 408 | EV | 408 | A | 4 | 92000 | 22.0 | 0 | 582 | 5.6 | 200 | 2585
+@ BMW | Série 4 Coupé | coupé | D | 2020- | B N G A Bl | 4 2 440
+420i 184 | E | 184 | A | P | 53500 | 6.4 | 145 | - | 7.5 | 240 | 1580
+M440i xDrive 374 | E | 374 | A | 4 | 76000 | 8.2 | 186 | - | 4.5 | 250 | 1815
+@ BMW | Série 4 Cabriolet | cabriolet | D | 2021- | B N G A Bl | 4 2 385
+420i 184 | E | 184 | A | P | 60500 | 6.8 | 155 | - | 8.2 | 240 | 1720
+@ BMW | X4 | SUV | D | 2018- | B N G A Bl | 5 5 525
+xDrive20d 190 | D | 190 | A | 4 | 65000 | 5.7 | 150 | - | 8.0 | 213 | 1845
+@ BMW | Série 1 F40 | berline | C | 2019-2024 | B N G A R Bl | 5 5 380
+118i 136 | E | 136 | M | T | 31500 | 5.7 | 130 | - | 8.5 | 213 | 1365
+118d 150 | D | 150 | A | T | 36000 | 4.5 | 118 | - | 8.4 | 216 | 1475
+@ Mercedes-Benz | EQE SUV | SUV | E | 2023- | B N G A Bl | 5 5 520
+EQE 350+ 292 | EV | 292 | A | P | 95000 | 19.5 | 0 | 590 | 6.7 | 210 | 2525
+@ Mercedes-Benz | EQS SUV | SUV | F | 2022- | B N G A Bl | 7 5 645
+EQS 450 4Matic 360 | EV | 360 | A | 4 | 125000 | 22.5 | 0 | 610 | 6.0 | 210 | 2810 | pl=5
+@ Mercedes-Benz | Citan | utilitaire | - | 2021- | B G | 2 4 2900
+110 CDI 95 | D | 95 | M | T | 27000 | 5.4 | 143 | - | - | 165 | 1550
+eCitan 122 | EV | 122 | A | T | 38000 | 19.0 | 0 | 285 | 11.0 | 130 | 1850
+@ Mercedes-Benz | Vito | utilitaire | - | 2014- | B G A | 3 4 6000
+114 CDI 136 | D | 136 | M | P | 38000 | 7.3 | 192 | - | - | 165 | 1950
+@ Mercedes-Benz | CLA Shooting Brake | break | C | 2019-2025 | B N G A Bl | 5 5 505
+CLA 180 136 DCT | E | 136 | A | T | 42000 | 6.2 | 141 | - | 9.4 | 215 | 1420
+@ Škoda | Enyaq Coupé | SUV | C | 2022- | B N G A Bl V | 5 5 570
+85 286 | EV | 286 | A | P | 53990 | 15.1 | 0 | 600 | 6.7 | 180 | 2130
+@ Hyundai | i30 SW | break | C | 2017- | B N G R Bl | 5 5 602
+1.0 T-GDi 120 BVM6 | E | 120 | M | T | 27100 | 5.8 | 131 | - | 11.4 | 188 | 1325
+@ Kia | Ceed SW | break | C | 2018- | B N G R Bl | 5 5 625
+1.0 T-GDi 120 BVM6 | E | 120 | M | T | 26690 | 5.9 | 133 | - | 11.1 | 188 | 1320
+1.6 GDi Plug-in 141 | PHEV | 141 | A | T | 39990 | 1.3 | 29 | 60 | 10.8 | 170 | 1550 | c=437
+@ Kia | ProCeed | break | C | 2019- | B N G R Bl | 5 5 594
+1.5 T-GDi 160 DCT7 | E | 160 | A | T | 36990 | 6.3 | 143 | - | 8.6 | 208 | 1405
+@ Ford | Focus SW | break | C | 2018-2025 | B N G R Bl | 5 5 608
+1.0 EcoBoost 125 mHEV BVM6 | E | 125 | M | T | 31400 | 5.6 | 127 | - | 10.5 | 196 | 1400
+@ Ford | Tourneo Courier | monospace | B | 2024- | B N G Bl | 5 5 570
+1.0 EcoBoost 125 BVM6 | E | 125 | M | T | 26500 | 6.0 | 136 | - | 10.9 | 183 | 1305
+E-Tourneo Courier 136 | EV | 136 | A | T | 36500 | 17.2 | 0 | 288 | 12.0 | 140 | 1609
+@ Ford | Transit Courier | utilitaire | B | 2024- | B G | 2 4 2900
+1.0 EcoBoost 100 BVM6 | E | 100 | M | T | 22500 | 6.0 | 137 | - | - | 172 | 1305
+@ Ford | Bronco | SUV | - | 2024- | B N G R Bl V O | 5 5 522
+2.7 EcoBoost V6 335 | E | 335 | A | 4 | 79990 | 14.1 | 316 | - | 6.7 | 160 | 2350
+@ Volvo | V60 Cross Country | break | D | 2019- | B N G A Bl | 5 5 529
+B5 AWD 250 | E | 250 | A | 4 | 58950 | 7.9 | 179 | - | 7.0 | 180 | 1860
+@ Volvo | S60 | berline | D | 2019-2024 | B N G A Bl | 5 4 442
+T6 Recharge 350 | PHEV | 350 | A | 4 | 61950 | 1.0 | 22 | 82 | 5.3 | 180 | 2050
+@ Volvo | S90 | berline | E | 2016-2024 | B N G A Bl | 5 4 461
+T8 Recharge 455 | PHEV | 455 | A | 4 | 76950 | 1.1 | 24 | 81 | 4.8 | 180 | 2120
+@ Mitsubishi | Colt | citadine | B | 2023- | B N G R | 5 5 391
+1.0 MPI-T 91 BVM6 | E | 91 | M | T | 19490 | 5.3 | 120 | - | 12.2 | 180 | 1090
+1.6 HEV 143 | HEV | 143 | A | T | 24490 | 4.3 | 96 | - | 9.3 | 174 | 1290 | c=301
+@ SsangYong | Tivoli | SUV | B | 2015- | B N G R Bl | 5 5 423
+1.5 T-GDi 163 BVM6 | E | 163 | M | T | 24990 | 7.7 | 175 | - | 10.0 | 181 | 1350
+@ SsangYong | Korando | SUV | C | 2019- | B N G R Bl | 5 5 551
+1.5 T-GDi 163 BVA6 | E | 163 | A | T | 32990 | 8.1 | 185 | - | 10.9 | 180 | 1530
+e-Motion 190 | EV | 190 | A | T | 39990 | 17.7 | 0 | 339 | 9.0 | 157 | 1810
+@ SsangYong | Musso | pick-up | - | 2018- | B N G A | 5 4 -
+2.2 e-XDi 202 4WD BVA6 | D | 202 | A | 4 | 39990 | 9.6 | 252 | - | 11.9 | 175 | 2120
+@ Isuzu | D-Max | pick-up | - | 2020- | B N G A R | 5 4 -
+1.9 Ddi 164 4x4 BVM6 | D | 164 | M | 4 | 38000 | 8.6 | 227 | - | 12.7 | 180 | 1955
+@ Nissan | Primastar | utilitaire | - | 2021- | B G | 3 4 5200
+dCi 150 BVM6 | D | 150 | M | T | 37000 | 7.1 | 186 | - | - | 180 | 1900
+@ Xpeng | P7 | berline | E | 2024- | B N G Bl | 5 4 440
+Long Range RWD 276 | EV | 276 | A | P | 49990 | 15.6 | 0 | 576 | 6.7 | 200 | 2095
+@ Honda | e | citadine | B | 2020-2024 | B N G J Bl | 4 5 171
+Advance 154 | EV | 154 | A | P | 38000 | 17.8 | 0 | 210 | 8.3 | 145 | 1542
+@ Hyundai | Ioniq | berline | C | 2016-2022 | B N G A Bl | 5 5 443
+Hybrid 141 | HEV | 141 | A | T | 29000 | 3.9 | 89 | - | 10.8 | 185 | 1445
+Electric 136 | EV | 136 | A | T | 36000 | 13.8 | 0 | 311 | 9.9 | 165 | 1602 | c=357
+@ Jeep | Compass (2017-2025) | SUV | C | 2017-2025 | B N G R Bl | 5 5 438
+4xe 240 PHEV | PHEV | 240 | A | 4 | 45000 | 2.0 | 46 | 49 | 7.3 | 200 | 1860 | c=420
+1.5 e-Hybrid 130 | E | 130 | A | T | 36000 | 6.0 | 136 | - | 9.6 | 192 | 1475
+
+# ===================== GÉNÉRATIONS PRÉCÉDENTES =====================
+@ Peugeot | 206 | citadine | B | 1998-2012 | B N G A R Bl | 5 5 245
+1.4 75 BVM5 | E | 75 | M | T | - | 6.6 | 157 | - | 13.1 | 170 | 980
+1.4 HDi 70 BVM5 | D | 70 | M | T | - | 4.4 | 117 | - | 15.0 | 165 | 1010
+@ Peugeot | 207 | citadine | B | 2006-2014 | B N G A R Bl | 5 5 270
+1.4 VTi 95 BVM5 | E | 95 | M | T | - | 6.2 | 145 | - | 12.4 | 183 | 1150
+1.6 HDi 92 BVM5 | D | 92 | M | T | - | 4.2 | 110 | - | 11.9 | 180 | 1205
+@ Peugeot | 308 I | berline | C | 2007-2013 | B N G A R Bl | 5 5 348
+1.6 VTi 120 BVM5 | E | 120 | M | T | - | 6.9 | 159 | - | 10.4 | 195 | 1275
+1.6 HDi 110 BVM5 | D | 110 | M | T | - | 4.8 | 125 | - | 11.0 | 190 | 1320
+@ Peugeot | 3008 I | SUV | C | 2009-2016 | B N G A R Bl | 5 5 512
+1.6 THP 155 BVM6 | E | 155 | M | T | - | 7.4 | 172 | - | 8.9 | 205 | 1420
+1.6 HDi 115 BVM6 | D | 115 | M | T | - | 4.8 | 125 | - | 11.8 | 180 | 1480
+@ Peugeot | 5008 I | monospace | C | 2009-2017 | B N G A Bl | 7 5 679
+1.6 HDi 115 BVM6 | D | 115 | M | T | - | 5.0 | 130 | - | 12.3 | 180 | 1590
+@ Peugeot | 307 | berline | C | 2001-2008 | B N G A R Bl | 5 5 341
+1.6 110 BVM5 | E | 110 | M | T | - | 7.3 | 174 | - | 11.0 | 190 | 1220
+2.0 HDi 90 BVM5 | D | 90 | M | T | - | 5.2 | 138 | - | 13.6 | 175 | 1300
+@ Citroën | C3 II | citadine | B | 2009-2016 | B N G A R Bl | 5 5 300
+1.2 PureTech 82 BVM5 | E | 82 | M | T | - | 4.7 | 107 | - | 13.4 | 169 | 1050
+1.6 BlueHDi 75 BVM5 | D | 75 | M | T | - | 3.6 | 95 | - | 13.8 | 165 | 1090
+@ Citroën | C3 Picasso | monospace | B | 2009-2017 | B N G A R Bl | 5 5 385
+1.6 HDi 90 BVM5 | D | 90 | M | T | - | 4.4 | 115 | - | 13.6 | 170 | 1320
+@ Citroën | C4 Picasso | monospace | C | 2013-2018 | B N G A Bl | 5 5 537
+1.6 BlueHDi 120 BVM6 | D | 120 | M | T | - | 4.0 | 104 | - | 11.4 | 189 | 1430
+@ Citroën | Xsara Picasso | monospace | C | 1999-2012 | B N G A Bl | 5 5 550
+1.6 HDi 90 BVM5 | D | 90 | M | T | - | 5.3 | 140 | - | 13.2 | 172 | 1380
+@ Citroën | C4 (2010-2018) | berline | C | 2010-2018 | B N G A R Bl | 5 5 408
+1.6 BlueHDi 120 BVM6 | D | 120 | M | T | - | 3.8 | 100 | - | 10.6 | 200 | 1320
+@ Renault | Clio III | citadine | B | 2005-2014 | B N G A R Bl | 5 5 288
+1.2 16V 75 BVM5 | E | 75 | M | T | - | 5.9 | 139 | - | 13.4 | 167 | 1090
+1.5 dCi 75 BVM5 | D | 75 | M | T | - | 4.0 | 105 | - | 14.0 | 165 | 1140
+@ Renault | Mégane III | berline | C | 2008-2016 | B N G A R Bl | 5 5 405
+1.2 TCe 115 BVM6 | E | 115 | M | T | - | 5.3 | 119 | - | 10.9 | 190 | 1280
+1.5 dCi 110 BVM6 | D | 110 | M | T | - | 3.5 | 90 | - | 11.9 | 190 | 1320
+@ Renault | Scénic III | monospace | C | 2009-2016 | B N G A Bl | 5 5 470
+1.5 dCi 110 BVM6 | D | 110 | M | T | - | 4.1 | 105 | - | 12.5 | 180 | 1455
+@ Renault | Twingo II | citadine | A | 2007-2014 | B N G R Bl J | 4 3 230
+1.2 16V 75 BVM5 | E | 75 | M | T | - | 5.5 | 128 | - | 12.3 | 169 | 950
+@ Renault | Mégane IV Estate | break | C | 2016-2024 | B N G A Bl | 5 5 521
+TCe 140 BVM6 | E | 140 | M | T | 29000 | 6.1 | 138 | - | 9.6 | 205 | 1330
+E-Tech plug-in 160 | PHEV | 160 | A | T | 39000 | 1.3 | 29 | 50 | 9.8 | 175 | 1625 | c=389
+@ Dacia | Sandero II | citadine | B | 2012-2020 | B N G A R Bl | 5 5 320
+SCe 75 BVM5 | E | 75 | M | T | 8990 | 5.2 | 117 | - | 14.2 | 162 | 970
+TCe 90 BVM5 | E | 90 | M | T | 11000 | 5.3 | 120 | - | 11.1 | 175 | 980
+@ Dacia | Duster I | SUV | C | 2010-2017 | B N G A R Bl | 5 5 475
+1.5 dCi 110 4x2 BVM6 | D | 110 | M | T | - | 4.7 | 123 | - | 11.8 | 169 | 1280
+1.5 dCi 110 4x4 BVM6 | D | 110 | M | 4 | - | 5.3 | 137 | - | 12.5 | 168 | 1390 | c=408
+@ Volkswagen | Golf VI | berline | C | 2008-2012 | B N G A R Bl | 5 5 350
+1.4 TSI 122 BVM6 | E | 122 | M | T | - | 6.2 | 144 | - | 9.5 | 200 | 1271
+1.6 TDI 105 BVM5 | D | 105 | M | T | - | 4.5 | 119 | - | 11.4 | 190 | 1314
+@ Toyota | Yaris III | citadine | B | 2011-2020 | B N G A R Bl | 5 5 286
+1.0 VVT-i 72 BVM5 | E | 72 | M | T | - | 4.3 | 99 | - | 15.3 | 160 | 980
+1.5 Hybrid 100 | HEV | 100 | A | T | - | 3.3 | 75 | - | 11.8 | 165 | 1100
+@ Ford | Fiesta VI | citadine | B | 2008-2017 | B N G A R Bl | 5 5 295
+1.0 EcoBoost 100 BVM5 | E | 100 | M | T | - | 4.3 | 99 | - | 11.2 | 180 | 1091
+1.5 TDCi 75 BVM5 | D | 75 | M | T | - | 3.6 | 94 | - | 14.9 | 163 | 1125
+@ Ford | Focus III | berline | C | 2011-2018 | B N G A R Bl | 5 5 363
+1.0 EcoBoost 125 BVM6 | E | 125 | M | T | - | 4.7 | 108 | - | 11.3 | 193 | 1270
+1.5 TDCi 120 BVM6 | D | 120 | M | T | - | 3.8 | 98 | - | 10.5 | 193 | 1330
+@ Opel | Corsa D | citadine | B | 2006-2014 | B N G A R Bl | 5 5 285
+1.2 85 BVM5 | E | 85 | M | T | - | 5.6 | 129 | - | 13.9 | 170 | 1120
+@ Opel | Corsa E | citadine | B | 2014-2019 | B N G A R Bl | 5 5 285
+1.4 90 BVM5 | E | 90 | M | T | - | 5.4 | 126 | - | 13.2 | 175 | 1120
+@ Opel | Astra K | berline | C | 2015-2021 | B N G A R Bl | 5 5 370
+1.4 Turbo 125 BVM6 | E | 125 | M | T | - | 5.3 | 123 | - | 9.9 | 205 | 1278
+@ Nissan | Juke I | SUV | B | 2010-2019 | B N G A R Bl J | 5 5 354
+1.2 DIG-T 115 BVM6 | E | 115 | M | T | - | 5.6 | 128 | - | 10.8 | 178 | 1236
+@ Nissan | Qashqai I | SUV | C | 2007-2014 | B N G A R Bl | 5 5 410
+1.5 dCi 110 BVM6 | D | 110 | M | T | - | 4.5 | 119 | - | 11.9 | 183 | 1395
+@ Kia | Sportage IV | SUV | C | 2016-2021 | B N G A R Bl | 5 5 491
+1.6 CRDi 136 mHEV DCT7 | D | 136 | A | T | - | 5.7 | 149 | - | 11.4 | 180 | 1600
+@ Hyundai | i20 II | citadine | B | 2014-2020 | B N G A R Bl | 5 5 326
+1.2 84 BVM5 | E | 84 | M | T | - | 5.1 | 119 | - | 12.8 | 170 | 1055
+@ Mercedes-Benz | Classe C W205 | berline | D | 2014-2021 | B N G A Bl | 5 4 480
+C 220 d 194 | D | 194 | A | P | - | 4.6 | 120 | - | 6.9 | 240 | 1590
+@ Audi | A1 Sportback (2012-2018) | citadine | B | 2012-2018 | B N G A R Bl | 5 5 270
+1.0 TFSI 95 BVM5 | E | 95 | M | T | - | 4.2 | 97 | - | 10.9 | 186 | 1120
+@ Fiat | 500 (2007) | citadine | A | 2007-2024 | B N G A R Bl | 4 3 185
+1.2 69 BVM5 | E | 69 | M | T | - | 5.1 | 119 | - | 12.9 | 160 | 940
+@ Toyota | Aygo | citadine | A | 2014-2022 | B N G R Bl | 4 5 168
+1.0 VVT-i 72 BVM5 | E | 72 | M | T | 12500 | 4.1 | 93 | - | 13.8 | 160 | 840
+@ Toyota | RAV4 IV | SUV | D | 2013-2018 | B N G A Bl | 5 5 501
+2.5 Hybrid 197 4x4 | HEV | 197 | A | 4 | - | 5.0 | 118 | - | 8.4 | 180 | 1720

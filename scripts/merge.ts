@@ -15,7 +15,7 @@
 import { join } from "node:path";
 import { CACHE, SORTIE, ecrireJson, lireJson } from "./lib/fichiers.ts";
 import { analyserClasses, chevauchement, rattacher, resoudreWikidata, type WdResolu } from "./lib/correspondance.ts";
-import { cle, cleModele, idMarque, slug } from "./lib/normaliser.ts";
+import { cle, cleModele, idMarque, nomMarque, slug } from "./lib/normaliser.ts";
 import { lireSpecs } from "./lire-specs.ts";
 import type { WdExport } from "./fetch-wikidata.ts";
 import type { CommonsExport } from "./fetch-commons.ts";
@@ -23,6 +23,12 @@ import type { NhtsaExport } from "./fetch-nhtsa.ts";
 import type { Marque, Modele, Photo } from "../src/types.ts";
 
 const MAX_PHOTOS = 5;
+const PAYS: Record<string, string> = {
+  "république populaire de Chine": "Chine",
+  "États-Unis d'Amérique": "États-Unis",
+  "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord": "Royaume-Uni",
+  "république de Chine": "Taïwan",
+};
 
 export function fusionner() {
   const wd = lireJson<WdExport>(join(CACHE, "wikidata.json"));
@@ -78,6 +84,11 @@ export function fusionner() {
       wds.filter((w) => s.anneeDebut === null || (w.anneeDebut !== null && w.anneeDebut >= s.anneeDebut - 1)).map((w) => photo(w.image)),
     );
     ajouterPhotos(photos, commons.galeries[`${marqueId}::${cle(s.nom)}`] ?? []);
+    // Dernier recours : l'image Wikidata du modèle, si cette fiche en est la génération la plus récente.
+    const plusRecente = !specs.some(
+      (o) => o !== s && cleModele(idMarque(o.marque), o.nom) === cleModele(marqueId, s.nom) && (o.anneeDebut ?? 0) > (s.anneeDebut ?? 0),
+    );
+    if (!photos.length && plusRecente) ajouterPhotos(photos, wds.slice(0, 1).map((w) => photo(w.image)));
     const src = ["Caractéristiques : connaissances (catalogues constructeurs, valeurs WLTP, prix indicatifs)"];
     if (wds.length) src.push(`Wikidata ${wds.map((w) => w.qid).join(", ")}`);
     if (photos.length) src.push("photos Wikimedia Commons");
@@ -149,13 +160,21 @@ export function fusionner() {
   for (const m of modeles) if (m.anneeDebut && m.anneeFin && m.anneeFin < m.anneeDebut) m.anneeFin = null;
 
   // 3. Marques : Wikidata (pays, logo) + fiches + NHTSA.
-  const wdMarques = new Map<string, { pays: string | null; logo: string | null; nom: string }>();
+  const wdMarques = new Map<string, { pays: string | null; logo: string | null; nom: string; exact: boolean }>();
   for (const b of wd.marques) {
     const id = idMarque(b.nom);
-    const e = wdMarques.get(id) ?? { pays: null, logo: null, nom: b.nom };
-    e.pays ??= b.pays;
-    if (!e.logo && b.logo && commons.logos[b.logo]) e.logo = commons.logos[b.logo];
-    wdMarques.set(id, e);
+    // Une entrée dont le nom correspond exactement à la marque (« Renault ») passe avant un alias (« Renault Group »).
+    const exact = slug(b.nom) === id;
+    const logo = b.logo && commons.logos[b.logo] ? commons.logos[b.logo]! : null;
+    const e = wdMarques.get(id);
+    if (!e) wdMarques.set(id, { pays: b.pays, logo, nom: b.nom, exact });
+    else {
+      e.pays ??= b.pays;
+      if (logo && (!e.logo || (exact && !e.exact))) {
+        e.logo = logo;
+        e.exact = exact;
+      }
+    }
   }
   const titre = (s: string) => s.toLowerCase().replace(/(^|[\s-])(\p{L})/gu, (_, a, b) => a + b.toUpperCase());
   let marquesNhtsaSeules = 0;
@@ -163,16 +182,29 @@ export function fusionner() {
     if (!m.types.includes("car")) continue;
     const id = idMarque(m.nom);
     if (!marquesUtilisees.has(id)) {
-      marquesUtilisees.set(id, titre(m.nom));
+      marquesUtilisees.set(id, titre(nomMarque(m.nom)));
       marquesNhtsaSeules++;
     }
   }
   const nbModelesParMarque = new Map<string, number>();
   for (const m of modeles) nbModelesParMarque.set(m.marqueId, (nbModelesParMarque.get(m.marqueId) ?? 0) + 1);
+  const logoParNom = new Map<string, string>();
+  for (const [nom, f] of Object.entries(wd.logosParNom ?? {})) if (commons.logos[f]) logoParNom.set(idMarque(nom), commons.logos[f]!);
   const marques: Marque[] = [...marquesUtilisees]
     .map(([id, nom]) => {
       const w = wdMarques.get(id);
-      return { id, nom, pays: w?.pays ?? "Inconnu", logoUrl: w?.logo ?? null };
+      return {
+        id,
+        nom,
+        pays: PAYS[w?.pays ?? ""] ?? w?.pays ?? "Inconnu",
+        // Logo de la marque elle-même d'abord, logo du groupe (« BMW Group ») en dernier recours.
+        logoUrl:
+          (w?.exact && !/group/i.test(w.logo ?? "") ? w.logo : null) ??
+          commons.logosParMarque?.[id] ??
+          w?.logo ??
+          logoParNom.get(id) ??
+          null,
+      };
     })
     .sort((a, b) => a.nom.localeCompare(b.nom, "fr"));
 
