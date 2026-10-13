@@ -1,0 +1,107 @@
+# Générations précédentes très vendues en France (prix = dernier prix catalogue neuf connu).
+@ Peugeot | 208 I | citadine | B | 2012-2019 | B N G A R Bl | 5 5 285
+1.2 PureTech 82 BVM5 | E | 82 | M | T | 16500 | 4.5 | 104 | - | 12.2 | 175 | 1035
+1.6 BlueHDi 100 BVM5 | D | 100 | M | T | 19800 | 3.7 | 95 | - | 10.9 | 187 | 1090
+@ Peugeot | 2008 I | SUV | B | 2013-2019 | B N G A R Bl | 5 5 360
+1.2 PureTech 110 BVM6 | E | 110 | M | T | 21000 | 4.8 | 110 | - | 9.9 | 190 | 1160
+@ Peugeot | 308 II | berline | C | 2013-2021 | B N G A R Bl | 5 5 420
+1.2 PureTech 130 BVM6 | E | 130 | M | T | 25500 | 5.1 | 115 | - | 9.6 | 206 | 1200
+1.5 BlueHDi 130 EAT8 | D | 130 | A | T | 30000 | 4.1 | 107 | - | 10.0 | 206 | 1300
+@ Peugeot | 3008 II | SUV | C | 2016-2023 | B N G A R Bl | 5 5 520
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 33500 | 6.2 | 140 | - | 10.3 | 188 | 1370
+1.5 BlueHDi 130 EAT8 | D | 130 | A | T | 35500 | 5.0 | 131 | - | 11.3 | 192 | 1430
+Hybrid4 300 | PHEV | 300 | A | 4 | 47000 | 1.4 | 31 | 59 | 5.9 | 235 | 1915 | c=395
+@ Peugeot | 5008 II | SUV | D | 2017-2023 | B N G A Bl | 7 5 702
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 36000 | 6.4 | 145 | - | 10.8 | 188 | 1420
+1.5 BlueHDi 130 EAT8 | D | 130 | A | T | 38000 | 5.2 | 137 | - | 11.4 | 188 | 1495
+@ Peugeot | 108 | citadine | A | 2014-2021 | B N G R Bl | 4 5 196
+1.0 VTi 72 BVM5 | E | 72 | M | T | 12500 | 4.1 | 93 | - | 13.0 | 160 | 840
+@ Citroën | C3 III | citadine | B | 2016-2024 | B N G R Bl O | 5 5 300
+1.2 PureTech 83 BVM5 | E | 83 | M | T | 17900 | 5.2 | 118 | - | 13.4 | 168 | 1050
+1.5 BlueHDi 100 BVM6 | D | 100 | M | T | 21000 | 4.0 | 105 | - | 10.6 | 186 | 1130
+@ Citroën | C3 Aircross I | SUV | B | 2017-2024 | B N G R Bl O | 5 5 410
+1.2 PureTech 110 BVM6 | E | 110 | M | T | 22500 | 6.0 | 135 | - | 10.9 | 183 | 1180
+@ Citroën | C5 Aircross I | SUV | C | 2018-2025 | B N G R Bl | 5 5 580
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 33500 | 6.2 | 140 | - | 10.5 | 188 | 1430
+Hybrid 225 ë-EAT8 | PHEV | 225 | A | T | 43000 | 1.4 | 32 | 55 | 8.7 | 225 | 1790 | c=460
+@ Citroën | C1 | citadine | A | 2014-2022 | B N G R Bl | 4 5 196
+1.0 VTi 72 BVM5 | E | 72 | M | T | 12500 | 4.1 | 93 | - | 13.0 | 160 | 840
+@ Citroën | C4 Cactus | berline | C | 2014-2020 | B N G R Bl | 5 5 358
+1.2 PureTech 110 BVM6 | E | 110 | M | T | 21500 | 4.6 | 105 | - | 9.7 | 188 | 1070
+@ Citroën | Grand C4 SpaceTourer | monospace | C | 2018-2022 | B N G Bl | 7 5 170
+1.5 BlueHDi 130 EAT8 | D | 130 | A | T | 33500 | 4.6 | 120 | - | 11.4 | 196 | 1500
+@ Renault | Clio IV | citadine | B | 2012-2019 | B N G R Bl O | 5 5 300
+TCe 90 BVM5 | E | 90 | M | T | 16000 | 4.7 | 105 | - | 12.2 | 182 | 1009
+dCi 90 BVM5 | D | 90 | M | T | 18500 | 3.6 | 95 | - | 11.7 | 180 | 1090
+@ Renault | Captur I | SUV | B | 2013-2019 | B N G R Bl O | 5 5 377
+TCe 90 BVM5 | E | 90 | M | T | 18500 | 5.1 | 113 | - | 13.1 | 171 | 1180
+@ Renault | Kadjar | SUV | C | 2015-2022 | B N G R Bl | 5 5 472
+TCe 140 BVM6 | E | 140 | M | T | 28500 | 6.4 | 145 | - | 10.1 | 203 | 1380
+Blue dCi 115 BVM6 | D | 115 | M | T | 30500 | 5.0 | 132 | - | 11.7 | 182 | 1450
+@ Renault | Scénic IV | monospace | C | 2016-2022 | B N G Bl | 5 5 506
+TCe 140 BVM6 | E | 140 | M | T | 29500 | 6.6 | 150 | - | 10.6 | 195 | 1430
+@ Renault | Grand Scénic IV | monospace | C | 2016-2022 | B N G Bl | 7 5 233
+Blue dCi 120 BVM6 | D | 120 | M | T | 33000 | 5.3 | 139 | - | 12.0 | 185 | 1570
+@ Renault | Koleos II | SUV | D | 2017-2023 | B N G A | 5 5 579
+Blue dCi 190 4x4 X-Tronic | D | 190 | A | 4 | 43000 | 6.9 | 181 | - | 9.5 | 201 | 1785
+@ Renault | Talisman | berline | D | 2015-2022 | B N G A Bl | 5 4 608
+TCe 160 EDC | E | 160 | A | T | 35000 | 6.6 | 150 | - | 9.0 | 215 | 1430
+@ Dacia | Duster II | SUV | C | 2017-2024 | B N G R Bl O | 5 5 445
+TCe 130 4x2 | E | 130 | M | T | 19500 | 6.3 | 142 | - | 10.4 | 190 | 1250
+Blue dCi 115 4x4 | D | 115 | M | 4 | 23500 | 5.3 | 139 | - | 10.6 | 172 | 1380 | c=411
+@ Dacia | Logan MCV | break | B | 2013-2020 | B N G R Bl | 5 5 573
+SCe 75 BVM5 | E | 75 | M | T | 10500 | 5.6 | 125 | - | 14.5 | 162 | 980
+@ Volkswagen | Polo V | citadine | B | 2009-2017 | B N G A R Bl | 5 5 280
+1.2 TSI 90 BVM5 | E | 90 | M | T | 17500 | 4.7 | 108 | - | 10.8 | 184 | 1105
+@ Volkswagen | Golf VII | berline | C | 2012-2019 | B N G A R Bl | 5 5 380
+1.5 TSI 130 BVM6 | E | 130 | M | T | 26000 | 5.0 | 114 | - | 9.1 | 208 | 1270
+2.0 TDI 150 DSG7 | D | 150 | A | T | 32000 | 4.4 | 115 | - | 8.6 | 216 | 1395
+GTI Performance 245 | E | 245 | A | T | 40000 | 6.4 | 148 | - | 6.2 | 250 | 1388
+@ Volkswagen | Tiguan II | SUV | C | 2016-2024 | B N G A R Bl | 5 5 615
+1.5 TSI 150 DSG7 | E | 150 | A | T | 38000 | 7.0 | 159 | - | 9.2 | 200 | 1510
+2.0 TDI 150 DSG7 | D | 150 | A | T | 40500 | 5.6 | 147 | - | 9.3 | 202 | 1620
+@ Volkswagen | Arteon | berline | D | 2017-2024 | B N G A Bl | 5 5 563
+2.0 TDI 150 DSG7 | D | 150 | A | T | 48000 | 5.1 | 134 | - | 8.9 | 222 | 1640
+@ Toyota | C-HR I | SUV | C | 2016-2023 | B N G A R Bl | 5 5 377
+1.8 Hybrid 122 | HEV | 122 | A | T | 31000 | 5.1 | 115 | - | 11.0 | 170 | 1395
+@ Toyota | Auris | berline | C | 2012-2018 | B N G A R | 5 5 360
+1.8 Hybrid 136 | HEV | 136 | A | T | 26000 | 3.9 | 82 | - | 10.9 | 180 | 1350
+@ Ford | Kuga II | SUV | C | 2012-2019 | B N G R Bl | 5 5 456
+2.0 TDCi 150 BVM6 | D | 150 | M | T | 32000 | 5.0 | 131 | - | 9.9 | 195 | 1600
+@ Ford | S-Max | monospace | D | 2015-2023 | B N G A Bl | 7 5 285
+2.5 Hybrid 190 | HEV | 190 | A | T | 45000 | 6.4 | 145 | - | 9.8 | 185 | 1800
+@ Ford | Galaxy | monospace | D | 2015-2023 | B N G A Bl | 7 5 300
+2.5 Hybrid 190 | HEV | 190 | A | T | 47000 | 6.5 | 147 | - | 9.8 | 185 | 1820
+@ Opel | Crossland | SUV | B | 2017-2024 | B N G R Bl | 5 5 410
+1.2 Turbo 110 BVM6 | E | 110 | M | T | 23500 | 5.6 | 127 | - | 10.6 | 187 | 1180
+@ Opel | Grandland X | SUV | C | 2017-2024 | B N G R Bl | 5 5 514
+1.2 Turbo 130 AT8 | E | 130 | A | T | 33000 | 6.2 | 141 | - | 10.4 | 188 | 1350
+Hybrid4 300 | PHEV | 300 | A | 4 | 48000 | 1.5 | 34 | 57 | 6.1 | 235 | 1875 | c=390
+@ Fiat | 500X | SUV | B | 2014-2024 | B N G R Bl | 5 5 350
+1.5 Hybrid 130 DCT | E | 130 | A | T | 29000 | 6.0 | 137 | - | 9.4 | 196 | 1365
+@ Fiat | 500L | monospace | B | 2012-2022 | B N G R Bl | 5 5 400
+1.4 95 BVM6 | E | 95 | M | T | 21000 | 6.6 | 150 | - | 12.6 | 177 | 1320
+@ Kia | Rio | citadine | B | 2017-2023 | B N G R Bl | 5 5 325
+1.0 T-GDi 100 BVM6 | E | 100 | M | T | 19000 | 5.5 | 126 | - | 10.4 | 188 | 1145
+@ Nissan | Micra V | citadine | B | 2017-2023 | B N G R Bl O | 5 5 300
+IG-T 92 BVM5 | E | 92 | M | T | 17500 | 5.4 | 122 | - | 12.1 | 178 | 1075
+@ Nissan | Qashqai II | SUV | C | 2014-2021 | B N G A R Bl | 5 5 430
+1.3 DIG-T 140 BVM6 | E | 140 | M | T | 27000 | 6.3 | 143 | - | 10.5 | 193 | 1330
+@ Hyundai | Kona I | SUV | B | 2017-2023 | B N G R Bl V J | 5 5 361
+Electric 64 kWh 204 | EV | 204 | A | T | 41000 | 14.7 | 0 | 484 | 7.6 | 167 | 1685 | c=332
+1.6 GDi Hybrid 141 | HEV | 141 | A | T | 29000 | 4.9 | 112 | - | 11.2 | 160 | 1400
+@ Hyundai | Tucson III | SUV | C | 2015-2020 | B N G R Bl | 5 5 513
+1.6 CRDi 136 DCT7 | D | 136 | A | T | 33000 | 5.8 | 152 | - | 11.4 | 182 | 1640
+@ Seat | Tarraco | SUV | D | 2018-2025 | B N G A Bl | 7 5 230
+1.5 TSI 150 DSG7 | E | 150 | A | T | 39000 | 7.1 | 161 | - | 9.7 | 201 | 1630 | pl=5 c=760
+e-Hybrid 245 | PHEV | 245 | A | T | 48000 | 1.6 | 37 | 49 | 7.4 | 205 | 1895 | pl=5 c=610
+@ Škoda | Kodiaq I | SUV | D | 2016-2024 | B N G A R Bl | 7 5 270
+2.0 TDI 150 DSG7 | D | 150 | A | T | 40000 | 5.6 | 147 | - | 9.6 | 205 | 1650 | pl=5 c=720
+@ Mercedes-Benz | Classe A W176 | berline | C | 2012-2018 | B N G A R Bl | 5 5 341
+A 180 122 | E | 122 | M | T | 26500 | 5.3 | 123 | - | 9.3 | 202 | 1395
+@ BMW | Série 3 F30 | berline | D | 2012-2019 | B N G A Bl | 5 4 480
+320d 190 | D | 190 | A | P | 42000 | 4.4 | 116 | - | 7.2 | 235 | 1505
+@ Audi | A3 Sportback 8V | berline | C | 2013-2020 | B N G A R Bl | 5 5 380
+1.5 TFSI 150 S tronic | E | 150 | A | T | 32000 | 5.1 | 117 | - | 8.4 | 222 | 1320
+@ Tesla | Model 3 (2017-2023) | berline | D | 2017-2023 | B N G Bl R | 5 4 542
+Standard Plus RWD 325 | EV | 325 | A | P | 43800 | 14.4 | 0 | 491 | 6.1 | 225 | 1745

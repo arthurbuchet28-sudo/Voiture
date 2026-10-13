@@ -1,0 +1,363 @@
+# ===================== TOYOTA =====================
+@ Toyota | Aygo X | citadine | A | 2022- | B N G R Bl V | 4 5 231
+1.0 VVT-i 72 BVM5 | E | 72 | M | T | 17900 | 4.9 | 111 | - | 14.9 | 158 | 940
+Hybrid 116 | HEV | 116 | A | T | 22900 | 3.9 | 86 | - | 9.5 | 165 | 1110
+@ Toyota | Yaris | citadine | B | 2020- | B N G A R Bl | 5 5 286
+1.5 Hybrid 116 | HEV | 116 | A | T | 24900 | 3.8 | 87 | - | 9.7 | 175 | 1135
+1.5 Hybrid 130 | HEV | 130 | A | T | 27900 | 3.9 | 88 | - | 9.2 | 175 | 1145
+GR Yaris 280 BVM6 | E | 280 | M | 4 | 49900 | 8.4 | 190 | - | 5.5 | 230 | 1295 | p=3 c=141
+@ Toyota | Yaris Cross | SUV | B | 2021- | B N G A R Bl V | 5 5 397
+1.5 Hybrid 116 | HEV | 116 | A | T | 28900 | 4.5 | 101 | - | 11.2 | 170 | 1250
+1.5 Hybrid 130 AWD-i | HEV | 130 | A | 4 | 33400 | 5.0 | 113 | - | 10.6 | 170 | 1340 | c=320
+@ Toyota | Corolla | berline | C | 2019- | B N G A R Bl | 5 5 361
+1.8 Hybrid 140 | HEV | 140 | A | T | 32900 | 4.4 | 101 | - | 9.1 | 180 | 1385
+2.0 Hybrid 196 | HEV | 196 | A | T | 36900 | 4.7 | 106 | - | 7.4 | 180 | 1445 | c=313
+@ Toyota | Corolla Touring Sports | break | C | 2019- | B N G A Bl | 5 5 596
+1.8 Hybrid 140 | HEV | 140 | A | T | 34400 | 4.5 | 103 | - | 9.3 | 180 | 1410
+2.0 Hybrid 196 | HEV | 196 | A | T | 38400 | 4.8 | 108 | - | 7.5 | 180 | 1470 | c=581
+@ Toyota | Corolla Cross | SUV | C | 2022- | B N G A Bl | 5 5 433
+1.8 Hybrid 140 | HEV | 140 | A | T | 36400 | 4.9 | 112 | - | 9.9 | 170 | 1470
+2.0 Hybrid 197 AWD-i | HEV | 197 | A | 4 | 42400 | 5.3 | 120 | - | 7.5 | 180 | 1600
+@ Toyota | C-HR | SUV | C | 2023- | B N G A R Bl | 5 5 364
+1.8 Hybrid 140 | HEV | 140 | A | T | 35900 | 4.8 | 108 | - | 9.9 | 170 | 1420
+2.0 Hybrid 197 | HEV | 197 | A | T | 39900 | 5.0 | 114 | - | 8.1 | 180 | 1505
+2.0 Plug-in Hybrid 223 | PHEV | 223 | A | T | 45900 | 0.8 | 19 | 66 | 7.4 | 180 | 1680 | c=310
+@ Toyota | RAV4 | SUV | D | 2019- | B N G A R Bl V | 5 5 580
+2.5 Hybrid 218 2WD | HEV | 218 | A | T | 43900 | 5.6 | 126 | - | 8.4 | 180 | 1665
+2.5 Hybrid 222 AWD-i | HEV | 222 | A | 4 | 46400 | 5.7 | 128 | - | 8.1 | 180 | 1735
+2.5 Plug-in Hybrid 306 AWD-i | PHEV | 306 | A | 4 | 55900 | 1.0 | 22 | 75 | 6.0 | 180 | 1910 | c=520
+@ Toyota | bZ4X | SUV | D | 2022- | B N G A Bl | 5 5 452
+FWD 224 | EV | 224 | A | T | 42900 | 14.4 | 0 | 573 | 7.4 | 160 | 1885
+AWD 343 | EV | 343 | A | 4 | 48900 | 16.5 | 0 | 504 | 5.1 | 160 | 2005
+@ Toyota | Prius | berline | C | 2023- | B N G A R | 5 5 284
+2.0 Plug-in Hybrid 223 | PHEV | 223 | A | T | 45900 | 0.5 | 11 | 86 | 6.8 | 177 | 1545
+@ Toyota | Camry | berline | D | 2019-2024 | B N G A | 5 4 524
+2.5 Hybrid 218 | HEV | 218 | A | T | 44900 | 5.3 | 119 | - | 8.3 | 180 | 1595
+@ Toyota | Highlander | SUV | E | 2021- | B N G A | 7 5 268
+2.5 Hybrid 248 AWD-i | HEV | 248 | A | 4 | 61900 | 7.1 | 160 | - | 8.3 | 180 | 2025
+@ Toyota | Land Cruiser | SUV | - | 2024- | B N G Be | 7 5 -
+2.8 D-4D 204 | D | 204 | A | 4 | 72900 | 10.4 | 273 | - | 10.2 | 160 | 2400
+@ Toyota | Hilux | pick-up | - | 2016- | B N G A R | 5 4 -
+2.8 D-4D 204 4x4 | D | 204 | A | 4 | 47900 | 9.5 | 249 | - | 10.7 | 175 | 2190
+@ Toyota | Proace City Verso | monospace | - | 2019- | B N G | 5 5 775
+1.5 D-4D 100 BVM6 | D | 100 | M | T | 30900 | 5.4 | 142 | - | 12.9 | 170 | 1430
+Électrique 136 | EV | 136 | A | T | 39900 | 21.0 | 0 | 320 | 11.2 | 135 | 1758
+@ Toyota | GR86 | coupé | - | 2022- | B N G R Bl | 4 2 226
+2.4 234 BVM6 | E | 234 | M | P | 39900 | 8.8 | 199 | - | 6.3 | 226 | 1276
+@ Toyota | GR Supra | coupé | - | 2019- | B N G R J | 2 3 290
+3.0 340 BVM6 | E | 340 | M | P | 70900 | 8.7 | 197 | - | 4.6 | 250 | 1495
+
+# ===================== LEXUS =====================
+@ Lexus | LBX | SUV | B | 2023- | B N G A R Bl | 5 5 332
+Hybrid 136 | HEV | 136 | A | T | 32990 | 4.5 | 103 | - | 9.2 | 170 | 1280
+@ Lexus | UX | SUV | C | 2019- | B N G A R Bl | 5 5 320
+300h 199 | HEV | 199 | A | T | 41990 | 4.9 | 112 | - | 8.1 | 177 | 1550
+@ Lexus | NX | SUV | D | 2021- | B N G A Bl | 5 5 521
+350h 244 | HEV | 244 | A | T | 55990 | 5.8 | 131 | - | 7.7 | 200 | 1780
+450h+ 309 | PHEV | 309 | A | 4 | 69990 | 1.0 | 22 | 76 | 6.3 | 200 | 2050 | c=545
+@ Lexus | RX | SUV | E | 2022- | B N G A Bl | 5 5 461
+350h 250 | HEV | 250 | A | 4 | 81990 | 6.4 | 145 | - | 7.9 | 200 | 2050
+450h+ 309 | PHEV | 309 | A | 4 | 89990 | 1.1 | 25 | 69 | 6.5 | 200 | 2195
+@ Lexus | RZ | SUV | D | 2023- | B N G A Bl | 5 5 522
+450e 313 | EV | 313 | A | 4 | 74990 | 18.7 | 0 | 440 | 5.3 | 160 | 2110
+@ Lexus | ES | berline | E | 2018- | B N G A Bl | 5 4 454
+300h 218 | HEV | 218 | A | T | 54990 | 5.3 | 120 | - | 8.9 | 180 | 1735
+
+# ===================== HYUNDAI =====================
+@ Hyundai | i10 | citadine | A | 2019- | B N G R Bl | 5 5 252
+1.0 67 BVM5 | E | 67 | M | T | 15900 | 5.3 | 120 | - | 14.6 | 156 | 935
+1.2 79 BVA5 | E | 79 | A | T | 18900 | 5.9 | 133 | - | 15.8 | 160 | 980
+@ Hyundai | i20 | citadine | B | 2020- | B N G R Bl | 5 5 352
+1.2 79 BVM5 | E | 79 | M | T | 20100 | 5.4 | 122 | - | 13.6 | 166 | 1095
+1.0 T-GDi 100 DCT7 | E | 100 | A | T | 24400 | 5.5 | 125 | - | 11.3 | 183 | 1155
+@ Hyundai | Bayon | SUV | B | 2021- | B N G R Bl | 5 5 411
+1.0 T-GDi 100 BVM6 | E | 100 | M | T | 22900 | 5.6 | 127 | - | 11.4 | 183 | 1185
+@ Hyundai | Kona | SUV | B | 2023- | B N G R Bl V | 5 5 466
+1.0 T-GDi 120 BVM6 | E | 120 | M | T | 28700 | 6.0 | 136 | - | 11.8 | 180 | 1320
+1.6 GDi Hybrid 141 | HEV | 141 | A | T | 33700 | 4.8 | 108 | - | 11.2 | 165 | 1420
+Electric 48,6 kWh 156 | EV | 156 | A | T | 37900 | 14.7 | 0 | 377 | 8.8 | 162 | 1630 | c=466
+Electric 65,4 kWh 218 | EV | 218 | A | T | 42900 | 14.7 | 0 | 514 | 7.8 | 172 | 1680 | c=466
+@ Hyundai | i30 | berline | C | 2017- | B N G R Bl | 5 5 395
+1.0 T-GDi 120 BVM6 | E | 120 | M | T | 25900 | 5.6 | 126 | - | 11.2 | 190 | 1270
+@ Hyundai | Tucson | SUV | C | 2020- | B N G R Bl V | 5 5 616
+1.6 T-GDi 160 mHEV | E | 160 | M | T | 35400 | 6.7 | 152 | - | 9.8 | 192 | 1540
+1.6 T-GDi Hybrid 239 | HEV | 239 | A | T | 41400 | 5.6 | 127 | - | 8.0 | 193 | 1640 | c=577
+1.6 T-GDi Plug-in 252 HTRAC | PHEV | 252 | A | 4 | 47400 | 1.4 | 31 | 62 | 8.0 | 191 | 1935 | c=558
+@ Hyundai | Santa Fe | SUV | E | 2024- | B N G A Bl V | 7 5 628
+1.6 T-GDi Hybrid 215 HTRAC | HEV | 215 | A | 4 | 55900 | 6.6 | 150 | - | 9.0 | 180 | 2010
+1.6 T-GDi Plug-in 253 HTRAC | PHEV | 253 | A | 4 | 61900 | 1.5 | 35 | 54 | 9.0 | 180 | 2165
+@ Hyundai | Ioniq 5 | SUV | D | 2021- | B N G A Bl V | 5 5 520
+63 kWh RWD 170 | EV | 170 | A | P | 43900 | 16.7 | 0 | 440 | 8.5 | 185 | 1955
+84 kWh RWD 229 | EV | 229 | A | P | 50900 | 17.5 | 0 | 570 | 7.5 | 185 | 2020
+84 kWh AWD 325 | EV | 325 | A | 4 | 55900 | 18.6 | 0 | 535 | 5.3 | 185 | 2100
+N 650 | EV | 650 | A | 4 | 76900 | 21.2 | 0 | 448 | 3.5 | 260 | 2200
+@ Hyundai | Ioniq 6 | berline | D | 2022- | B N G A Bl | 5 4 401
+77 kWh RWD 229 | EV | 229 | A | P | 51900 | 14.3 | 0 | 614 | 7.4 | 185 | 1930
+@ Hyundai | Inster | citadine | A | 2024- | B N G V J | 4 5 280
+42 kWh 97 | EV | 97 | A | T | 25000 | 14.3 | 0 | 327 | 11.7 | 140 | 1310
+49 kWh 115 | EV | 115 | A | T | 28000 | 15.1 | 0 | 360 | 10.6 | 150 | 1400
+@ Hyundai | Staria | monospace | - | 2021- | B N G | 9 5 117
+2.2 CRDi 177 BVA8 | D | 177 | A | T | 49900 | 8.6 | 227 | - | 12.8 | 185 | 2266
+
+# ===================== KIA =====================
+@ Kia | Picanto | citadine | A | 2017- | B N G R Bl J | 5 5 255
+1.0 DPi 63 BVM5 | E | 63 | M | T | 15490 | 4.8 | 109 | - | 15.6 | 158 | 932
+1.2 DPi 79 BVA5 | E | 79 | A | T | 18490 | 5.6 | 128 | - | 15.6 | 160 | 980
+@ Kia | Stonic | SUV | B | 2017- | B N G R Bl | 5 5 352
+1.0 T-GDi 100 mHEV BVM6 | E | 100 | M | T | 22990 | 5.4 | 123 | - | 10.7 | 183 | 1215
+@ Kia | Ceed | berline | C | 2018- | B N G R Bl | 5 5 395
+1.0 T-GDi 120 BVM6 | E | 120 | M | T | 25490 | 5.7 | 129 | - | 10.9 | 190 | 1280
+@ Kia | XCeed | SUV | C | 2019- | B N G R Bl J | 5 5 426
+1.0 T-GDi 115 BVM6 | E | 115 | M | T | 27990 | 6.0 | 136 | - | 11.1 | 184 | 1340
+1.6 GDi Plug-in 141 | PHEV | 141 | A | T | 39990 | 1.2 | 27 | 58 | 10.6 | 162 | 1534 | c=291
+@ Kia | Niro | SUV | C | 2022- | B N G R Bl V | 5 5 451
+1.6 GDi Hybrid 141 | HEV | 141 | A | T | 32990 | 4.4 | 100 | - | 10.4 | 165 | 1415
+1.6 GDi Plug-in 183 | PHEV | 183 | A | T | 39990 | 0.8 | 18 | 65 | 9.4 | 172 | 1594 | c=348
+EV 204 | EV | 204 | A | T | 41990 | 16.2 | 0 | 460 | 7.8 | 167 | 1682 | c=475
+@ Kia | Sportage | SUV | C | 2021- | B N G R Bl V | 5 5 591
+1.6 T-GDi 150 mHEV BVM6 | E | 150 | M | T | 33990 | 6.8 | 154 | - | 10.3 | 186 | 1500
+1.6 T-GDi Hybrid 215 | HEV | 215 | A | T | 39990 | 5.6 | 126 | - | 8.1 | 191 | 1600 | c=587
+1.6 T-GDi Plug-in 252 4x4 | PHEV | 252 | A | 4 | 47990 | 1.1 | 25 | 70 | 8.2 | 191 | 1905 | c=540
+@ Kia | Sorento | SUV | E | 2020- | B N G A Bl | 7 5 179
+1.6 T-GDi Hybrid 215 4x4 | HEV | 215 | A | 4 | 52990 | 6.7 | 153 | - | 8.8 | 193 | 1920 | pl=5 c=821
+1.6 T-GDi Plug-in 253 4x4 | PHEV | 253 | A | 4 | 59990 | 1.6 | 38 | 57 | 8.4 | 192 | 2085
+@ Kia | EV3 | SUV | B | 2024- | B N G R Bl V | 5 5 460
+Standard Range 204 | EV | 204 | A | T | 35990 | 14.9 | 0 | 436 | 7.5 | 170 | 1795
+Long Range 204 | EV | 204 | A | T | 39990 | 14.9 | 0 | 605 | 7.7 | 170 | 1885
+@ Kia | EV4 | berline | C | 2025- | B N G R Bl | 5 5 435
+Long Range 204 | EV | 204 | A | T | 37990 | 14.1 | 0 | 630 | 7.7 | 170 | -
+@ Kia | EV6 | SUV | D | 2021- | B N G R Bl V | 5 5 480
+84 kWh RWD 229 | EV | 229 | A | P | 52990 | 16.5 | 0 | 582 | 7.7 | 185 | 2000
+84 kWh AWD 325 | EV | 325 | A | 4 | 59990 | 17.5 | 0 | 553 | 5.3 | 188 | 2100
+GT 650 | EV | 650 | A | 4 | 72990 | 21.2 | 0 | 448 | 3.5 | 260 | 2200
+@ Kia | EV9 | SUV | E | 2023- | B N G A Bl V | 7 5 333
+99,8 kWh RWD 204 | EV | 204 | A | P | 74990 | 21.9 | 0 | 563 | 9.4 | 183 | 2513
+99,8 kWh AWD 385 | EV | 385 | A | 4 | 82990 | 22.8 | 0 | 505 | 5.3 | 200 | 2650
+@ Kia | PV5 | monospace | - | 2025- | B G | 5 5 1310
+Passenger 71,2 kWh 163 | EV | 163 | A | T | 42000 | - | 0 | 358 | - | 135 | -
+
+# ===================== NISSAN =====================
+@ Nissan | Micra | citadine | B | 2025- | B N G J Bl V | 5 5 326
+EV 122 | EV | 122 | A | T | 29990 | 15.0 | 0 | 317 | 9.0 | 150 | 1400
+EV 150 | EV | 150 | A | T | 33990 | 15.0 | 0 | 416 | 8.0 | 150 | 1500
+@ Nissan | Juke | SUV | B | 2019- | B N G R Bl J O | 5 5 422
+DIG-T 114 BVM6 | E | 114 | M | T | 24990 | 5.8 | 131 | - | 10.7 | 180 | 1255
+Hybrid 143 | HEV | 143 | A | T | 30990 | 5.1 | 114 | - | 10.1 | 166 | 1414 | c=354
+@ Nissan | Qashqai | SUV | C | 2021- | B N G A R Bl | 5 5 504
+1.3 DIG-T 140 mHEV BVM6 | E | 140 | M | T | 32990 | 6.3 | 143 | - | 10.2 | 198 | 1420
+e-Power 190 | HEV | 190 | A | T | 38990 | 5.2 | 117 | - | 7.9 | 170 | 1660 | c=479
+@ Nissan | X-Trail | SUV | D | 2022- | B N G A Bl | 7 5 177
+e-Power 204 | HEV | 204 | A | T | 43990 | 6.2 | 141 | - | 8.0 | 170 | 1750 | pl=5 c=585
+e-Power e-4orce 213 | HEV | 213 | A | 4 | 47990 | 6.6 | 150 | - | 7.0 | 180 | 1890
+@ Nissan | Leaf | citadine | C | 2017-2025 | B N G R Bl | 5 5 435
+40 kWh 150 | EV | 150 | A | T | 36990 | 17.1 | 0 | 270 | 7.9 | 144 | 1580
+@ Nissan | Ariya | SUV | D | 2022- | B N G A Bl | 5 5 468
+63 kWh 218 | EV | 218 | A | T | 47990 | 17.1 | 0 | 403 | 7.5 | 160 | 1950
+87 kWh 242 | EV | 242 | A | T | 53990 | 17.6 | 0 | 529 | 7.6 | 160 | 2050
+87 kWh e-4orce 306 | EV | 306 | A | 4 | 59990 | 19.3 | 0 | 498 | 5.7 | 200 | 2200
+@ Nissan | Townstar | monospace | - | 2022- | B N G Bl | 5 5 775
+EV 122 | EV | 122 | A | T | 39990 | 19.4 | 0 | 285 | 11.0 | 132 | 1850
+@ Nissan | Navara | pick-up | - | 2015-2023 | B N G A R | 5 4 -
+2.3 dCi 190 4x4 | D | 190 | A | 4 | 42000 | 9.4 | 246 | - | 10.4 | 180 | 2070
+
+# ===================== HONDA =====================
+@ Honda | Jazz | citadine | B | 2020- | B N G A R Bl | 5 5 304
+e:HEV 122 | HEV | 122 | A | T | 25990 | 4.5 | 102 | - | 9.6 | 175 | 1260
+@ Honda | HR-V | SUV | B | 2021- | B N G A R Bl | 5 5 335
+e:HEV 131 | HEV | 131 | A | T | 32990 | 5.4 | 122 | - | 10.6 | 170 | 1380
+@ Honda | ZR-V | SUV | C | 2023- | B N G A R Bl | 5 5 390
+e:HEV 184 | HEV | 184 | A | T | 41990 | 5.6 | 127 | - | 7.8 | 173 | 1600
+@ Honda | Civic | berline | C | 2022- | B N G A R Bl | 5 5 410
+e:HEV 184 | HEV | 184 | A | T | 34990 | 4.7 | 108 | - | 7.8 | 180 | 1480
+Type R 329 BVM6 | E | 329 | M | T | 59990 | 9.0 | 203 | - | 5.4 | 275 | 1505
+@ Honda | CR-V | SUV | D | 2023- | B N G A Bl | 5 5 587
+e:HEV 184 AWD | HEV | 184 | A | 4 | 49990 | 6.7 | 152 | - | 9.4 | 187 | 1785
+e:PHEV 184 | PHEV | 184 | A | T | 54990 | 0.8 | 18 | 82 | 9.4 | 195 | 1815 | c=617
+@ Honda | e:Ny1 | SUV | B | 2023- | B N G R Bl | 5 5 361
+204 | EV | 204 | A | T | 47990 | 18.2 | 0 | 412 | 7.6 | 160 | 1756
+
+# ===================== MAZDA =====================
+@ Mazda | Mazda2 | citadine | B | 2014-2024 | B N G R Bl | 5 5 280
+1.5 e-Skyactiv G 90 BVM6 | E | 90 | M | T | 19950 | 5.2 | 117 | - | 9.7 | 183 | 1060
+@ Mazda | Mazda2 Hybrid | citadine | B | 2022- | B N G R Bl | 5 5 286
+1.5 Hybrid 116 | HEV | 116 | A | T | 24150 | 3.8 | 87 | - | 9.7 | 175 | 1135
+@ Mazda | Mazda3 | berline | C | 2019- | B N G A R Bl | 5 5 358
+2.5 e-Skyactiv G 140 BVM6 | E | 140 | M | T | 30000 | 6.4 | 145 | - | 9.8 | 205 | 1350
+2.0 e-Skyactiv X 186 BVM6 | E | 186 | M | T | 34000 | 5.9 | 133 | - | 8.1 | 216 | 1410
+@ Mazda | CX-30 | SUV | C | 2019- | B N G A R Bl | 5 5 430
+2.5 e-Skyactiv G 140 BVM6 | E | 140 | M | T | 31400 | 6.6 | 149 | - | 9.9 | 199 | 1390
+@ Mazda | CX-5 | SUV | C | 2017- | B N G A R Bl | 5 5 522
+2.5 e-Skyactiv G 141 BVM6 | E | 141 | M | T | 35000 | 7.3 | 166 | - | 10.4 | 197 | 1530
+@ Mazda | CX-60 | SUV | D | 2022- | B N G A R Bl | 5 5 570
+2.5 e-Skyactiv PHEV 327 | PHEV | 327 | A | 4 | 52000 | 1.5 | 33 | 63 | 5.8 | 200 | 2050
+3.3 e-Skyactiv D 200 | D | 200 | A | P | 51000 | 4.9 | 127 | - | 8.4 | 212 | 1880
+@ Mazda | CX-80 | SUV | E | 2024- | B N G A R Bl | 7 5 258
+2.5 e-Skyactiv PHEV 327 | PHEV | 327 | A | 4 | 58000 | 1.6 | 36 | 61 | 6.8 | 195 | 2195
+3.3 e-Skyactiv D 254 | D | 254 | A | 4 | 60000 | 5.7 | 150 | - | 8.4 | 219 | 2075
+@ Mazda | MX-5 | cabriolet | - | 2015- | B N G R Bl | 2 2 130
+1.5 Skyactiv G 132 BVM6 | E | 132 | M | P | 32000 | 6.3 | 142 | - | 8.3 | 204 | 1050
+2.0 Skyactiv G 184 BVM6 | E | 184 | M | P | 37000 | 7.0 | 157 | - | 6.5 | 219 | 1100
+@ Mazda | Mazda6e | berline | D | 2025- | B N G R | 5 5 330
+Long Range 245 | EV | 245 | A | P | 44000 | 16.6 | 0 | 552 | 7.8 | 175 | 1997
+@ Mazda | MX-30 | SUV | C | 2020- | B N G R | 5 5 350
+e-Skyactiv 145 | EV | 145 | A | T | 34000 | 19.0 | 0 | 200 | 9.7 | 140 | 1645
+e-Skyactiv R-EV 170 | PHEV | 170 | A | T | 39000 | 1.0 | 21 | 85 | 9.1 | 140 | 1778 | c=332
+
+# ===================== SUZUKI / MITSUBISHI / SUBARU =====================
+@ Suzuki | Swift | citadine | B | 2024- | B N G R Bl V | 5 5 265
+1.2 Hybrid 83 BVM5 | E | 83 | M | T | 18490 | 4.4 | 99 | - | 12.5 | 165 | 949
+1.2 Hybrid 83 ALLGRIP | E | 83 | M | 4 | 20490 | 4.8 | 108 | - | 13.6 | 165 | 1004
+@ Suzuki | Ignis | citadine | A | 2016- | B N G R Bl O | 5 5 260
+1.2 Hybrid 83 BVM5 | E | 83 | M | T | 17990 | 4.9 | 112 | - | 12.8 | 165 | 900
+@ Suzuki | Vitara | SUV | B | 2015- | B N G R Bl V | 5 5 375
+1.4 Boosterjet 129 Hybrid | E | 129 | M | T | 25990 | 5.8 | 132 | - | 9.5 | 190 | 1250
+1.5 Dualjet Hybrid 116 AGS | HEV | 116 | A | T | 28990 | 5.3 | 120 | - | 12.7 | 180 | 1320 | c=289
+@ Suzuki | S-Cross | SUV | C | 2021- | B N G A R Bl | 5 5 430
+1.4 Boosterjet 129 Hybrid | E | 129 | M | T | 28490 | 5.6 | 127 | - | 9.5 | 195 | 1240
+1.5 Dualjet Hybrid 116 AGS | HEV | 116 | A | T | 31990 | 5.4 | 122 | - | 13.5 | 175 | 1320 | c=293
+@ Suzuki | Swace | break | C | 2020- | B N G A | 5 5 596
+1.8 Hybrid 140 | HEV | 140 | A | T | 32990 | 4.5 | 103 | - | 9.3 | 180 | 1410
+@ Suzuki | e Vitara | SUV | B | 2025- | B N G Bl V | 5 5 310
+49 kWh 144 | EV | 144 | A | T | 34990 | - | 0 | 344 | 9.6 | 150 | 1700
+61 kWh 174 | EV | 174 | A | T | 38990 | - | 0 | 426 | 8.7 | 150 | 1790
+@ Suzuki | Jimny | SUV | - | 2018- | B N G V J | 2 3 85
+1.5 102 BVM5 4x4 | E | 102 | M | 4 | 29990 | 7.9 | 179 | - | 13.0 | 145 | 1135
+@ Mitsubishi | Space Star | citadine | A | 2012-2024 | B N G R | 5 5 209
+1.2 MIVEC 71 BVM5 | E | 71 | M | T | 14990 | 5.0 | 113 | - | 14.0 | 173 | 915
+@ Mitsubishi | ASX | SUV | B | 2023- | B N G R Bl | 5 5 422
+1.0 MPI-T 91 BVM6 | E | 91 | M | T | 23990 | 5.4 | 124 | - | 13.4 | 168 | 1170
+1.6 HEV 143 | HEV | 143 | A | T | 30990 | 4.7 | 107 | - | 10.6 | 170 | 1360 | c=332
+@ Mitsubishi | Eclipse Cross | SUV | C | 2018- | B N G R Bl | 5 5 359
+2.4 PHEV 188 4WD | PHEV | 188 | A | 4 | 42990 | 2.0 | 46 | 45 | 10.9 | 162 | 1925
+@ Mitsubishi | Outlander | SUV | D | 2024- | B N G A R | 5 5 495
+2.4 PHEV 302 4WD | PHEV | 302 | A | 4 | 49990 | 0.8 | 18 | 86 | 7.9 | 170 | 2105
+@ Mitsubishi | L200 | pick-up | - | 2015- | B N G A R | 5 4 -
+2.2 DI-D 150 4WD | D | 150 | M | 4 | 39000 | 8.8 | 231 | - | 11.4 | 174 | 1970
+@ Subaru | Crosstrek | SUV | C | 2023- | B N G A Bl V O | 5 5 315
+2.0 e-Boxer 136 | HEV | 136 | A | 4 | 35950 | 7.7 | 174 | - | 10.8 | 197 | 1550
+@ Subaru | Forester | SUV | C | 2019- | B N G A Bl V | 5 5 509
+2.0 e-Boxer 150 | HEV | 150 | A | 4 | 42950 | 8.1 | 185 | - | 11.8 | 188 | 1650
+@ Subaru | Outback | break | D | 2021- | B N G A Bl V | 5 5 561
+2.5i 169 | E | 169 | A | 4 | 45950 | 8.7 | 197 | - | 10.2 | 193 | 1630
+@ Subaru | Solterra | SUV | D | 2022- | B N G A Bl | 5 5 452
+AWD 218 | EV | 218 | A | 4 | 56950 | 17.5 | 0 | 466 | 6.9 | 160 | 2025
+@ Subaru | BRZ | coupé | - | 2022- | B N G R Bl | 4 2 237
+2.4 234 BVM6 | E | 234 | M | P | 39950 | 9.5 | 215 | - | 6.3 | 226 | 1277
+
+# ===================== MG =====================
+@ MG | MG3 | citadine | B | 2024- | B N G R Bl | 5 5 293
+Hybrid+ 194 | HEV | 194 | A | T | 19990 | 4.4 | 100 | - | 8.0 | 170 | 1300
+@ MG | MG4 | berline | C | 2022- | B N G R Bl O | 5 5 363
+Standard 51 kWh 170 | EV | 170 | A | P | 29990 | 16.0 | 0 | 350 | 7.7 | 160 | 1655
+Extended Range 77 kWh 245 | EV | 245 | A | P | 37990 | 17.2 | 0 | 520 | 6.5 | 160 | 1800
+XPower 435 | EV | 435 | A | 4 | 40990 | 18.2 | 0 | 385 | 3.8 | 200 | 1800
+@ MG | ZS | SUV | B | 2024- | B N G R Bl | 5 5 443
+Hybrid+ 197 | HEV | 197 | A | T | 22990 | 5.1 | 116 | - | 8.7 | 170 | 1380
+@ MG | ZS EV | SUV | B | 2019- | B N G R Bl | 5 5 448
+Long Range 156 | EV | 156 | A | T | 34990 | 17.8 | 0 | 440 | 8.6 | 175 | 1620
+@ MG | HS | SUV | C | 2024- | B N G R Bl | 5 5 507
+1.5 T-GDI 170 DCT | E | 170 | A | T | 28990 | 7.4 | 168 | - | 9.4 | 190 | 1545
+Hybrid+ 224 | HEV | 224 | A | T | 33990 | 5.5 | 125 | - | 8.8 | 175 | 1660
+Plug-in Hybrid 272 | PHEV | 272 | A | T | 36990 | 0.7 | 16 | 120 | 6.8 | 180 | 1850 | c=448
+@ MG | MG5 | break | C | 2020- | B N G R Bl | 5 5 479
+Long Range 156 | EV | 156 | A | T | 33990 | 17.3 | 0 | 400 | 7.7 | 185 | 1572
+@ MG | Marvel R | SUV | D | 2021-2024 | B N G A Bl | 5 5 357
+Performance 288 | EV | 288 | A | 4 | 49990 | 20.0 | 0 | 370 | 4.9 | 200 | 1940
+@ MG | Cyberster | cabriolet | - | 2024- | B N G R J | 2 2 249
+Trophy 340 | EV | 340 | A | P | 59990 | 17.6 | 0 | 507 | 5.0 | 195 | 1885
+GT 510 | EV | 510 | A | 4 | 64990 | 19.9 | 0 | 443 | 3.2 | 200 | 1985
+@ MG | S5 EV | SUV | C | 2025- | B N G Bl V | 5 5 453
+Standard 49 kWh 170 | EV | 170 | A | P | 32990 | 15.6 | 0 | 340 | 8.0 | 160 | 1645
+Long Range 64 kWh 231 | EV | 231 | A | P | 36990 | 16.3 | 0 | 480 | 6.6 | 170 | 1750
+
+# ===================== BYD =====================
+@ BYD | Dolphin | citadine | C | 2023- | B N G Bl Ro | 5 5 345
+Comfort 60 kWh 204 | EV | 204 | A | T | 32990 | 15.9 | 0 | 427 | 7.0 | 160 | 1658
+@ BYD | Dolphin Surf | citadine | B | 2025- | B N G V J | 4 5 308
+Active 30 kWh 88 | EV | 88 | A | T | 22990 | 15.2 | 0 | 220 | 11.1 | 140 | 1270
+Comfort 43 kWh 156 | EV | 156 | A | T | 25990 | 15.0 | 0 | 322 | 9.1 | 150 | 1324
+@ BYD | Atto 2 | SUV | B | 2025- | B N G Bl | 5 5 400
+45 kWh 177 | EV | 177 | A | T | 30990 | 15.9 | 0 | 312 | 7.9 | 160 | 1505
+@ BYD | Atto 3 | SUV | C | 2022- | B N G Bl | 5 5 440
+60 kWh 204 | EV | 204 | A | T | 39990 | 15.6 | 0 | 420 | 7.3 | 160 | 1750
+@ BYD | Seal | berline | D | 2023- | B N G Bl | 5 4 400
+Design RWD 313 | EV | 313 | A | P | 46990 | 16.6 | 0 | 570 | 5.9 | 180 | 2055
+Excellence AWD 530 | EV | 530 | A | 4 | 51990 | 18.4 | 0 | 520 | 3.8 | 180 | 2185
+@ BYD | Seal U DM-i | SUV | D | 2024- | B N G Bl | 5 5 552
+Boost 218 | PHEV | 218 | A | T | 39990 | 1.2 | 28 | 80 | 8.9 | 170 | 1940
+@ BYD | Sealion 7 | SUV | D | 2024- | B N G Bl | 5 5 500
+Comfort RWD 313 | EV | 313 | A | P | 46990 | 19.0 | 0 | 482 | 6.7 | 215 | 2225
+Excellence AWD 530 | EV | 530 | A | 4 | 52990 | 20.5 | 0 | 456 | 4.5 | 215 | 2340
+@ BYD | Han | berline | E | 2022- | B N G Bl | 5 4 410
+AWD 517 | EV | 517 | A | 4 | 71990 | 19.6 | 0 | 521 | 3.9 | 180 | 2350
+@ BYD | Tang | SUV | E | 2022- | B N G | 7 5 235
+AWD 517 | EV | 517 | A | 4 | 71990 | 24.0 | 0 | 400 | 4.6 | 180 | 2630
+
+# ===================== AUTRES CONSTRUCTEURS CHINOIS =====================
+@ Leapmotor | T03 | citadine | A | 2024- | B N G V Bl | 4 5 210
+95 | EV | 95 | A | T | 18900 | 15.9 | 0 | 265 | 12.7 | 130 | 1185
+@ Leapmotor | C10 | SUV | D | 2024- | B N G Bl V | 5 5 435
+BEV 218 | EV | 218 | A | P | 36400 | 19.1 | 0 | 420 | 7.5 | 170 | 1975
+REEV 215 | PHEV | 215 | A | P | 36400 | 0.9 | 20 | 145 | 8.5 | 170 | 1880
+@ Leapmotor | B10 | SUV | C | 2025- | B N G Bl V | 5 5 430
+Pro Max 218 | EV | 218 | A | P | 29900 | 16.0 | 0 | 434 | - | 170 | -
+@ Xpeng | G6 | SUV | D | 2024- | B N G Bl Vi | 5 5 571
+Standard Range 258 | EV | 258 | A | P | 41990 | 16.9 | 0 | 435 | 6.6 | 200 | 1995
+Long Range 286 | EV | 286 | A | P | 46990 | 17.3 | 0 | 570 | 6.2 | 200 | 2045
+@ Xpeng | G9 | SUV | E | 2023- | B N G Bl | 5 5 660
+Long Range RWD 313 | EV | 313 | A | P | 57990 | 18.6 | 0 | 570 | 6.4 | 200 | 2290
+@ Omoda | 5 | SUV | C | 2024- | B N G R | 5 5 378
+1.6 TGDI 186 DCT7 | E | 186 | A | T | 29900 | 7.4 | 168 | - | 8.0 | 190 | 1495
+E5 électrique 204 | EV | 204 | A | T | 36900 | 18.0 | 0 | 430 | 7.6 | 172 | 1675 | c=360
+@ Jaecoo | 7 | SUV | C | 2024- | B N G V | 5 5 500
+1.5 SHS Plug-in 204 | PHEV | 204 | A | T | 37990 | 1.3 | 30 | 90 | 8.5 | 180 | 1760
+@ Zeekr | 001 | break | E | 2023- | B N G A Bl | 5 5 539
+Privilege AWD 544 | EV | 544 | A | 4 | 63000 | 18.0 | 0 | 580 | 3.8 | 200 | 2345
+@ Zeekr | X | SUV | C | 2023- | B N G A Bl V | 5 5 362
+Privilege AWD 428 | EV | 428 | A | 4 | 50000 | 17.3 | 0 | 425 | 3.8 | 190 | 1960
+@ Zeekr | 7X | SUV | D | 2024- | B N G A Bl | 5 5 539
+RWD 421 | EV | 421 | A | P | 56000 | 17.6 | 0 | 615 | 5.8 | 210 | 2280
+@ NIO | ET5 | berline | D | 2022- | B N G Bl | 5 4 386
+75 kWh AWD 490 | EV | 490 | A | 4 | 59900 | 18.3 | 0 | 456 | 4.0 | 200 | 2145
+@ NIO | EL6 | SUV | D | 2023- | B N G Bl | 5 5 579
+75 kWh AWD 490 | EV | 490 | A | 4 | 69900 | 19.6 | 0 | 406 | 4.5 | 200 | 2220
+@ Firefly | Firefly | citadine | B | 2025- | B N V | 5 5 404
+42 kWh 143 | EV | 143 | A | P | 29900 | 15.0 | 0 | 330 | 8.1 | 150 | 1555
+
+# ===================== CORÉE (autres) =====================
+@ Genesis | GV60 | SUV | D | 2021- | B N G A V | 5 5 432
+Sport Plus AWD 490 | EV | 490 | A | 4 | 72000 | 19.1 | 0 | 466 | 4.0 | 235 | 2195
+@ Genesis | GV70 | SUV | D | 2020- | B N G A Bl | 5 5 542
+2.5T 304 AWD | E | 304 | A | 4 | 60000 | 10.0 | 227 | - | 6.1 | 240 | 1880
+@ SsangYong | Torres | SUV | C | 2023- | B N G A V | 5 5 703
+1.5 T-GDi 163 BVA6 | E | 163 | A | T | 35990 | 8.6 | 195 | - | 11.4 | 175 | 1650
+EVX 207 | EV | 207 | A | T | 42990 | 18.9 | 0 | 462 | 8.1 | 175 | 1915 | c=839
+@ SsangYong | Rexton | SUV | E | 2017- | B N G A | 7 5 240
+2.2 e-XDi 202 4WD BVA8 | D | 202 | A | 4 | 47990 | 9.3 | 243 | - | 11.4 | 185 | 2223
+
+# ===================== TESLA =====================
+@ Tesla | Model 3 | berline | D | 2023- | B N G Bl R | 5 4 594
+Propulsion 283 | EV | 283 | A | P | 39990 | 13.2 | 0 | 554 | 6.1 | 201 | 1765
+Grande Autonomie AWD 498 | EV | 498 | A | 4 | 47990 | 13.5 | 0 | 702 | 4.4 | 201 | 1847
+Performance 460 kW | EV | 625 | A | 4 | 56990 | 15.0 | 0 | 571 | 3.1 | 262 | 1910
+@ Tesla | Model Y | SUV | D | 2020- | B N G Bl R | 5 5 854
+Propulsion 299 | EV | 299 | A | P | 44990 | 14.7 | 0 | 500 | 7.2 | 201 | 1928
+Grande Autonomie AWD 514 | EV | 514 | A | 4 | 49990 | 15.6 | 0 | 586 | 4.8 | 201 | 1992
+Performance 460 kW | EV | 625 | A | 4 | 61990 | 16.3 | 0 | 580 | 3.5 | 250 | 2010
+@ Tesla | Model S | berline | F | 2012- | B N G Bl R | 5 5 793
+Grande Autonomie AWD 670 | EV | 670 | A | 4 | 104990 | 18.0 | 0 | 634 | 3.2 | 250 | 2069
+Plaid 1020 | EV | 1020 | A | 4 | 119990 | 18.5 | 0 | 600 | 2.1 | 282 | 2162
+@ Tesla | Model X | SUV | F | 2015- | B N G Bl R | 7 5 415
+Grande Autonomie AWD 670 | EV | 670 | A | 4 | 114990 | 20.6 | 0 | 576 | 3.9 | 250 | 2352 | pl=5 c=2614
+Plaid 1020 | EV | 1020 | A | 4 | 124990 | 21.1 | 0 | 543 | 2.6 | 262 | 2455
+
+# ===================== AMÉRICAINS (autres) / BRITANNIQUES 4x4 =====================
+@ Dodge | Ram 1500 | pick-up | - | 2019- | B N G A R Bl | 5 4 -
+5.7 HEMI V8 401 eTorque | E | 401 | A | 4 | 85000 | 13.3 | 300 | - | 6.6 | 180 | 2550
+@ Chevrolet | Corvette | coupé | - | 2020- | B N G R Bl J O | 2 2 357
+Stingray 6.2 V8 482 | E | 482 | A | P | 120000 | 12.5 | 285 | - | 3.5 | 296 | 1655
+@ Cadillac | Lyriq | SUV | E | 2024- | B N G A | 5 5 588
+RWD 340 | EV | 340 | A | P | 82000 | 22.5 | 0 | 530 | 6.5 | 190 | 2577
+@ Ineos | Grenadier | SUV | - | 2022- | B N G V Be | 5 5 1152
+3.0 Diesel 249 | D | 249 | A | 4 | 82000 | 12.1 | 318 | - | 9.9 | 160 | 2669
+3.0 Essence 286 | E | 286 | A | 4 | 82000 | 14.4 | 327 | - | 8.6 | 160 | 2649

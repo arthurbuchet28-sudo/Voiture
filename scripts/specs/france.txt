@@ -1,0 +1,199 @@
+# ===================== PEUGEOT =====================
+@ Peugeot | 208 | citadine | B | 2019- | B N G A Bl J R | 5 5 311
+1.2 PureTech 100 BVM6 | E | 100 | M | T | 20450 | 5.4 | 122 | - | 10.6 | 188 | 1158
+Hybrid 110 e-DCS6 | HEV | 110 | A | T | 24450 | 4.6 | 104 | - | 10.1 | 194 | 1225
+e-208 156 | EV | 156 | A | T | 33300 | 14.9 | 0 | 410 | 8.5 | 150 | 1530 | c=309
+@ Peugeot | 2008 | SUV | B | 2019- | B N G A Bl R V | 5 5 434
+1.2 PureTech 100 BVM6 | E | 100 | M | T | 26500 | 5.8 | 131 | - | 10.9 | 186 | 1236
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 31750 | 5.0 | 113 | - | 8.9 | 206 | 1360
+e-2008 156 | EV | 156 | A | T | 38500 | 15.6 | 0 | 406 | 9.0 | 150 | 1585
+@ Peugeot | 308 | berline | C | 2021- | B N G A Bl R | 5 5 412
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 30450 | 5.7 | 129 | - | 9.7 | 210 | 1307
+1.5 BlueHDi 130 EAT8 | D | 130 | A | T | 32000 | 4.7 | 123 | - | 10.6 | 206 | 1380
+Plug-in Hybrid 180 e-EAT8 | PHEV | 180 | A | T | 40150 | 1.1 | 25 | 69 | 7.8 | 225 | 1633 | c=361
+e-308 156 | EV | 156 | A | T | 41600 | 14.6 | 0 | 412 | 9.8 | 170 | 1726 | c=361
+@ Peugeot | 308 SW | break | C | 2021- | B N G A Bl | 5 5 608
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 31700 | 5.8 | 131 | - | 9.9 | 207 | 1350
+1.5 BlueHDi 130 EAT8 | D | 130 | A | T | 33250 | 4.8 | 126 | - | 10.9 | 204 | 1430
+Plug-in Hybrid 180 e-EAT8 | PHEV | 180 | A | T | 41400 | 1.1 | 25 | 66 | 7.9 | 225 | 1708 | c=548
+@ Peugeot | 3008 | SUV | C | 2023- | B N G A Bl V | 5 5 520
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 36500 | 5.6 | 126 | - | 10.2 | 201 | 1573
+Plug-in Hybrid 195 e-DCS7 | PHEV | 195 | A | T | 46100 | 1.2 | 28 | 87 | 7.8 | 210 | 1810 | c=470
+e-3008 210 | EV | 210 | A | T | 44990 | 16.5 | 0 | 527 | 8.8 | 170 | 2108
+e-3008 Dual Motor 325 | EV | 325 | A | 4 | 53700 | 17.8 | 0 | 525 | 6.5 | 180 | 2253
+@ Peugeot | 5008 | SUV | D | 2024- | B N G A Bl | 7 5 748
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 41600 | 5.7 | 129 | - | 10.6 | 201 | 1675
+Plug-in Hybrid 195 e-DCS7 | PHEV | 195 | A | T | 52300 | 1.3 | 30 | 81 | 8.3 | 210 | 1900
+e-5008 210 | EV | 210 | A | T | 48500 | 17.0 | 0 | 502 | 9.6 | 170 | 2218
+@ Peugeot | 408 | berline | C | 2022- | B N G Bl | 5 5 536
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 34900 | 6.0 | 135 | - | 10.4 | 205 | 1397
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 37650 | 5.2 | 118 | - | 9.6 | 206 | 1470
+Plug-in Hybrid 225 e-EAT8 | PHEV | 225 | A | T | 47550 | 1.0 | 23 | 64 | 7.8 | 233 | 1731 | c=471
+e-408 210 | EV | 210 | A | T | 47900 | 15.7 | 0 | 453 | 8.0 | 160 | 1790 | c=471
+@ Peugeot | 508 | berline | D | 2018- | B N G Bl | 5 5 487
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 42750 | 6.0 | 136 | - | 9.9 | 207 | 1420
+Plug-in Hybrid 225 e-EAT8 | PHEV | 225 | A | T | 51950 | 1.3 | 29 | 63 | 8.3 | 240 | 1720 | c=487
+@ Peugeot | 508 SW | break | D | 2018- | B N G Bl | 5 5 530
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 44050 | 6.1 | 138 | - | 10.1 | 205 | 1460
+Plug-in Hybrid 225 e-EAT8 | PHEV | 225 | A | T | 53250 | 1.3 | 29 | 62 | 8.4 | 240 | 1780
+@ Peugeot | Rifter | monospace | - | 2018- | B N G Bl | 5 5 775
+1.2 PureTech 110 BVM6 | E | 110 | M | T | 27900 | 7.0 | 158 | - | 12.4 | 172 | 1400
+1.5 BlueHDi 100 BVM6 | D | 100 | M | T | 28950 | 5.3 | 140 | - | 12.9 | 170 | 1430
+e-Rifter 136 | EV | 136 | A | T | 39900 | 21.0 | 0 | 320 | 11.2 | 135 | 1758
+@ Peugeot | Partner | utilitaire | - | 2018- | B G A | 3 4 3300
+1.5 BlueHDi 100 BVM6 | D | 100 | M | T | 24600 | 5.6 | 146 | - | - | 160 | 1450
+e-Partner 136 | EV | 136 | A | T | 36500 | 22.0 | 0 | 330 | 11.2 | 135 | 1750
+@ Peugeot | Expert | utilitaire | - | 2016- | B G A | 3 4 5100
+2.0 BlueHDi 145 BVM6 | D | 145 | M | T | 34500 | 6.7 | 177 | - | - | 170 | 1800
+e-Expert 136 | EV | 136 | A | T | 47500 | 26.0 | 0 | 350 | 12.1 | 130 | 2100
+@ Peugeot | Traveller | monospace | - | 2016- | B N G | 8 5 640
+2.0 BlueHDi 145 EAT8 | D | 145 | A | T | 47500 | 7.1 | 187 | - | 12.0 | 170 | 1900
+e-Traveller 136 | EV | 136 | A | T | 59900 | 26.6 | 0 | 350 | 13.1 | 130 | 2250
+
+# ===================== CITROËN =====================
+@ Citroën | C3 | citadine | B | 2024- | B N G R Bl | 5 5 310
+1.2 Turbo 100 BVM6 | E | 100 | M | T | 18990 | 5.5 | 125 | - | 10.3 | 183 | 1180
+Hybrid 110 e-DCS6 | HEV | 110 | A | T | 22990 | 4.9 | 110 | - | 10.4 | 180 | 1260
+ë-C3 113 | EV | 113 | A | T | 23300 | 17.0 | 0 | 326 | 11.0 | 135 | 1416
+@ Citroën | C3 Aircross | SUV | B | 2024- | B N G Bl R | 5 5 460
+1.2 Turbo 100 BVM6 | E | 100 | M | T | 21990 | 5.8 | 131 | - | 11.2 | 180 | 1250
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 26990 | 5.2 | 117 | - | - | - | 1370
+ë-C3 Aircross 113 | EV | 113 | A | T | 27390 | 17.6 | 0 | 306 | 12.0 | 135 | 1520
+@ Citroën | C4 | berline | C | 2020- | B N G Bl R | 5 5 380
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 28900 | 5.9 | 133 | - | 9.6 | 205 | 1280
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 30400 | 5.0 | 113 | - | 8.8 | 207 | 1365
+ë-C4 156 | EV | 156 | A | T | 36400 | 15.3 | 0 | 420 | 9.1 | 150 | 1625
+@ Citroën | C4 X | berline | C | 2022- | B N G Bl | 5 4 510
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 31400 | 5.0 | 114 | - | 8.9 | 207 | 1380
+ë-C4 X 156 | EV | 156 | A | T | 37400 | 15.2 | 0 | 423 | 9.1 | 150 | 1625
+@ Citroën | C5 Aircross | SUV | C | 2025- | B N G Bl V | 5 5 565
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 34990 | 5.4 | 122 | - | - | 200 | -
+Plug-in Hybrid 195 e-DCS7 | PHEV | 195 | A | T | 40990 | 1.3 | 30 | 86 | - | - | -
+ë-C5 Aircross 210 | EV | 210 | A | T | 39990 | 16.7 | 0 | 520 | 9.0 | 170 | -
+@ Citroën | C5 X | berline | D | 2021- | B N G Bl | 5 5 545
+1.2 PureTech 130 EAT8 | E | 130 | A | T | 39100 | 6.1 | 138 | - | 10.3 | 210 | 1430
+Plug-in Hybrid 225 ë-EAT8 | PHEV | 225 | A | T | 47100 | 1.3 | 29 | 63 | 7.9 | 233 | 1745 | c=485
+@ Citroën | Berlingo | monospace | - | 2018- | B N G Bl | 5 5 775
+1.2 PureTech 110 BVM6 | E | 110 | M | T | 26700 | 7.0 | 158 | - | 12.4 | 172 | 1390
+1.5 BlueHDi 100 BVM6 | D | 100 | M | T | 27700 | 5.3 | 140 | - | 12.9 | 170 | 1420
+ë-Berlingo 136 | EV | 136 | A | T | 38900 | 21.0 | 0 | 320 | 11.2 | 135 | 1758
+@ Citroën | SpaceTourer | monospace | - | 2016- | B N G | 8 5 640
+2.0 BlueHDi 145 EAT8 | D | 145 | A | T | 46000 | 7.1 | 187 | - | 12.0 | 170 | 1900
+ë-SpaceTourer 136 | EV | 136 | A | T | 58600 | 26.6 | 0 | 350 | 13.1 | 130 | 2250
+@ Citroën | Ami | citadine | A | 2020- | B Bl O | 2 3 63
+Ami 8 kW | EV | 8 | A | P | 7990 | 5.5 | 0 | 75 | - | 45 | 485
+@ Citroën | Jumpy | utilitaire | - | 2016- | B G A | 3 4 5100
+2.0 BlueHDi 145 BVM6 | D | 145 | M | T | 33900 | 6.7 | 177 | - | - | 170 | 1800
+@ Citroën | Jumper | utilitaire | - | 2006- | B G | 3 4 11500
+2.2 BlueHDi 140 BVM6 | D | 140 | M | T | 37900 | 8.4 | 220 | - | - | 155 | 2050
+
+# ===================== DS =====================
+@ DS | DS 3 | SUV | B | 2019- | B N G Bl | 5 5 350
+PureTech 130 EAT8 | E | 130 | A | T | 36400 | 6.0 | 135 | - | 9.4 | 200 | 1280
+E-Tense 156 | EV | 156 | A | T | 41200 | 15.6 | 0 | 404 | 9.0 | 150 | 1525
+@ DS | DS 4 | berline | C | 2021- | B N G Bl | 5 5 430
+Hybrid 145 e-DCS6 | HEV | 145 | A | T | 37900 | 5.3 | 120 | - | 9.1 | 206 | 1450
+E-Tense 225 | PHEV | 225 | A | T | 47200 | 1.3 | 30 | 63 | 7.7 | 233 | 1730 | c=390
+E-Tense 213 électrique | EV | 213 | A | T | 47200 | 15.5 | 0 | 449 | 7.8 | 170 | 1800 | c=390
+@ DS | DS 7 | SUV | D | 2018- | B N G Bl | 5 5 555
+BlueHDi 130 EAT8 | D | 130 | A | T | 43900 | 5.2 | 137 | - | 11.4 | 195 | 1530
+E-Tense 225 | PHEV | 225 | A | T | 52950 | 1.4 | 32 | 66 | 8.9 | 225 | 1855 | c=555
+E-Tense 4x4 360 | PHEV | 360 | A | 4 | 69950 | 1.6 | 36 | 57 | 5.6 | 250 | 1970 | c=555
+@ DS | N°8 | berline | D | 2025- | B N G | 5 5 560
+FWD 230 | EV | 230 | A | T | 56000 | 15.7 | 0 | 572 | 7.7 | 190 | -
+AWD 350 | EV | 350 | A | 4 | 63000 | 16.5 | 0 | 688 | 5.4 | 190 | -
+
+# ===================== RENAULT =====================
+@ Renault | Twingo | citadine | A | 2014-2024 | B N G R J Bl | 4 5 219
+SCe 65 BVM5 | E | 65 | M | P | 15950 | 5.4 | 122 | - | 15.6 | 155 | 1003
+E-Tech électrique 82 | EV | 82 | A | P | 22650 | 16.3 | 0 | 190 | 12.6 | 135 | 1149
+@ Renault | Twingo E-Tech électrique | citadine | A | 2026- | B N J V | 4 5 360
+E-Tech électrique 82 | EV | 82 | A | T | 19990 | - | 0 | 263 | 12.1 | 130 | -
+@ Renault | Clio | citadine | B | 2019- | B N G R Bl O | 5 5 391
+TCe 90 BVM6 | E | 90 | M | T | 18900 | 5.3 | 118 | - | 12.2 | 180 | 1090
+TCe 90 X-Tronic | E | 90 | A | T | 21400 | 5.7 | 127 | - | 13.5 | 170 | 1140
+E-Tech full hybrid 145 | HEV | 145 | A | T | 24900 | 4.2 | 96 | - | 9.3 | 174 | 1294 | c=301
+Blue dCi 100 BVM6 | D | 100 | M | T | 23000 | 4.2 | 110 | - | 12.3 | 183 | 1166
+ECO-G 100 BVM6 | GPL | 100 | M | T | 19900 | 6.8 | 110 | - | 11.8 | 180 | 1196
+@ Renault | Captur | SUV | B | 2019- | B N G R Bl O | 5 5 422
+TCe 90 BVM6 | E | 90 | M | T | 23400 | 5.9 | 131 | - | 13.7 | 172 | 1180
+Mild Hybrid 160 EDC | E | 160 | A | T | 30700 | 6.1 | 136 | - | 8.6 | 200 | 1350
+E-Tech full hybrid 145 | HEV | 145 | A | T | 29800 | 4.7 | 105 | - | 10.6 | 170 | 1438 | c=326
+ECO-G 100 BVM6 | GPL | 100 | M | T | 24600 | 7.2 | 116 | - | 13.9 | 170 | 1290
+@ Renault | Mégane | berline | C | 2016-2024 | B N G R Bl | 5 5 384
+TCe 140 EDC | E | 140 | A | T | 30000 | 6.1 | 137 | - | 9.4 | 205 | 1300
+E-Tech plug-in 160 | PHEV | 160 | A | T | 36000 | 1.3 | 28 | 50 | 9.4 | 175 | 1580 | c=257
+@ Renault | Mégane E-Tech electric | SUV | C | 2022- | B N G R Bl | 5 5 440
+EV40 130 ch | EV | 130 | A | T | 35500 | 15.5 | 0 | 300 | 10.0 | 150 | 1624
+EV60 220 ch | EV | 220 | A | T | 42000 | 16.1 | 0 | 450 | 7.4 | 160 | 1636
+@ Renault | Arkana | SUV | C | 2021- | B N G R Bl | 5 5 513
+Mild Hybrid 140 EDC | E | 140 | A | T | 32900 | 5.9 | 133 | - | 9.8 | 200 | 1388
+E-Tech full hybrid 145 | HEV | 145 | A | T | 35400 | 4.9 | 108 | - | 10.8 | 172 | 1464 | c=480
+@ Renault | Austral | SUV | C | 2022- | B N G Bl | 5 5 555
+Mild Hybrid 160 X-Tronic | E | 160 | A | T | 35600 | 6.3 | 141 | - | 9.6 | 205 | 1490
+E-Tech full hybrid 200 | HEV | 200 | A | T | 40500 | 4.6 | 105 | - | 8.4 | 175 | 1580 | c=500
+@ Renault | Espace | SUV | D | 2023- | B N G Bl | 7 5 477
+E-Tech full hybrid 200 | HEV | 200 | A | T | 44400 | 4.8 | 108 | - | 8.8 | 175 | 1710
+@ Renault | Rafale | SUV | D | 2024- | B N G Bl | 5 5 535
+E-Tech full hybrid 200 | HEV | 200 | A | T | 45900 | 4.7 | 106 | - | 8.9 | 180 | 1650
+E-Tech 4x4 300 | PHEV | 300 | A | 4 | 58400 | 0.8 | 16 | 105 | 6.4 | 180 | 1990 | c=470
+@ Renault | Symbioz | SUV | C | 2024- | B N G Bl | 5 5 492
+E-Tech full hybrid 145 | HEV | 145 | A | T | 30900 | 4.7 | 106 | - | 10.6 | 170 | 1470
+@ Renault | Scenic E-Tech electric | SUV | C | 2024- | B N G Bl V | 5 5 545
+Confort range 170 | EV | 170 | A | T | 40000 | 16.1 | 0 | 430 | 8.6 | 150 | 1842
+Long range 220 | EV | 220 | A | T | 44000 | 16.6 | 0 | 625 | 7.9 | 170 | 1890
+@ Renault | 5 E-Tech | citadine | B | 2024- | B N J R V Bl | 5 5 326
+Urban range 120 | EV | 120 | A | T | 25000 | 14.9 | 0 | 312 | 9.0 | 150 | 1350
+Comfort range 150 | EV | 150 | A | T | 32900 | 14.9 | 0 | 410 | 7.9 | 150 | 1450
+@ Renault | 4 E-Tech | SUV | B | 2025- | B N J V Bl | 5 5 420
+Comfort range 120 | EV | 120 | A | T | 29990 | 15.3 | 0 | 332 | 9.2 | 150 | 1424
+Comfort range 150 | EV | 150 | A | T | 35990 | 15.6 | 0 | 409 | 8.2 | 150 | 1527
+@ Renault | Zoe | citadine | B | 2012-2024 | B N G R Bl | 5 5 338
+R135 | EV | 135 | A | T | 33500 | 17.7 | 0 | 386 | 9.5 | 140 | 1577
+@ Renault | Kangoo | monospace | - | 2021- | B N G Bl | 5 5 775
+TCe 100 BVM6 | E | 100 | M | T | 28900 | 6.9 | 157 | - | 13.0 | 170 | 1500
+Blue dCi 95 BVM6 | D | 95 | M | T | 30400 | 5.4 | 143 | - | 13.8 | 168 | 1545
+E-Tech électrique 122 | EV | 122 | A | T | 39900 | 18.9 | 0 | 285 | 11.0 | 132 | 1890
+@ Renault | Trafic | utilitaire | - | 2014- | B G A | 3 4 5200
+Blue dCi 150 BVM6 | D | 150 | M | T | 38500 | 7.1 | 186 | - | - | 180 | 1900
+@ Renault | Master | utilitaire | - | 2024- | B G | 3 4 11000
+Blue dCi 150 BVM6 | D | 150 | M | T | 42000 | 8.3 | 217 | - | - | 160 | 2100
+E-Tech électrique 140 | EV | 140 | A | T | 59900 | 24.0 | 0 | 410 | - | 130 | 2400
+
+# ===================== DACIA =====================
+@ Dacia | Sandero | citadine | B | 2020- | B N G R Bl O | 5 5 410
+SCe 65 BVM5 | E | 65 | M | T | 12990 | 5.7 | 127 | - | 17.1 | 158 | 1009
+TCe 90 BVM6 | E | 90 | M | T | 15290 | 5.4 | 120 | - | 11.7 | 178 | 1065
+ECO-G 100 BVM6 | GPL | 100 | M | T | 15990 | 6.8 | 108 | - | 11.6 | 180 | 1110
+@ Dacia | Sandero Stepway | citadine | B | 2020- | B N G Bl O | 5 5 410
+TCe 90 BVM6 | E | 90 | M | T | 17990 | 5.6 | 125 | - | 12.2 | 172 | 1090
+ECO-G 100 BVM6 | GPL | 100 | M | T | 18690 | 6.9 | 111 | - | 12.0 | 174 | 1130
+TCe 110 CVT | E | 110 | A | T | 19990 | 5.9 | 133 | - | 11.5 | 180 | 1140
+@ Dacia | Duster | SUV | C | 2024- | B N G Bl V | 5 5 472
+TCe 130 4x2 | E | 130 | M | T | 22690 | 5.7 | 129 | - | 10.2 | 185 | 1302
+Hybrid 140 | HEV | 140 | A | T | 25690 | 4.6 | 105 | - | 10.1 | 160 | 1420 | c=430
+ECO-G 100 | GPL | 100 | M | T | 21990 | 7.0 | 113 | - | 13.6 | 168 | 1300
+TCe 130 4x4 | E | 130 | M | 4 | 26990 | 6.3 | 141 | - | 10.4 | 180 | 1390 | c=456
+@ Dacia | Jogger | monospace | C | 2022- | B N G R Bl | 7 5 160
+TCe 110 BVM6 | E | 110 | M | T | 19990 | 6.0 | 135 | - | 11.2 | 183 | 1205 | pl=5 c=708
+TCe 110 7 places | E | 110 | M | T | 20790 | 6.1 | 137 | - | 11.2 | 183 | 1250
+Hybrid 140 7 places | HEV | 140 | A | T | 26490 | 4.8 | 109 | - | 10.1 | 160 | 1361
+ECO-G 100 7 places | GPL | 100 | M | T | 20990 | 7.4 | 120 | - | 12.8 | 172 | 1265
+@ Dacia | Spring | citadine | A | 2021- | B G R Bl V | 4 5 308
+Electric 45 | EV | 45 | A | T | 16900 | 13.9 | 0 | 225 | 19.1 | 125 | 975
+Electric 65 | EV | 65 | A | T | 18900 | 14.0 | 0 | 225 | 13.7 | 125 | 984
+@ Dacia | Bigster | SUV | C | 2025- | B N G Bl V | 5 5 667
+TCe 140 mild hybrid 4x2 | E | 140 | M | T | 24990 | 5.8 | 131 | - | 10.1 | 190 | 1395
+Hybrid 155 | HEV | 155 | A | T | 30990 | 4.9 | 112 | - | 9.7 | 180 | 1485 | c=612
+TCe 140 mild hybrid 4x4 | E | 140 | M | 4 | 29990 | 6.2 | 140 | - | 10.4 | 180 | 1495 | c=667
+
+# ===================== ALPINE =====================
+@ Alpine | A110 | coupé | - | 2017- | B N G Bl | 2 3 196
+A110 300 | E | 300 | A | P | 63400 | 6.9 | 157 | - | 4.2 | 250 | 1102
+A110 GTS 345 | E | 345 | A | P | 82500 | 7.1 | 160 | - | 3.9 | 285 | 1119
+@ Alpine | A290 | citadine | B | 2024- | B N G Bl | 4 5 326
+GT 180 | EV | 180 | A | T | 38700 | 15.8 | 0 | 380 | 7.4 | 170 | 1479
+GTS 220 | EV | 220 | A | T | 44200 | 16.2 | 0 | 364 | 6.4 | 170 | 1479
+@ Alpine | A390 | SUV | D | 2025- | B N G Bl | 5 5 532
+GT 400 | EV | 400 | A | 4 | 66990 | 18.9 | 0 | 555 | 4.8 | 200 | 2121
+GTS 470 | EV | 470 | A | 4 | 76990 | 19.5 | 0 | 520 | 3.9 | 220 | 2129

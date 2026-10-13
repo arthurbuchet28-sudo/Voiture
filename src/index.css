@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-asphalte-50 font-sans text-asphalte-900 antialiased dark:bg-asphalte-950 dark:text-asphalte-100;
+  }
+  ::selection {
+    @apply bg-accent-500 text-white;
+  }
+}
+
+@layer components {
+  .champ {
+    @apply rounded-lg border border-asphalte-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 dark:border-asphalte-700 dark:bg-asphalte-800;
+  }
+  .bouton-principal {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent-600 px-5 py-2.5 font-display text-lg font-bold uppercase tracking-wide text-white shadow-lg shadow-accent-600/25 transition hover:bg-accent-700 active:scale-[0.98];
+  }
+  .bouton-secondaire {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-asphalte-300 px-5 py-2.5 font-semibold text-asphalte-700 transition hover:border-asphalte-500 hover:bg-asphalte-100 dark:border-asphalte-600 dark:text-asphalte-200 dark:hover:bg-asphalte-800;
+  }
+  /* Bandes « piste de course » décoratives */
+  .bandes {
+    background-image: repeating-linear-gradient(-45deg, transparent 0 14px, rgb(255 255 255 / 0.04) 14px 28px);
+  }
+}
+
+/* Curseur double : deux <input type=range> superposés, seuls les boutons captent la souris. */
+.curseur-double input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+  margin: 0;
+}
+.curseur-double input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: auto;
+  height: 22px;
+  width: 22px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 3px solid #f2481a;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.25);
+  cursor: grab;
+}
+.curseur-double input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 3px solid #f2481a;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.25);
+  cursor: grab;
+}
+.curseur-double input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+.curseur-double input[type="range"]:focus-visible::-webkit-slider-thumb {
+  outline: 3px solid rgb(242 72 26 / 0.35);
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
