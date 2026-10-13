@@ -16,7 +16,7 @@ export default function Favoris() {
       <h1 className="mb-6 font-display text-4xl font-bold uppercase">Mes favoris</h1>
       {modeles.length === 0 ? (
         <div className="py-16 text-center">
-          <p className="text-asphalte-500">Aucun favori pour l'instant. Cliquez sur le cœur d'une voiture pour la retrouver ici.</p>
+          <p className="text-asphalte-500 dark:text-asphalte-400">Aucun favori pour l'instant. Cliquez sur le cœur d'une voiture pour la retrouver ici.</p>
           <Link to="/" className="bouton-principal mt-6">
             Lancer une recherche
           </Link>
@@ -30,12 +30,12 @@ export default function Favoris() {
                 <Link to={`/modele/${m.id}`}>
                   <PhotoVoiture photo={m.photos[0]} carrosserie={m.carrosserie} alt={m.nom} className="aspect-[16/10]" credit="incruste" />
                   <div className="p-4">
-                    <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-asphalte-500">
+                    <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-asphalte-500 dark:text-asphalte-400">
                       <LogoMarque marque={marqueParId.get(m.marqueId)} taille={18} />
                       {marqueParId.get(m.marqueId)?.nom}
                     </p>
                     <h2 className="font-display text-2xl font-bold group-hover:text-accent-600">{m.nom}</h2>
-                    <p className="text-sm text-asphalte-500">
+                    <p className="text-sm text-asphalte-500 dark:text-asphalte-400">
                       {periode(m.anneeDebut, m.anneeFin)} · {m.versions.length} version{m.versions.length > 1 ? "s" : ""}
                     </p>
                     {Number.isFinite(prixMin) && <p className="mt-2 font-display text-xl font-bold">À partir de {prix(prixMin)}</p>}

@@ -31,8 +31,8 @@ export default function Comparateur() {
   if (!elements.length) {
     return (
       <div className="mx-auto max-w-xl px-4 py-24 text-center">
-        <p className="font-display text-4xl font-bold uppercase">Comparateur vide</p>
-        <p className="mt-3 text-asphalte-500">
+        <h1 className="font-display text-4xl font-bold uppercase">Comparateur vide</h1>
+        <p className="mt-3 text-asphalte-500 dark:text-asphalte-400">
           Ajoutez jusqu'à {MAX_COMPARATEUR} voitures depuis les résultats ou les fiches modèles pour les comparer côte à côte.
         </p>
         <Link to="/" className="bouton-principal mt-8">
@@ -60,7 +60,7 @@ export default function Comparateur() {
     <div className="mx-auto max-w-7xl px-4 py-6">
       <div className="mb-6 flex items-end justify-between gap-3">
         <h1 className="font-display text-4xl font-bold uppercase">Comparateur</h1>
-        <button type="button" onClick={viderComparateur} className="text-sm text-asphalte-500 hover:text-accent-600">
+        <button type="button" onClick={viderComparateur} className="text-sm text-asphalte-500 dark:text-asphalte-400 hover:text-accent-600">
           Tout retirer
         </button>
       </div>
@@ -74,7 +74,7 @@ export default function Comparateur() {
                   <div className="overflow-hidden rounded-xl text-left">
                     <PhotoVoiture photo={m.photos[0]} carrosserie={m.carrosserie} alt={m.nom} className="aspect-[16/10]" credit="incruste" />
                   </div>
-                  <div className="mt-3 flex items-center gap-2 text-left text-xs font-semibold uppercase tracking-wider text-asphalte-500">
+                  <div className="mt-3 flex items-center gap-2 text-left text-xs font-semibold uppercase tracking-wider text-asphalte-500 dark:text-asphalte-400">
                     <LogoMarque marque={marqueParId.get(m.marqueId)} taille={18} />
                     {marqueParId.get(m.marqueId)?.nom}
                   </div>
@@ -90,7 +90,7 @@ export default function Comparateur() {
                   </select>
                   <div className="mt-2 flex items-center justify-between">
                     <span className="font-display text-xl font-bold">{prix(v.prixNeufEuros)}</span>
-                    <button type="button" onClick={() => retirerComparateur(e)} className="text-xs text-asphalte-500 hover:text-accent-600">
+                    <button type="button" onClick={() => retirerComparateur(e)} className="text-xs text-asphalte-500 dark:text-asphalte-400 hover:text-accent-600">
                       Retirer ×
                     </button>
                   </div>
@@ -100,7 +100,7 @@ export default function Comparateur() {
                 <th className="align-top font-normal">
                   <Link
                     to="/resultats"
-                    className="flex aspect-[16/10] flex-col items-center justify-center rounded-xl border-2 border-dashed border-asphalte-300 text-asphalte-500 hover:border-accent-500 hover:text-accent-600 dark:border-asphalte-700"
+                    className="flex aspect-[16/10] flex-col items-center justify-center rounded-xl border-2 border-dashed border-asphalte-300 text-asphalte-500 dark:text-asphalte-400 hover:border-accent-500 hover:text-accent-600 dark:border-asphalte-700"
                   >
                     <span className="text-3xl">+</span>
                     <span className="text-sm">Ajouter une voiture</span>
@@ -114,7 +114,7 @@ export default function Comparateur() {
               const best = meilleurs(l);
               return (
                 <tr key={l}>
-                  <th scope="row" className={`px-3 py-2.5 text-left font-medium text-asphalte-500 ${li % 2 ? "" : "bg-asphalte-100/70 dark:bg-asphalte-800/50"} rounded-l-lg`}>
+                  <th scope="row" className={`px-3 py-2.5 text-left font-medium text-asphalte-500 dark:text-asphalte-400 ${li % 2 ? "" : "bg-asphalte-100/70 dark:bg-asphalte-800/50"} rounded-l-lg`}>
                     {l}
                   </th>
                   {elements.map(({ e, v }, i) => {
@@ -123,7 +123,7 @@ export default function Comparateur() {
                       <td
                         key={`${e.modeleId}#${e.indexVersion}`}
                         className={`px-3 py-2.5 font-semibold ${li % 2 ? "" : "bg-asphalte-100/70 dark:bg-asphalte-800/50"} ${
-                          best.has(i) ? "text-emerald-600 dark:text-emerald-400" : x === "—" ? "text-asphalte-400" : ""
+                          best.has(i) ? "text-emerald-600 dark:text-emerald-400" : x === "—" ? "text-asphalte-500 dark:text-asphalte-400" : ""
                         }`}
                       >
                         {x}
@@ -138,7 +138,7 @@ export default function Comparateur() {
           </tbody>
         </table>
       </div>
-      <p className="mt-4 text-xs text-asphalte-500">★ meilleure valeur de la ligne. « — » : donnée inconnue.</p>
+      <p className="mt-4 text-xs text-asphalte-500 dark:text-asphalte-400">★ meilleure valeur de la ligne. « — » : donnée inconnue.</p>
     </div>
   );
 }

@@ -39,9 +39,9 @@ export function CurseurDouble({ min, max, pas, valeurMin, valeurMax, onChange, f
   return (
     <div>
       <div className="mb-3 flex items-center justify-between gap-2 font-display text-lg font-semibold tabular-nums">
-        <span className={valeurMin === null ? "text-asphalte-400" : ""}>{valeurMin === null ? libelleMin ?? format(min) : format(valeurMin)}</span>
+        <span className={valeurMin === null ? "text-asphalte-500 dark:text-asphalte-400" : ""}>{valeurMin === null ? libelleMin ?? format(min) : format(valeurMin)}</span>
         <span className="h-px flex-1 bg-asphalte-200 dark:bg-asphalte-700" />
-        <span className={valeurMax === null ? "text-asphalte-400" : ""}>{valeurMax === null ? libelleMax ?? `${format(max)}+` : format(valeurMax)}</span>
+        <span className={valeurMax === null ? "text-asphalte-500 dark:text-asphalte-400" : ""}>{valeurMax === null ? libelleMax ?? `${format(max)}+` : format(valeurMax)}</span>
       </div>
       <div className="curseur-double relative h-6">
         <div className="absolute inset-x-0 top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-asphalte-200 dark:bg-asphalte-700" />

@@ -35,7 +35,7 @@ export default function Accueil() {
           </p>
           {/* Profils rapides */}
           <div className="mt-7">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-asphalte-400">Profils rapides</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-asphalte-300">Profils rapides</p>
             <div className="flex flex-wrap gap-2">
               {PROFILS.map((p) => (
                 <button
@@ -47,7 +47,7 @@ export default function Accueil() {
                     setProfil(p.id);
                   }}
                   className={`group flex items-center gap-2 rounded-xl border px-3.5 py-2 text-left transition-all hover:-translate-y-0.5 ${
-                    profil === p.id ? "border-accent-500 bg-accent-500 text-white" : "border-white/15 bg-white/5 hover:border-white/40 hover:bg-white/10"
+                    profil === p.id ? "border-accent-500 bg-accent-600 text-white" : "border-white/15 bg-white/5 hover:border-white/40 hover:bg-white/10"
                   }`}
                 >
                   <span className="text-xl" aria-hidden>
@@ -55,7 +55,7 @@ export default function Accueil() {
                   </span>
                   <span>
                     <span className="block text-sm font-semibold leading-tight">{p.nom}</span>
-                    <span className={`block text-[11px] leading-tight ${profil === p.id ? "text-white/80" : "text-asphalte-400"}`}>{p.description}</span>
+                    <span className={`block text-[11px] leading-tight ${profil === p.id ? "text-white/80" : "text-asphalte-300"}`}>{p.description}</span>
                   </span>
                 </button>
               ))}

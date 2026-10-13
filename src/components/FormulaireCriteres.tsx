@@ -289,7 +289,7 @@ function GroupeCriteres({ panneau, titre, sousTitre, children }: { panneau: bool
     <details open className="group border-b border-asphalte-200 py-4 dark:border-asphalte-800">
       <summary className="flex cursor-pointer list-none items-center justify-between font-display text-lg font-bold uppercase tracking-wide">
         {titre}
-        <span className="text-asphalte-400 transition-transform group-open:rotate-180">▾</span>
+        <span className="text-asphalte-500 dark:text-asphalte-400 transition-transform group-open:rotate-180">▾</span>
       </summary>
       <div className="mt-4 space-y-5">{children}</div>
     </details>

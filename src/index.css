@@ -19,7 +19,7 @@
     @apply rounded-lg border border-asphalte-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 dark:border-asphalte-700 dark:bg-asphalte-800;
   }
   .bouton-principal {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 px-5 py-2.5 font-display text-lg font-bold uppercase tracking-wide text-white shadow-lg shadow-accent-500/25 transition hover:bg-accent-600 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent-600 px-5 py-2.5 font-display text-lg font-bold uppercase tracking-wide text-white shadow-lg shadow-accent-600/25 transition hover:bg-accent-700 active:scale-[0.98];
   }
   .bouton-secondaire {
     @apply inline-flex items-center justify-center gap-2 rounded-xl border border-asphalte-300 px-5 py-2.5 font-semibold text-asphalte-700 transition hover:border-asphalte-500 hover:bg-asphalte-100 dark:border-asphalte-600 dark:text-asphalte-200 dark:hover:bg-asphalte-800;

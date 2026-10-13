@@ -53,7 +53,7 @@ function FicheModele({ id }: { id: string | undefined }) {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
-      <nav className="mb-4 text-sm text-asphalte-500">
+      <nav aria-label="Fil d'Ariane" className="mb-4 text-sm text-asphalte-500 dark:text-asphalte-400">
         <Link to="/" className="hover:text-accent-600">
           Recherche
         </Link>{" "}
@@ -86,20 +86,20 @@ function FicheModele({ id }: { id: string | undefined }) {
 
         {/* En-tête et version */}
         <div>
-          <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-asphalte-500">
+          <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-asphalte-500 dark:text-asphalte-400">
             <LogoMarque marque={marque} taille={28} />
             {marque?.nom}
             {marque?.pays && marque.pays !== "Inconnu" && <span className="font-normal normal-case tracking-normal">· {marque.pays}</span>}
           </div>
           <h1 className="mt-1 font-display text-5xl font-bold uppercase leading-none">{m.nom}</h1>
-          <p className="mt-2 text-asphalte-500">
+          <p className="mt-2 text-asphalte-500 dark:text-asphalte-400">
             {m.carrosserie}
             {m.segment ? ` · segment ${m.segment}` : ""} · {periode(m.anneeDebut, m.anneeFin)}
           </p>
 
           {v ? (
             <div className="mt-6 rounded-2xl border border-asphalte-200 bg-white p-5 shadow-carte dark:border-asphalte-800 dark:bg-asphalte-900">
-              <label className="text-xs font-semibold uppercase tracking-wider text-asphalte-500" htmlFor="version">
+              <label className="text-xs font-semibold uppercase tracking-wider text-asphalte-500 dark:text-asphalte-400" htmlFor="version">
                 Version
               </label>
               <select
@@ -126,23 +126,23 @@ function FicheModele({ id }: { id: string | undefined }) {
                 ].map(([l, x]) => (
                   <div key={l} className="rounded-xl bg-asphalte-50 py-3 dark:bg-asphalte-800">
                     <p className="font-display text-2xl font-bold">{x}</p>
-                    <p className="text-xs text-asphalte-500">{l}</p>
+                    <p className="text-xs text-asphalte-500 dark:text-asphalte-400">{l}</p>
                   </div>
                 ))}
               </div>
               <p className="mt-5 font-display text-4xl font-bold">{prix(v.prixNeufEuros)}</p>
-              <p className="text-xs text-asphalte-500">Prix catalogue neuf indicatif</p>
+              <p className="text-xs text-asphalte-500 dark:text-asphalte-400">Prix catalogue neuf indicatif</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <button type="button" onClick={comparer} className={compare ? "bouton-secondaire" : "bouton-principal"}>
                   {compare ? "✓ Dans le comparateur" : "Ajouter au comparateur"}
                 </button>
                 <BoutonFavori modeleId={m.id} avecTexte />
               </div>
-              {message && <p className="mt-2 text-sm text-accent-600">{message}</p>}
+              {message && <p className="mt-2 text-sm text-accent-600 dark:text-accent-400">{message}</p>}
             </div>
           ) : (
             <div className="mt-6 flex items-start justify-between gap-4 rounded-2xl border border-dashed border-asphalte-300 p-5 dark:border-asphalte-700">
-              <p className="text-sm text-asphalte-500">
+              <p className="text-sm text-asphalte-500 dark:text-asphalte-400">
                 Ce modèle provient de Wikidata et ne dispose pas encore de fiche technique détaillée (versions, prix, consommation). Les valeurs
                 inconnues ne sont jamais inventées.
               </p>
@@ -151,7 +151,7 @@ function FicheModele({ id }: { id: string | undefined }) {
           )}
 
           <div className="mt-6">
-            <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-asphalte-500">Couleurs disponibles</h2>
+            <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-asphalte-500 dark:text-asphalte-400">Couleurs disponibles</h2>
             {m.couleursDisponibles.length ? (
               <div className="flex flex-wrap gap-3">
                 {m.couleursDisponibles.map((nom) => (
@@ -165,7 +165,7 @@ function FicheModele({ id }: { id: string | undefined }) {
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-asphalte-500">Non renseignées.</p>
+              <p className="text-sm text-asphalte-500 dark:text-asphalte-400">Non renseignées.</p>
             )}
           </div>
         </div>
@@ -175,7 +175,7 @@ function FicheModele({ id }: { id: string | undefined }) {
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
           <section>
             <h2 className="mb-3 font-display text-2xl font-bold uppercase">Caractéristiques techniques</h2>
-            <p className="mb-3 text-sm text-asphalte-500">{v.nom}</p>
+            <p className="mb-3 text-sm text-asphalte-500 dark:text-asphalte-400">{v.nom}</p>
             <table className="w-full overflow-hidden rounded-xl text-sm">
               <tbody>
                 {lignesTechniques(v).map(([l, x], i) => (
@@ -183,12 +183,12 @@ function FicheModele({ id }: { id: string | undefined }) {
                     <th scope="row" className="px-4 py-2.5 text-left font-medium text-asphalte-500 dark:text-asphalte-400">
                       {l}
                     </th>
-                    <td className={`px-4 py-2.5 text-right font-semibold ${x === "—" ? "text-asphalte-400" : ""}`}>{x}</td>
+                    <td className={`px-4 py-2.5 text-right font-semibold ${x === "—" ? "text-asphalte-500 dark:text-asphalte-400" : ""}`}>{x}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
-            <p className="mt-2 text-xs text-asphalte-500">« — » : donnée inconnue, laissée vide plutôt qu'estimée.</p>
+            <p className="mt-2 text-xs text-asphalte-500 dark:text-asphalte-400">« — » : donnée inconnue, laissée vide plutôt qu'estimée.</p>
           </section>
 
           <section>
@@ -207,7 +207,7 @@ function FicheModele({ id }: { id: string | undefined }) {
                 >
                   <div className="min-w-0 flex-1">
                     <p className="truncate font-semibold">{x.nom}</p>
-                    <p className="text-xs text-asphalte-500">
+                    <p className="text-xs text-asphalte-500 dark:text-asphalte-400">
                       {x.energie} · {val(x.puissanceCh, " ch")} · {x.boite}
                       {conso(x) ? ` · ${conso(x)}` : ""}
                     </p>
@@ -220,7 +220,7 @@ function FicheModele({ id }: { id: string | undefined }) {
         </div>
       )}
 
-      <p className="mt-10 text-xs text-asphalte-500">
+      <p className="mt-10 text-xs text-asphalte-500 dark:text-asphalte-400">
         Sources : {m.source}. Mise à jour : {new Date(m.dateMiseAJour).toLocaleDateString("fr-FR")}.
       </p>
     </div>

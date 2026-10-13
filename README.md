@@ -108,6 +108,12 @@ D'après `public/data/stats.json` (collecte du 13/10/2026) :
 Les alertes actuelles (6) portent toutes sur des hypercars hybrides rechargeables, dont la
 consommation est élevée en réalité.
 
+### Accessibilité
+
+Les pages principales (accueil, résultats, fiche, comparateur, favoris) ont été auditées avec
+axe-core, en mode clair et en mode sombre : aucune violation. Les textes respectent le contraste
+WCAG AA (au moins 4,5:1), les repères de navigation sont nommés et les titres sont hiérarchisés.
+
 ## Intégration continue et déploiement
 
 - `.github/workflows/ci.yml` : à chaque push, contrôle des fiches, tests et build.

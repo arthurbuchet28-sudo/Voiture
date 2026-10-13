@@ -20,10 +20,10 @@ export function Champ({ libelle, aide, children, actif, onEffacer }: { libelle: 
       <div className="mb-2 flex items-center justify-between gap-2">
         <span className="text-sm font-semibold text-asphalte-700 dark:text-asphalte-200">
           {libelle}
-          {aide && <span className="ml-2 font-normal text-asphalte-400">{aide}</span>}
+          {aide && <span className="ml-2 font-normal text-asphalte-500 dark:text-asphalte-400">{aide}</span>}
         </span>
         {actif && onEffacer && (
-          <button type="button" onClick={onEffacer} className="text-xs text-asphalte-400 hover:text-accent-600">
+          <button type="button" onClick={onEffacer} className="text-xs text-asphalte-500 dark:text-asphalte-400 hover:text-accent-600">
             Effacer
           </button>
         )}
@@ -91,7 +91,7 @@ export function Puce({ actif, onClick, children, titre }: { actif: boolean; onCl
       onClick={onClick}
       className={`rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
         actif
-          ? "border-accent-500 bg-accent-500 text-white shadow-sm"
+          ? "border-accent-500 bg-accent-600 text-white shadow-sm"
           : "border-asphalte-200 bg-asphalte-50 text-asphalte-700 hover:border-asphalte-400 dark:border-asphalte-700 dark:bg-asphalte-800 dark:text-asphalte-200 dark:hover:border-asphalte-500"
       }`}
     >

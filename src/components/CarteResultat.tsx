@@ -58,7 +58,7 @@ export function CarteResultat({ r }: { r: Resultat }) {
           <span className="ml-auto font-normal normal-case tracking-normal">{m.carrosserie}</span>
         </div>
         <Link to={lien} className="mt-1">
-          <h3 className="font-display text-2xl font-bold leading-tight group-hover:text-accent-600">{m.nom}</h3>
+          <h2 className="font-display text-2xl font-bold leading-tight group-hover:text-accent-600">{m.nom}</h2>
           <p className="truncate text-sm text-asphalte-500 dark:text-asphalte-400">{v ? v.nom : "Fiche technique non disponible"}</p>
         </Link>
         {v ? (
@@ -76,7 +76,7 @@ export function CarteResultat({ r }: { r: Resultat }) {
                 onClick={() => (compare ? retirerComparateur(elt) : ajouterComparateur(elt))}
                 className={`rounded-lg border px-2.5 py-1 text-xs font-semibold transition-colors ${
                   compare
-                    ? "border-accent-500 bg-accent-500 text-white"
+                    ? "border-accent-500 bg-accent-600 text-white"
                     : "border-asphalte-300 text-asphalte-600 hover:border-accent-500 hover:text-accent-600 dark:border-asphalte-600 dark:text-asphalte-300"
                 }`}
               >
@@ -85,12 +85,12 @@ export function CarteResultat({ r }: { r: Resultat }) {
             </div>
           </>
         ) : (
-          <p className="mt-auto pt-3 text-xs text-asphalte-500">
+          <p className="mt-auto pt-3 text-xs text-asphalte-500 dark:text-asphalte-400">
             {m.anneeDebut ? `Produite ${m.anneeFin ? `de ${m.anneeDebut} à ${m.anneeFin}` : `depuis ${m.anneeDebut}`}` : "Années inconnues"} · Source : Wikidata
           </p>
         )}
         {pointsFaibles.length > 0 && (
-          <p className="mt-2 border-t border-dashed border-asphalte-200 pt-2 text-[11px] text-asphalte-500 dark:border-asphalte-700">
+          <p className="mt-2 border-t border-dashed border-asphalte-200 pt-2 text-[11px] text-asphalte-500 dark:text-asphalte-400 dark:border-asphalte-700">
             Écarts : {pointsFaibles.map((d) => `${d.critere}${d.inconnu ? " (inconnu)" : ""}`).join(", ")}
           </p>
         )}

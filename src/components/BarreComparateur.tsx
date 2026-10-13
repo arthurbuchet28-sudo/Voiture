@@ -25,16 +25,16 @@ export function BarreComparateur() {
                 </div>
                 <div className="max-w-[10rem] text-xs leading-tight">
                   <p className="truncate font-semibold">{nomComplet(m)}</p>
-                  <p className="truncate text-asphalte-500">{m.versions[e.indexVersion]?.nom}</p>
+                  <p className="truncate text-asphalte-500 dark:text-asphalte-400">{m.versions[e.indexVersion]?.nom}</p>
                 </div>
-                <button type="button" onClick={() => retirerComparateur(e)} className="text-asphalte-400 hover:text-accent-600" aria-label="Retirer">
+                <button type="button" onClick={() => retirerComparateur(e)} className="text-asphalte-500 dark:text-asphalte-400 hover:text-accent-600" aria-label="Retirer">
                   ×
                 </button>
               </div>
             );
           })}
         </div>
-        <button type="button" onClick={viderComparateur} className="hidden text-sm text-asphalte-500 hover:text-accent-600 sm:block">
+        <button type="button" onClick={viderComparateur} className="hidden text-sm text-asphalte-500 dark:text-asphalte-400 hover:text-accent-600 sm:block">
           Vider
         </button>
         <Link to="/comparateur" className="bouton-principal shrink-0">

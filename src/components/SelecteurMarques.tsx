@@ -52,7 +52,7 @@ export function SelecteurMarques({ valeurs, onChange }: { valeurs: string[]; onC
               key={id}
               type="button"
               onClick={() => basculer(id)}
-              className="flex items-center gap-1.5 rounded-full bg-accent-500 py-1 pl-1.5 pr-2.5 text-sm font-medium text-white"
+              className="flex items-center gap-1.5 rounded-full bg-accent-600 py-1 pl-1.5 pr-2.5 text-sm font-medium text-white"
               title="Retirer"
             >
               <LogoMarque marque={marqueParId.get(id)} taille={18} />
@@ -90,10 +90,10 @@ export function SelecteurMarques({ valeurs, onChange }: { valeurs: string[]; onC
             </button>
           );
         })}
-        {liste.length === 0 && <p className="col-span-full py-3 text-sm text-asphalte-400">Aucune marque trouvée.</p>}
+        {liste.length === 0 && <p className="col-span-full py-3 text-sm text-asphalte-500 dark:text-asphalte-400">Aucune marque trouvée.</p>}
       </div>
       {!requete && (
-        <button type="button" onClick={() => setToutes(!toutes)} className="mt-2 text-xs font-medium text-accent-600 hover:underline">
+        <button type="button" onClick={() => setToutes(!toutes)} className="mt-2 text-xs font-medium text-accent-600 dark:text-accent-400 hover:underline">
           {toutes ? "Afficher seulement les marques avec fiches techniques" : `Afficher toutes les marques (${marquesActives.length})`}
         </button>
       )}

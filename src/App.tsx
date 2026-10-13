@@ -35,7 +35,7 @@ function Entete() {
       isActive ? "text-accent-600 dark:text-accent-400" : "text-asphalte-600 hover:text-asphalte-900 dark:text-asphalte-300 dark:hover:text-white"
     }`;
   const Badge = ({ n }: { n: number }) =>
-    n ? <span className="ml-1 rounded-full bg-accent-500 px-1.5 text-[10px] font-bold text-white">{n}</span> : null;
+    n ? <span className="ml-1 rounded-full bg-accent-600 px-1.5 text-[10px] font-bold text-white">{n}</span> : null;
   return (
     <header className="sticky top-0 z-30 border-b border-asphalte-200 bg-white/90 backdrop-blur dark:border-asphalte-800 dark:bg-asphalte-950/90">
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5">
@@ -43,7 +43,7 @@ function Entete() {
         <div className="flex flex-1 justify-center">
           <RechercheRapide />
         </div>
-        <nav className="flex items-center">
+        <nav className="flex items-center" aria-label="Navigation principale">
           <NavLink to="/" end className={lien}>
             <span className="hidden sm:inline">Rechercher</span>
             <span className="sm:hidden" aria-label="Rechercher">⌕</span>
@@ -118,7 +118,7 @@ export default function App() {
         {erreur ? (
           <div className="mx-auto max-w-xl px-4 py-24 text-center">
             <p className="font-display text-2xl font-bold">Base de données introuvable</p>
-            <p className="mt-2 text-asphalte-500">{erreur}</p>
+            <p className="mt-2 text-asphalte-500 dark:text-asphalte-400">{erreur}</p>
           </div>
         ) : chargement ? (
           <div className="flex justify-center py-32" role="status">

@@ -60,7 +60,7 @@ export default function Resultats() {
           <div className="flex items-center justify-between pt-4">
             <h2 className="font-display text-2xl font-bold uppercase">Filtres</h2>
             <div className="flex items-center gap-3">
-              <button type="button" onClick={() => maj(CRITERES_VIDES)} className="text-sm text-asphalte-500 hover:text-accent-600">
+              <button type="button" onClick={() => maj(CRITERES_VIDES)} className="text-sm text-asphalte-500 dark:text-asphalte-400 hover:text-accent-600">
                 Réinitialiser
               </button>
               <button type="button" onClick={() => setPanneauMobile(false)} className="bouton-principal px-3 py-1 text-sm lg:hidden">
@@ -69,7 +69,7 @@ export default function Resultats() {
             </div>
           </div>
           <FormulaireCriteres criteres={criteres} onChange={(c) => maj(c)} disposition="panneau" />
-          <Link to={`/?${criteresVersParams(criteres)}`} className="my-4 block text-center text-sm text-accent-600 hover:underline">
+          <Link to={`/?${criteresVersParams(criteres)}`} className="my-4 block text-center text-sm text-accent-600 dark:text-accent-400 hover:underline">
             ← Modifier sur la page d'accueil
           </Link>
         </aside>
@@ -81,7 +81,7 @@ export default function Resultats() {
               <h1 className="font-display text-3xl font-bold uppercase leading-none">
                 {tries.length.toLocaleString("fr-FR")} résultat{tries.length > 1 ? "s" : ""}
               </h1>
-              <p className="mt-1 text-sm text-asphalte-500">
+              <p className="mt-1 text-sm text-asphalte-500 dark:text-asphalte-400">
                 {modelesDistincts} modèle{modelesDistincts > 1 ? "s" : ""} · {actifs} critère{actifs > 1 ? "s" : ""} actif{actifs > 1 ? "s" : ""}
                 {criteres.neuveUniquement ? " · modèles neufs uniquement" : ""}
               </p>
@@ -90,7 +90,7 @@ export default function Resultats() {
               Filtres ({actifs})
             </button>
             <label className="flex items-center gap-2 text-sm">
-              <span className="text-asphalte-500">Trier par</span>
+              <span className="text-asphalte-500 dark:text-asphalte-400">Trier par</span>
               <select value={tri} onChange={(e) => maj(criteres, e.target.value as Tri)} className="champ py-1.5">
                 {TRIS.map((t) => (
                   <option key={t.valeur} value={t.valeur}>
@@ -112,7 +112,7 @@ export default function Resultats() {
           {tries.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-asphalte-300 bg-white p-10 text-center dark:border-asphalte-700 dark:bg-asphalte-900">
               <p className="font-display text-2xl font-bold">Aucune voiture ne correspond à tous vos critères</p>
-              <p className="mx-auto mt-2 max-w-lg text-asphalte-500">
+              <p className="mx-auto mt-2 max-w-lg text-asphalte-500 dark:text-asphalte-400">
                 Le budget, le nombre de places et l'énergie sont des critères éliminatoires. Essayez d'en assouplir un.
               </p>
               {conseil ? (

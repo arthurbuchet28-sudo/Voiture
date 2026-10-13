@@ -45,7 +45,7 @@ export function PhotoVoiture({ photo, carrosserie, alt, className = "", credit =
             className={`h-full w-full object-cover transition-opacity duration-500 ${charge ? "opacity-100" : "opacity-0"}`}
           />
         ) : (
-          <div className="flex h-full w-full flex-col items-center justify-center gap-1 p-6 text-asphalte-400 dark:text-asphalte-600">
+          <div className="flex h-full w-full flex-col items-center justify-center gap-1 p-6 text-asphalte-500 dark:text-asphalte-400">
             <Silhouette type={carrosserie} className="w-3/4 max-w-[260px]" />
             <span className="text-[11px] uppercase tracking-wider">Photo libre indisponible</span>
           </div>

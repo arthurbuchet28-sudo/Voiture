@@ -29,7 +29,7 @@ export function RechercheRapide() {
 
   return (
     <div ref={ref} className="relative w-full max-w-md">
-      <svg viewBox="0 0 24 24" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-asphalte-400" fill="none" stroke="currentColor" strokeWidth="2.2">
+      <svg viewBox="0 0 24 24" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-asphalte-500 dark:text-asphalte-400" fill="none" stroke="currentColor" strokeWidth="2.2">
         <circle cx="11" cy="11" r="7" />
         <path d="m20 20-3.5-3.5" strokeLinecap="round" />
       </svg>
@@ -58,7 +58,7 @@ export function RechercheRapide() {
       />
       {ouvert && q && (
         <ul className="absolute z-50 mt-2 w-full overflow-hidden rounded-xl border border-asphalte-200 bg-white shadow-carte-survol dark:border-asphalte-700 dark:bg-asphalte-900">
-          {suggestions.length === 0 && <li className="px-4 py-3 text-sm text-asphalte-500">Aucun modèle trouvé.</li>}
+          {suggestions.length === 0 && <li className="px-4 py-3 text-sm text-asphalte-500 dark:text-asphalte-400">Aucun modèle trouvé.</li>}
           {suggestions.map((m, i) => (
             <li key={m.id}>
               <button
@@ -69,7 +69,7 @@ export function RechercheRapide() {
               >
                 <LogoMarque marque={marqueParId.get(m.marqueId)} taille={22} />
                 <span className="flex-1 truncate font-medium">{nomComplet(m)}</span>
-                <span className="shrink-0 text-xs text-asphalte-400">{periode(m.anneeDebut, m.anneeFin)}</span>
+                <span className="shrink-0 text-xs text-asphalte-500 dark:text-asphalte-400">{periode(m.anneeDebut, m.anneeFin)}</span>
               </button>
             </li>
           ))}
