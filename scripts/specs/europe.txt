@@ -1,0 +1,293 @@
+# ===================== SKODA =====================
+@ Škoda | Fabia | citadine | B | 2021- | B N G A R Bl V | 5 5 380
+1.0 MPI 80 BVM5 | E | 80 | M | T | 19490 | 5.3 | 120 | - | 15.5 | 179 | 1130
+1.0 TSI 95 BVM5 | E | 95 | M | T | 21490 | 5.1 | 116 | - | 10.6 | 195 | 1167
+1.0 TSI 116 DSG7 | E | 116 | A | T | 25590 | 5.4 | 122 | - | 9.7 | 205 | 1200
+@ Škoda | Kamiq | SUV | B | 2019- | B N G A R Bl | 5 5 400
+1.0 TSI 95 BVM5 | E | 95 | M | T | 25490 | 5.5 | 125 | - | 11.4 | 185 | 1240
+1.0 TSI 116 DSG7 | E | 116 | A | T | 29390 | 5.8 | 131 | - | 10.4 | 195 | 1275
+@ Škoda | Scala | berline | C | 2019- | B N G A R Bl | 5 5 467
+1.0 TSI 116 BVM6 | E | 116 | M | T | 25990 | 5.4 | 123 | - | 9.8 | 201 | 1240
+@ Škoda | Octavia | berline | C | 2020- | B N G A R Bl V | 5 5 600
+1.5 TSI 115 BVM6 | E | 115 | M | T | 31690 | 5.5 | 124 | - | 10.2 | 208 | 1345
+2.0 TDI 115 BVM6 | D | 115 | M | T | 33190 | 4.3 | 113 | - | 10.4 | 207 | 1435
+2.0 TDI 150 DSG7 | D | 150 | A | T | 38190 | 4.5 | 117 | - | 8.6 | 228 | 1480
+RS 2.0 TSI 265 DSG7 | E | 265 | A | T | 49990 | 7.0 | 158 | - | 6.4 | 250 | 1495
+@ Škoda | Octavia Combi | break | C | 2020- | B N G A R Bl V | 5 5 640
+1.5 TSI 115 BVM6 | E | 115 | M | T | 32790 | 5.6 | 127 | - | 10.4 | 205 | 1370
+2.0 TDI 150 DSG7 | D | 150 | A | T | 39290 | 4.6 | 120 | - | 8.8 | 225 | 1505
+@ Škoda | Superb | berline | D | 2024- | B N G A Bl | 5 5 645
+1.5 TSI 150 DSG7 | E | 150 | A | T | 44990 | 5.9 | 134 | - | 9.6 | 222 | 1550
+2.0 TDI 150 DSG7 | D | 150 | A | T | 47290 | 4.9 | 128 | - | 9.4 | 222 | 1620
+@ Škoda | Superb Combi | break | D | 2024- | B N G A Bl | 5 5 690
+2.0 TDI 150 DSG7 | D | 150 | A | T | 48490 | 5.0 | 131 | - | 9.4 | 222 | 1650
+iV 204 DSG6 | PHEV | 204 | A | T | 52290 | 0.4 | 9 | 128 | 8.1 | 220 | 1860 | c=510
+@ Škoda | Karoq | SUV | C | 2017- | B N G A R Bl V | 5 5 521
+1.5 TSI 150 DSG7 | E | 150 | A | T | 38990 | 6.4 | 145 | - | 8.9 | 208 | 1415
+2.0 TDI 150 DSG7 | D | 150 | A | T | 40990 | 5.4 | 141 | - | 9.4 | 201 | 1530
+@ Škoda | Kodiaq | SUV | D | 2024- | B N G A R Bl V | 7 5 340
+1.5 TSI 150 DSG7 | E | 150 | A | T | 44990 | 6.5 | 147 | - | 9.7 | 209 | 1660 | pl=5 c=910
+2.0 TDI 150 DSG7 | D | 150 | A | T | 47990 | 5.3 | 138 | - | 9.9 | 207 | 1740
+iV 204 DSG6 | PHEV | 204 | A | T | 49990 | 0.4 | 9 | 123 | 8.4 | 210 | 1940 | pl=5 c=745
+@ Škoda | Elroq | SUV | C | 2024- | B N G A Bl V | 5 5 470
+50 170 | EV | 170 | A | P | 34990 | 16.0 | 0 | 375 | 9.0 | 160 | 1860
+85 286 | EV | 286 | A | P | 44990 | 15.6 | 0 | 580 | 6.6 | 180 | 2065
+@ Škoda | Enyaq | SUV | C | 2020- | B N G A Bl V | 5 5 585
+60 204 | EV | 204 | A | P | 45990 | 15.7 | 0 | 430 | 8.0 | 160 | 2050
+85 286 | EV | 286 | A | P | 50990 | 15.5 | 0 | 590 | 6.7 | 180 | 2130
+85x 286 4x4 | EV | 286 | A | 4 | 53990 | 16.9 | 0 | 549 | 6.6 | 180 | 2240
+
+# ===================== SEAT / CUPRA =====================
+@ Seat | Ibiza | citadine | B | 2017- | B N G A R Bl | 5 5 355
+1.0 MPI 80 BVM5 | E | 80 | M | T | 18490 | 5.4 | 122 | - | 15.4 | 175 | 1130
+1.0 TSI 95 BVM5 | E | 95 | M | T | 20390 | 5.2 | 118 | - | 10.6 | 191 | 1165
+1.0 TSI 115 DSG7 | E | 115 | A | T | 24290 | 5.5 | 124 | - | 9.7 | 199 | 1215
+@ Seat | Arona | SUV | B | 2017- | B N G A R Bl | 5 5 400
+1.0 TSI 95 BVM5 | E | 95 | M | T | 22990 | 5.7 | 129 | - | 11.3 | 179 | 1225
+1.0 TSI 115 DSG7 | E | 115 | A | T | 26890 | 5.9 | 133 | - | 10.5 | 191 | 1265
+@ Seat | Leon | berline | C | 2020- | B N G A R Bl | 5 5 380
+1.5 TSI 115 BVM6 | E | 115 | M | T | 28990 | 5.5 | 124 | - | 9.9 | 203 | 1300
+1.5 eTSI 150 DSG7 | E | 150 | A | T | 33490 | 5.4 | 123 | - | 8.5 | 220 | 1380
+e-Hybrid 204 DSG6 | PHEV | 204 | A | T | 39990 | 0.3 | 7 | 128 | 7.6 | 220 | 1610 | c=270
+@ Seat | Leon Sportstourer | break | C | 2020- | B N G A Bl | 5 5 620
+1.5 TSI 115 BVM6 | E | 115 | M | T | 30290 | 5.6 | 127 | - | 10.1 | 201 | 1340
+@ Seat | Ateca | SUV | C | 2016- | B N G A R Bl | 5 5 510
+1.5 TSI 150 DSG7 | E | 150 | A | T | 36990 | 6.6 | 150 | - | 8.5 | 201 | 1440
+2.0 TDI 150 DSG7 | D | 150 | A | T | 39990 | 5.4 | 141 | - | 8.9 | 198 | 1550
+@ Cupra | Born | berline | C | 2021- | B N G Bl | 5 5 385
+170 | EV | 170 | A | P | 38990 | 15.5 | 0 | 365 | 8.0 | 160 | 1810
+VZ 326 | EV | 326 | A | P | 48990 | 15.3 | 0 | 593 | 5.7 | 200 | 1955
+@ Cupra | Formentor | SUV | C | 2020- | B N G A Bl | 5 5 450
+1.5 TSI 150 DSG7 | E | 150 | A | T | 39990 | 6.5 | 147 | - | 8.9 | 204 | 1450
+e-Hybrid 204 DSG6 | PHEV | 204 | A | T | 45990 | 0.4 | 9 | 125 | 7.8 | 210 | 1690 | c=345
+VZ 2.0 TSI 333 4Drive | E | 333 | A | 4 | 61990 | 8.6 | 195 | - | 4.9 | 250 | 1640 | c=420
+@ Cupra | Leon | berline | C | 2020- | B N G A Bl | 5 5 380
+1.5 eTSI 150 DSG7 | E | 150 | A | T | 36990 | 5.5 | 125 | - | 8.6 | 220 | 1385
+VZ 2.0 TSI 300 DSG7 | E | 300 | A | T | 49990 | 7.6 | 173 | - | 5.7 | 250 | 1475
+@ Cupra | Terramar | SUV | C | 2024- | B N G A Bl | 5 5 540
+1.5 eTSI 150 DSG7 | E | 150 | A | T | 41990 | 6.4 | 145 | - | 9.1 | 205 | 1580
+e-Hybrid 272 DSG6 | PHEV | 272 | A | T | 49990 | 0.4 | 10 | 120 | 7.1 | 215 | 1850 | c=400
+@ Cupra | Tavascan | SUV | C | 2024- | B N G A Bl | 5 5 540
+Endurance 286 | EV | 286 | A | P | 52990 | 16.0 | 0 | 568 | 6.8 | 180 | 2130
+VZ 340 4Drive | EV | 340 | A | 4 | 58990 | 17.2 | 0 | 522 | 5.5 | 180 | 2240
+
+# ===================== FIAT / ABARTH =====================
+@ Fiat | 500 | citadine | A | 2020- | B N G R Bl V | 4 3 185
+Hybrid 70 BVM6 | E | 70 | M | T | 17990 | 5.3 | 120 | - | 13.8 | 167 | 940
+@ Fiat | 500e | citadine | A | 2020- | B N G R Bl V Ro | 4 3 185
+95 ch 23,8 kWh | EV | 95 | A | T | 26900 | 13.0 | 0 | 190 | 9.5 | 135 | 1290
+118 ch 42 kWh | EV | 118 | A | T | 31900 | 14.0 | 0 | 320 | 9.0 | 150 | 1365
+@ Fiat | Grande Panda | citadine | B | 2025- | B N G R Bl J | 5 5 412
+Hybrid 110 e-DCT6 | HEV | 110 | A | T | 18900 | 5.4 | 122 | - | 11.2 | 160 | 1265
+Électrique 113 | EV | 113 | A | T | 24900 | 16.5 | 0 | 320 | 11.0 | 132 | 1530 | c=361
+@ Fiat | Panda | citadine | A | 2012- | B N G R Bl J V | 5 5 225
+Hybrid 70 BVM6 | E | 70 | M | T | 15990 | 5.3 | 120 | - | 14.7 | 155 | 980
+@ Fiat | 600 | SUV | B | 2023- | B N G R Bl O | 5 5 385
+Hybrid 100 e-DCT6 | HEV | 100 | A | T | 26990 | 5.3 | 120 | - | 10.9 | 180 | 1320
+600e 156 | EV | 156 | A | T | 34900 | 15.1 | 0 | 409 | 9.0 | 150 | 1520 | c=360
+@ Fiat | Tipo | berline | C | 2015- | B N G R Bl | 5 5 440
+1.5 Hybrid 130 DCT | E | 130 | A | T | 26990 | 5.6 | 127 | - | 9.7 | 200 | 1355
+@ Fiat | Doblò | monospace | - | 2022- | B N G Bl | 5 5 775
+1.5 BlueHDi 100 BVM6 | D | 100 | M | T | 26990 | 5.3 | 140 | - | 12.9 | 170 | 1450
+Électrique 136 | EV | 136 | A | T | 36990 | 21.0 | 0 | 320 | 11.2 | 135 | 1758
+@ Fiat | Ducato | utilitaire | - | 2006- | B G | 3 4 11500
+2.2 MultiJet 140 BVM6 | D | 140 | M | T | 38000 | 8.2 | 215 | - | - | 155 | 2050
+@ Abarth | 500e | citadine | A | 2023- | B N G R J | 4 3 185
+155 ch 42 kWh | EV | 155 | A | T | 37900 | 18.0 | 0 | 252 | 7.0 | 155 | 1410
+@ Abarth | 600e | SUV | B | 2024- | B N G R | 5 5 360
+Scorpionissima 280 | EV | 280 | A | T | 46900 | 17.9 | 0 | 334 | 5.85 | 200 | 1640
+@ Abarth | 695 | citadine | A | 2016-2024 | B N G R J | 4 3 185
+1.4 T-Jet 180 BVM5 | E | 180 | M | T | 29900 | 7.0 | 158 | - | 6.7 | 225 | 1045
+
+# ===================== ALFA ROMEO =====================
+@ Alfa Romeo | Junior | SUV | B | 2024- | B N G R Bl V | 5 5 415
+Ibrida 145 e-DCT6 | HEV | 145 | A | T | 29900 | 5.0 | 115 | - | 8.9 | 206 | 1380
+Elettrica 156 | EV | 156 | A | T | 39500 | 15.5 | 0 | 410 | 9.0 | 150 | 1545 | c=400
+Veloce 280 | EV | 280 | A | T | 47500 | 17.5 | 0 | 334 | 5.9 | 200 | 1590 | c=400
+@ Alfa Romeo | Tonale | SUV | C | 2022- | B N G R Bl V | 5 5 500
+1.5 Hybrid 160 VGT TCT7 | E | 160 | A | T | 39900 | 6.2 | 141 | - | 8.8 | 210 | 1525
+Plug-in Hybrid Q4 280 | PHEV | 280 | A | 4 | 52500 | 1.2 | 28 | 69 | 6.2 | 206 | 1835 | c=385
+@ Alfa Romeo | Giulia | berline | D | 2016- | B N G R Bl | 5 4 480
+2.0 Turbo 280 Q4 | E | 280 | A | 4 | 56000 | 8.3 | 188 | - | 5.2 | 240 | 1605
+Quadrifoglio 520 | E | 520 | A | P | 110000 | 10.9 | 248 | - | 3.9 | 307 | 1580
+@ Alfa Romeo | Stelvio | SUV | D | 2017- | B N G R Bl | 5 5 525
+2.0 Turbo 280 Q4 | E | 280 | A | 4 | 62000 | 9.0 | 205 | - | 5.7 | 230 | 1735
+2.2 Diesel 210 Q4 | D | 210 | A | 4 | 61000 | 6.3 | 167 | - | 6.6 | 215 | 1810
+
+# ===================== LANCIA =====================
+@ Lancia | Ypsilon | citadine | B | 2024- | B N G Bl | 5 5 352
+Hybrid 110 e-DCT6 | HEV | 110 | A | T | 24900 | 4.8 | 110 | - | 10.1 | 190 | 1250
+Électrique 156 | EV | 156 | A | T | 34900 | 14.3 | 0 | 403 | 8.2 | 150 | 1575
+
+# ===================== JEEP =====================
+@ Jeep | Avenger | SUV | B | 2022- | B N G R Bl J | 5 5 380
+1.2 Turbo 100 BVM6 | E | 100 | M | T | 24900 | 5.7 | 129 | - | 10.6 | 184 | 1180
+e-Hybrid 100 e-DCT6 | HEV | 100 | A | T | 28400 | 5.0 | 114 | - | 10.6 | 184 | 1305
+4xe e-Hybrid 136 | HEV | 136 | A | 4 | 33000 | 5.7 | 129 | - | 9.8 | 194 | 1420 | c=340
+Électrique 156 | EV | 156 | A | T | 37500 | 15.9 | 0 | 400 | 9.0 | 150 | 1520 | c=355
+@ Jeep | Compass | SUV | C | 2025- | B N G R Bl | 5 5 550
+e-Hybrid 145 e-DCT6 | HEV | 145 | A | T | 37900 | 5.6 | 127 | - | 10.0 | 195 | -
+Électrique 213 | EV | 213 | A | T | 44900 | 17.4 | 0 | 500 | 8.9 | 170 | -
+@ Jeep | Renegade | SUV | B | 2014- | B N G R Bl V J | 5 5 330
+4xe 240 PHEV | PHEV | 240 | A | 4 | 39900 | 2.1 | 47 | 44 | 7.1 | 199 | 1780
+@ Jeep | Wrangler | SUV | - | 2018- | B N G R Bl V J O | 5 5 533
+4xe 380 PHEV | PHEV | 380 | A | 4 | 74900 | 3.5 | 79 | 48 | 6.4 | 156 | 2290
+@ Jeep | Grand Cherokee | SUV | E | 2022- | B N G Bl | 5 5 1067
+4xe 380 PHEV | PHEV | 380 | A | 4 | 89900 | 2.9 | 65 | 53 | 6.3 | 180 | 2575
+
+# ===================== MASERATI / FERRARI / LAMBORGHINI =====================
+@ Maserati | Grecale | SUV | D | 2022- | B N G A Bl | 5 5 535
+GT 300 Mild Hybrid | E | 300 | A | 4 | 82000 | 9.3 | 212 | - | 5.6 | 240 | 1870
+Folgore 557 | EV | 557 | A | 4 | 115000 | 22.5 | 0 | 500 | 4.1 | 220 | 2481
+@ Maserati | MC20 | coupé | - | 2020- | B N G R Bl J | 2 2 150
+MC20 630 | E | 630 | A | P | 245000 | 11.6 | 262 | - | 2.9 | 325 | 1500
+@ Maserati | GranTurismo | coupé | F | 2023- | B N G R Bl | 4 2 270
+Modena 490 | E | 490 | A | 4 | 185000 | 10.9 | 247 | - | 3.9 | 302 | 1795
+Folgore 761 | EV | 761 | A | 4 | 205000 | 22.3 | 0 | 450 | 2.7 | 320 | 2260
+@ Ferrari | 296 GTB | coupé | - | 2021- | B N G R J Bl | 2 2 -
+296 GTB 830 | PHEV | 830 | A | P | 285000 | 6.4 | 149 | 25 | 2.9 | 330 | 1470
+@ Ferrari | Roma | coupé | - | 2020- | B N G R Bl | 4 2 272
+Roma 620 | E | 620 | A | P | 230000 | 11.2 | 255 | - | 3.4 | 320 | 1570
+@ Ferrari | Purosangue | SUV | - | 2022- | B N G R Bl | 4 5 473
+V12 725 | E | 725 | A | 4 | 410000 | 17.3 | 393 | - | 3.3 | 310 | 2033
+@ Ferrari | SF90 Stradale | coupé | - | 2019- | B N G R J | 2 2 74
+SF90 1000 | PHEV | 1000 | A | 4 | 450000 | 6.1 | 154 | 25 | 2.5 | 340 | 1570
+@ Ferrari | 12Cilindri | coupé | - | 2024- | B N G R Bl | 2 2 270
+V12 830 | E | 830 | A | P | 400000 | 15.0 | 340 | - | 2.9 | 340 | 1560
+@ Lamborghini | Urus | SUV | - | 2018- | B N G R J V O | 5 5 616
+SE 800 | PHEV | 800 | A | 4 | 270000 | 3.5 | 80 | 60 | 3.4 | 312 | 2505
+@ Lamborghini | Revuelto | coupé | - | 2023- | B N G R J V O | 2 2 -
+V12 1015 | PHEV | 1015 | A | 4 | 520000 | 11.9 | 276 | 10 | 2.5 | 350 | 1772
+@ Lamborghini | Huracán | coupé | - | 2014-2024 | B N G R J V O | 2 2 100
+EVO 640 | E | 640 | A | 4 | 230000 | 14.0 | 332 | - | 2.9 | 325 | 1422
+@ Lamborghini | Temerario | coupé | - | 2024- | B N G R J V O | 2 2 -
+V8 hybride 920 | PHEV | 920 | A | 4 | 340000 | - | - | - | 2.7 | 343 | 1690
+
+# ===================== VOLVO / POLESTAR =====================
+@ Volvo | EX30 | SUV | B | 2023- | B N G A Bl | 5 5 318
+Single Motor 272 | EV | 272 | A | P | 36950 | 16.7 | 0 | 476 | 5.3 | 180 | 1850
+Twin Motor Performance 428 | EV | 428 | A | 4 | 49950 | 17.5 | 0 | 445 | 3.6 | 180 | 1960
+@ Volvo | XC40 | SUV | C | 2017- | B N G A Bl V | 5 5 452
+B3 163 | E | 163 | A | T | 42950 | 7.0 | 159 | - | 9.0 | 180 | 1650
+B4 197 | E | 197 | A | T | 45950 | 7.1 | 161 | - | 8.4 | 180 | 1690
+@ Volvo | EX40 | SUV | C | 2021- | B N G A Bl V | 5 5 419
+Single Motor 238 | EV | 238 | A | P | 49950 | 17.4 | 0 | 476 | 7.3 | 180 | 2015
+Twin Motor 408 | EV | 408 | A | 4 | 57950 | 19.3 | 0 | 535 | 4.8 | 180 | 2185
+@ Volvo | XC60 | SUV | D | 2017- | B N G A Bl | 5 5 483
+B5 AWD 250 | E | 250 | A | 4 | 60950 | 8.0 | 182 | - | 6.9 | 180 | 1900
+T6 Recharge 350 | PHEV | 350 | A | 4 | 67950 | 1.0 | 22 | 81 | 5.7 | 180 | 2140 | c=468
+@ Volvo | XC90 | SUV | E | 2015- | B N G A Bl | 7 5 302
+B5 AWD 250 | E | 250 | A | 4 | 85950 | 9.0 | 205 | - | 7.7 | 180 | 2085
+T8 Recharge 455 | PHEV | 455 | A | 4 | 95950 | 1.2 | 28 | 71 | 5.4 | 180 | 2350
+@ Volvo | EX90 | SUV | E | 2024- | B N G A Bl | 7 5 310
+Twin Motor 408 | EV | 408 | A | 4 | 102500 | 20.9 | 0 | 614 | 5.9 | 180 | 2818
+@ Volvo | V60 | break | D | 2018- | B N G A Bl | 5 5 519
+B4 197 | E | 197 | A | T | 53450 | 6.7 | 152 | - | 7.9 | 180 | 1745
+T6 Recharge 350 | PHEV | 350 | A | 4 | 65950 | 0.9 | 20 | 87 | 5.4 | 180 | 2090 | c=481
+@ Volvo | V90 | break | E | 2016- | B N G A Bl | 5 5 560
+T6 Recharge 350 | PHEV | 350 | A | 4 | 74950 | 0.9 | 20 | 87 | 5.5 | 180 | 2140
+@ Volvo | ES90 | berline | E | 2025- | B N G A Bl | 5 5 446
+Single Motor 333 | EV | 333 | A | P | 79900 | - | 0 | 700 | 6.6 | 180 | -
+@ Polestar | Polestar 2 | berline | D | 2020- | B N G A Bl | 5 5 405
+Standard range single motor 272 | EV | 272 | A | P | 49900 | 15.0 | 0 | 532 | 6.4 | 205 | 1990
+Long range dual motor 421 | EV | 421 | A | 4 | 57900 | 16.5 | 0 | 592 | 4.5 | 205 | 2160
+@ Polestar | Polestar 3 | SUV | E | 2024- | B N G A Bl | 5 5 484
+Long range dual motor 489 | EV | 489 | A | 4 | 89900 | 21.2 | 0 | 631 | 5.0 | 210 | 2584
+@ Polestar | Polestar 4 | SUV | D | 2024- | B N G A Bl | 5 5 526
+Long range single motor 272 | EV | 272 | A | P | 62900 | 17.6 | 0 | 610 | 7.1 | 200 | 2232
+Long range dual motor 544 | EV | 544 | A | 4 | 70900 | 19.1 | 0 | 590 | 3.8 | 200 | 2355
+
+# ===================== FORD =====================
+@ Ford | Fiesta | citadine | B | 2017-2023 | B N G R Bl | 5 5 292
+1.0 EcoBoost 100 mHEV | E | 100 | M | T | 21000 | 5.2 | 118 | - | 10.4 | 183 | 1124
+@ Ford | Puma | SUV | B | 2019- | B N G R Bl V | 5 5 456
+1.0 EcoBoost 125 mHEV BVM6 | E | 125 | M | T | 28900 | 5.4 | 122 | - | 9.8 | 191 | 1280
+1.0 EcoBoost 155 mHEV Powershift | E | 155 | A | T | 33450 | 5.8 | 131 | - | 8.9 | 205 | 1325
+Gen-E 168 | EV | 168 | A | T | 36990 | 13.1 | 0 | 376 | 8.0 | 160 | 1563 | c=523
+@ Ford | Focus | berline | C | 2018-2025 | B N G R Bl | 5 5 392
+1.0 EcoBoost 125 mHEV BVM6 | E | 125 | M | T | 30200 | 5.4 | 123 | - | 10.2 | 200 | 1350
+1.0 EcoBoost 155 mHEV Powershift | E | 155 | A | T | 33950 | 5.6 | 127 | - | 9.0 | 213 | 1400
+@ Ford | Kuga | SUV | C | 2019- | B N G R Bl | 5 5 526
+1.5 EcoBoost 150 | E | 150 | M | T | 36950 | 6.9 | 157 | - | 9.7 | 200 | 1550
+2.5 Hybrid 183 FHEV | HEV | 183 | A | T | 41950 | 5.4 | 123 | - | 8.9 | 196 | 1680 | c=412
+2.5 PHEV 243 | PHEV | 243 | A | T | 45950 | 0.9 | 21 | 69 | 7.3 | 200 | 1844 | c=412
+@ Ford | Explorer EV | SUV | C | 2024- | B N G Bl | 5 5 470
+Standard Range RWD 170 | EV | 170 | A | P | 43990 | 15.3 | 0 | 378 | 8.0 | 160 | 1985
+Extended Range RWD 286 | EV | 286 | A | P | 49990 | 14.7 | 0 | 602 | 6.4 | 180 | 2090
+@ Ford | Capri | SUV | C | 2024- | B N G Bl J | 5 5 572
+Extended Range RWD 286 | EV | 286 | A | P | 53990 | 14.9 | 0 | 627 | 6.4 | 180 | 2098
+@ Ford | Mustang | coupé | - | 2024- | B N G R Bl J | 4 2 408
+GT 5.0 V8 446 BVM6 | E | 446 | M | P | 63990 | 12.4 | 282 | - | 4.9 | 250 | 1838
+@ Ford | Mustang Mach-E | SUV | D | 2021- | B N G R Bl | 5 5 402
+Standard Range RWD 269 | EV | 269 | A | P | 51990 | 16.5 | 0 | 440 | 6.3 | 180 | 1990
+Extended Range AWD 351 | EV | 351 | A | 4 | 62990 | 18.1 | 0 | 550 | 5.1 | 180 | 2195
+@ Ford | Ranger | pick-up | - | 2022- | B N G R Bl O | 5 4 -
+2.0 EcoBlue 170 4x4 | D | 170 | M | 4 | 46000 | 8.4 | 222 | - | 10.4 | 180 | 2200
+3.0 V6 EcoBlue 240 4x4 | D | 240 | A | 4 | 55000 | 9.8 | 257 | - | 8.6 | 180 | 2350
+Raptor 3.0 EcoBoost 292 | E | 292 | A | 4 | 80000 | 13.8 | 315 | - | 7.9 | 180 | 2475
+PHEV 281 4x4 | PHEV | 281 | A | 4 | 60000 | 3.1 | 70 | 45 | 7.4 | 180 | 2500
+@ Ford | Tourneo Connect | monospace | - | 2022- | B N G Bl | 5 5 1076
+1.5 EcoBoost 114 BVM6 | E | 114 | M | T | 31000 | 6.8 | 154 | - | 11.4 | 182 | 1540
+@ Ford | Tourneo Custom | monospace | - | 2023- | B N G | 8 4 -
+2.0 EcoBlue 150 | D | 150 | A | T | 52000 | 7.2 | 188 | - | - | 175 | 2200
+@ Ford | Transit Custom | utilitaire | - | 2023- | B G | 3 4 5800
+2.0 EcoBlue 136 BVM6 | D | 136 | M | T | 38000 | 7.0 | 184 | - | - | 165 | 2000
+E-Transit Custom 217 | EV | 217 | A | P | 55000 | 25.0 | 0 | 337 | - | 180 | 2600
+
+# ===================== LAND ROVER / JAGUAR =====================
+@ Land Rover | Defender | SUV | - | 2020- | B N G V Bl | 5 5 786
+110 D250 MHEV | D | 250 | A | 4 | 82000 | 8.8 | 231 | - | 8.0 | 188 | 2350
+110 P400e PHEV | PHEV | 404 | A | 4 | 95000 | 3.3 | 74 | 51 | 5.6 | 209 | 2550
+90 D250 MHEV | D | 250 | A | 4 | 78000 | 8.5 | 224 | - | 7.9 | 188 | 2250 | p=3 c=297
+@ Land Rover | Range Rover Evoque | SUV | C | 2019- | B N G A Bl | 5 5 472
+P250 | E | 249 | A | 4 | 57000 | 8.3 | 189 | - | 7.5 | 230 | 1840
+P300e PHEV | PHEV | 309 | A | 4 | 62000 | 1.5 | 33 | 62 | 6.4 | 213 | 2085 | c=472
+@ Land Rover | Range Rover Velar | SUV | D | 2017- | B N G A Bl | 5 5 558
+P400e PHEV | PHEV | 404 | A | 4 | 80000 | 1.2 | 27 | 64 | 5.4 | 217 | 2260
+@ Land Rover | Range Rover Sport | SUV | E | 2022- | B N G A Bl | 5 5 647
+P460e PHEV | PHEV | 460 | A | 4 | 125000 | 0.8 | 18 | 113 | 5.4 | 225 | 2735
+D300 MHEV | D | 300 | A | 4 | 110000 | 7.5 | 196 | - | 6.6 | 225 | 2395
+@ Land Rover | Range Rover | SUV | F | 2022- | B N G A Bl | 5 5 818
+P550e PHEV | PHEV | 550 | A | 4 | 170000 | 0.9 | 20 | 108 | 4.6 | 242 | 2810
+@ Land Rover | Discovery Sport | SUV | C | 2014- | B N G A Bl | 7 5 157
+P300e PHEV | PHEV | 309 | A | 4 | 60000 | 1.4 | 32 | 62 | 6.2 | 209 | 2130 | pl=5 c=897
+D200 MHEV | D | 204 | A | 4 | 56000 | 6.6 | 174 | - | 8.9 | 200 | 1950
+@ Jaguar | F-Pace | SUV | D | 2016- | B N G A Bl | 5 5 613
+P400e PHEV | PHEV | 404 | A | 4 | 78000 | 1.4 | 32 | 61 | 5.3 | 240 | 2160 | c=520
+@ Jaguar | E-Pace | SUV | C | 2017-2024 | B N G A Bl | 5 5 577
+P300e PHEV | PHEV | 309 | A | 4 | 58000 | 1.5 | 34 | 60 | 6.5 | 216 | 2080
+@ Jaguar | I-Pace | SUV | D | 2018-2024 | B N G A Bl | 5 5 656
+EV400 | EV | 400 | A | 4 | 86000 | 22.0 | 0 | 470 | 4.8 | 200 | 2208
+
+# ===================== LUXE / SPORT BRITANNIQUES =====================
+@ Aston Martin | Vantage | coupé | - | 2024- | B N G V J | 2 2 346
+V8 665 | E | 665 | A | P | 190000 | 12.0 | 274 | - | 3.5 | 325 | 1605
+@ Aston Martin | DB12 | coupé | - | 2023- | B N G V Bl | 4 2 262
+V8 680 | E | 680 | A | P | 230000 | 12.2 | 276 | - | 3.6 | 325 | 1685
+@ Aston Martin | DBX | SUV | - | 2020- | B N G V Bl | 5 5 638
+DBX707 | E | 707 | A | 4 | 260000 | 14.5 | 323 | - | 3.3 | 310 | 2245
+@ Bentley | Continental GT | coupé | F | 2024- | B N G V Bl | 4 2 260
+Speed 782 | PHEV | 782 | A | 4 | 300000 | 1.0 | 23 | 81 | 3.2 | 335 | 2459
+@ Bentley | Bentayga | SUV | F | 2015- | B N G V Bl | 5 5 484
+V8 550 | E | 550 | A | 4 | 220000 | 13.3 | 302 | - | 4.5 | 290 | 2416
+@ Rolls-Royce | Spectre | coupé | F | 2023- | B N G Bl | 4 2 -
+Spectre 585 | EV | 585 | A | 4 | 450000 | 23.6 | 0 | 530 | 4.5 | 250 | 2975
+@ Rolls-Royce | Cullinan | SUV | F | 2018- | B N G Bl | 5 5 600
+V12 571 | E | 571 | A | 4 | 380000 | 15.0 | 341 | - | 5.2 | 250 | 2660
+@ McLaren | Artura | coupé | - | 2021- | B N G O Bl | 2 2 160
+Artura 700 | PHEV | 700 | A | P | 245000 | 4.6 | 104 | 33 | 3.0 | 330 | 1498
+@ McLaren | 750S | coupé | - | 2023- | B N G O | 2 2 150
+750S 750 | E | 750 | A | P | 330000 | 12.2 | 276 | - | 2.8 | 332 | 1389
+@ Lotus | Emira | coupé | - | 2022- | B N G J V | 2 2 208
+V6 405 BVM6 | E | 405 | M | P | 100000 | 11.2 | 254 | - | 4.3 | 290 | 1405
+2.0 Turbo 365 DCT | E | 365 | A | P | 95000 | 9.5 | 216 | - | 4.4 | 275 | 1446
+@ Lotus | Eletre | SUV | - | 2023- | B N G J V | 5 5 688
+Eletre 612 | EV | 612 | A | 4 | 112000 | 22.1 | 0 | 600 | 4.5 | 258 | 2520
+
+# ===================== AUTRES EUROPÉENS =====================
+@ Lynk & Co | 01 | SUV | C | 2021- | N Bl | 5 5 466
+PHEV 261 | PHEV | 261 | A | T | 45000 | 0.9 | 20 | 69 | 7.5 | 210 | 1750
+@ Lynk & Co | 02 | SUV | C | 2025- | N | 5 5 -
+Électrique 272 | EV | 272 | A | P | 40000 | - | 0 | 445 | 5.9 | 180 | -
+@ Microlino | Microlino | citadine | A | 2022- | B R Bl V J | 2 1 230
+10,5 kWh | EV | 17 | A | P | 18990 | 9.0 | 0 | 177 | - | 90 | 513

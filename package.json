@@ -1,0 +1,34 @@
+{
+  "name": "ma-voiture-ideale",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "data": "tsx scripts/run-all.ts",
+    "data:wikidata": "tsx scripts/fetch-wikidata.ts",
+    "data:nhtsa": "tsx scripts/fetch-nhtsa.ts",
+    "data:commons": "tsx scripts/fetch-commons.ts",
+    "data:merge": "tsx scripts/merge.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.21"
+  }
+}
