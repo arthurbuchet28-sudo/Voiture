@@ -1,7 +1,7 @@
 // Chargement unique des fichiers JSON statiques (public/data) et mise à disposition via un contexte.
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { Marque, Modele } from "../types";
-import { cle } from "./texte";
+import { creerIndex, type ResultatRecherche } from "./recherche";
 
 export interface Stats {
   dateMiseAJour: string;
@@ -23,7 +23,7 @@ interface Donnees {
   /** Marques ayant au moins un modèle, avec le nombre de modèles avec fiche technique. */
   marquesActives: { marque: Marque; nbFiches: number; nbModeles: number }[];
   nomComplet: (m: Modele) => string;
-  rechercherModeles: (q: string, limite?: number) => Modele[];
+  rechercherModeles: (q: string, limite?: number) => ResultatRecherche;
 }
 
 const Contexte = createContext<Donnees | null>(null);
@@ -66,22 +66,7 @@ export function FournisseurDonnees({ children }: { children: ReactNode }) {
       .filter((m) => compte.has(m.id))
       .map((m) => ({ marque: m, nbFiches: compte.get(m.id)!.f, nbModeles: compte.get(m.id)!.n }));
     const nomComplet = (m: Modele) => `${marqueParId.get(m.marqueId)?.nom ?? m.marqueId} ${m.nom}`;
-    const index = modeles.map((m) => ({ m, k: cle(nomComplet(m)), kn: cle(m.nom) }));
-    const rechercherModeles = (q: string, limite = 8) => {
-      const k = cle(q);
-      if (!k) return [];
-      return index
-        .filter((x) => x.k.includes(k) || x.kn.startsWith(k))
-        .sort(
-          (a, b) =>
-            Number(b.k.startsWith(k) || b.kn.startsWith(k)) - Number(a.k.startsWith(k) || a.kn.startsWith(k)) ||
-            Number(b.m.versions.length > 0) - Number(a.m.versions.length > 0) ||
-            Number(a.m.anneeFin !== null) - Number(b.m.anneeFin !== null) ||
-            a.k.length - b.k.length,
-        )
-        .slice(0, limite)
-        .map((x) => x.m);
-    };
+    const rechercherModeles = creerIndex(modeles, marqueParId);
     return { chargement, erreur, modeles, marques, stats, marqueParId, modeleParId, marquesActives, nomComplet, rechercherModeles };
   }, [modeles, marques, stats, chargement, erreur]);
 
