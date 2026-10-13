@@ -14,6 +14,7 @@ npm install
 npm run dev        # http://localhost:5173
 npm run build      # build de production dans dist/ (vérifie aussi les types)
 npm run preview    # sert le build
+npm test           # tests unitaires (score, URL, cohérence de la base)
 ```
 
 La base de données est déjà générée et versionnée (`public/data/`). Le site marche donc dès
@@ -33,6 +34,8 @@ Vous pouvez aussi lancer chaque étape séparément :
 | `npm run data:nhtsa` | API NHTSA vPIC : marques et modèles (voitures, MPV, camionnettes) | `scripts/cache/nhtsa.json` |
 | `npm run data:commons` | API Wikimedia Commons : auteur, licence et miniature des photos, logos, recherche de photos complémentaires par modèle | `scripts/cache/commons.json` |
 | `npm run data:merge` | Fusion, dédoublonnage, sortie finale | `public/data/voitures.json`, `marques.json`, `stats.json` |
+
+| `npm run data:verifier` | Contrôle de cohérence des fiches (bornes, CO2 ↔ consommation, accélération ↔ poids/puissance, doublons…) | rapport dans le terminal |
 
 `scripts/cache/` n'est pas versionné. `data:merge` peut être relancé seul tant que le cache existe,
 par exemple après avoir modifié une fiche technique.
@@ -92,6 +95,26 @@ D'après `public/data/stats.json` (collecte du 13/10/2026) :
 - 465 marques, dont 351 avec au moins un modèle et 251 avec un logo ;
 - 2 950 modèles, dont 520 avec fiche technique (918 versions) et 2 430 issus de Wikidata seulement ;
 - 2 830 modèles avec au moins une photo (513 des 520 fiches techniques), soit 4 015 photos.
+
+### Contrôle qualité
+
+`npm run data:verifier` relit toutes les fiches et signale :
+- **erreurs** (bloquantes en CI) : valeur hors bornes, électrique avec du CO2 ou en boîte manuelle,
+  version en double, années incohérentes ;
+- **alertes** : CO2 qui s'écarte de plus de 15 % de la consommation (facteurs par carburant),
+  0-100 km/h peu plausible pour le rapport poids/puissance, prix incohérent avec la puissance,
+  autonomie manquante.
+
+Les alertes actuelles (6) portent toutes sur des hypercars hybrides rechargeables, dont la
+consommation est élevée en réalité.
+
+## Intégration continue et déploiement
+
+- `.github/workflows/ci.yml` : à chaque push, contrôle des fiches, tests et build.
+- `.github/workflows/pages.yml` : publication sur GitHub Pages, **lancée à la main seulement**
+  (onglet Actions > « Déployer sur GitHub Pages »). Il faut d'abord choisir « GitHub Actions » comme
+  source dans Settings > Pages. Le site est alors servi sous `/<nom-du-dépôt>/` : la variable
+  `BASE_URL` règle le chemin, et `404.html` permet d'ouvrir directement les URL des pages.
 
 ## Fonctionnalités
 

@@ -12,7 +12,9 @@
     "data:wikidata": "tsx scripts/fetch-wikidata.ts",
     "data:nhtsa": "tsx scripts/fetch-nhtsa.ts",
     "data:commons": "tsx scripts/fetch-commons.ts",
-    "data:merge": "tsx scripts/merge.ts"
+    "data:merge": "tsx scripts/merge.ts",
+    "data:verifier": "tsx scripts/verifier.ts",
+    "test": "vitest run"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -29,6 +31,7 @@
     "tailwindcss": "^3.4.17",
     "tsx": "^4.19.2",
     "typescript": "~5.6.3",
-    "vite": "^5.4.21"
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
   }
 }
