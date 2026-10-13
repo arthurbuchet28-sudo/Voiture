@@ -10,6 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Ma Voiture Idéale</title>
     <script>
+      // Après une mise à jour du site, une page gardée en cache peut réclamer d'anciens fichiers
+      // qui n'existent plus (page blanche). Dans ce cas : on rafraîchit le cache et on recharge, une fois.
+      window.addEventListener(
+        "error",
+        function (e) {
+          var t = e.target;
+          if (!t || (t.tagName !== "SCRIPT" && t.tagName !== "LINK")) return;
+          try {
+            if (sessionStorage.getItem("rechargement-auto")) return;
+            sessionStorage.setItem("rechargement-auto", "1");
+          } catch (x) {}
+          fetch(location.href, { cache: "reload" }).finally(function () {
+            location.reload();
+          });
+        },
+        true,
+      );
+      // Filet de sécurité : si l'application n'a rien affiché au bout de 10 s, on le dit.
+      setTimeout(function () {
+        var r = document.getElementById("root");
+        if (r && !r.hasChildNodes())
+          r.innerHTML =
+            '<div style="font-family:system-ui,sans-serif;max-width:32rem;margin:6rem auto;padding:0 1rem;text-align:center">' +
+            "<h1>Le site n'a pas pu se charger</h1><p>Une nouvelle version vient peut-être d'être publiée.</p>" +
+            '<button onclick="location.reload()" style="margin-top:1rem;padding:.6rem 1.2rem;border-radius:.6rem;border:0;background:#d6360c;color:#fff;font-weight:700;cursor:pointer">Recharger la page</button></div>';
+      }, 10000);
+    </script>
+    <script>
       // Applique le thème avant le rendu pour éviter un flash.
       try {
         const t = localStorage.getItem("theme");
