@@ -140,7 +140,7 @@ export const S3Special: React.FC<SceneProps> = ({t, w}) => {
 						<Photon x={restX} y={restY + H / 2 - restPh * H} />
 					</g>
 					<T x={restX} y={restY + H / 2 + 70} size={32} textAnchor="middle" fill={C.cyan}>
-						au repos · {restTicks} tics
+						au repos · {restTicks} {restTicks > 1 ? "tics" : "tic"}
 					</T>
 				</g>
 
@@ -152,7 +152,7 @@ export const S3Special: React.FC<SceneProps> = ({t, w}) => {
 				</g>
 				<g opacity={oMove}>
 					<T x={1190} y={restY + H / 2 + 70} size={32} textAnchor="middle" fill={C.orange}>
-						en mouvement · {moveTicks} tics
+						en mouvement · {moveTicks} {moveTicks > 1 ? "tics" : "tic"}
 					</T>
 					<path d={`M 1050 ${restY - H / 2 - 60} l 260 0 m -24 -14 l 24 14 l -24 14`} stroke={C.orange} strokeWidth={4} fill="none" />
 				</g>

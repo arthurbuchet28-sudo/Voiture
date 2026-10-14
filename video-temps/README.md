@@ -20,8 +20,9 @@ npm install
 npm run tts                      # voix off + timings + sous-titres .srt
 ./tts/musique.sh                 # musique d'ambiance
 npm run studio                   # prévisualisation interactive
-npm run render                   # out/le-temps.mp4 (sans sous-titres incrustés)
-npm run render:sub               # out/le-temps-sous-titres.mp4 (sous-titres incrustés)
+npx remotion render Temps out/le-temps-brut.mp4 --codec=h264 --crf=18
+./tts/finalise.sh               # out/le-temps.mp4 (piste de sous-titres activable)
+                                 #  + out/le-temps-sous-titres.mp4 (sous-titres incrustés)
 ```
 
 Le fichier `.srt` peut aussi être chargé dans n'importe quel lecteur (VLC, YouTube…) pour
