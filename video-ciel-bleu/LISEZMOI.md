@@ -3,6 +3,8 @@
 Vidéo explicative de 2 min 02 s, 1920×1080, 30 i/s, MP4 (H.264 + AAC).
 
 - `pourquoi-le-ciel-est-bleu.mp4` : la vidéo finale.
+- `miniature.png` (1280×720, format YouTube) et `miniature-1920.png` (1920×1080) : la miniature,
+  générée par `miniature.py` dans le même style graphique.
 - `script_voix.py` : texte de la voix off, scène par scène.
 - `generer_voix.py` : génère un MP3 par scène avec edge-tts (voix fr-FR-DeniseNeural, débit +8 %)
   et l'horodatage de chaque mot (`build/audio/timings.json`).
