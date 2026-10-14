@@ -150,3 +150,8 @@ src/
   components/ formulaire, curseur double, cartes, photos, silhouettes, comparateur…
   pages/      Accueil, Resultats, FicheModele, Comparateur, Favoris
 ```
+
+## Vidéo : le moteur W16
+
+Le dossier [`w16-video/`](w16-video/) contient un projet Remotion indépendant (vidéo explicative de
+75 s sur le moteur W16). Voir [`w16-video/README.md`](w16-video/README.md).
