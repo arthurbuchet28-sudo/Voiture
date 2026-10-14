@@ -1,0 +1,3680 @@
+[
+ {
+  "id": "s1",
+  "audio": "audio/s1.mp3",
+  "audioDuration": 28.608,
+  "lead": 0.3,
+  "duration": 29.508000000000003,
+  "words": [
+   {
+    "w": "Imaginez",
+    "t": 0.403
+   },
+   {
+    "w": "deux",
+    "t": 0.995
+   },
+   {
+    "w": "jumeaux",
+    "t": 1.179
+   },
+   {
+    "w": "Léa",
+    "t": 1.85
+   },
+   {
+    "w": "et",
+    "t": 2.113
+   },
+   {
+    "w": "Hugo",
+    "t": 2.192
+   },
+   {
+    "w": "Le",
+    "t": 3.497
+   },
+   {
+    "w": "jour",
+    "t": 3.734
+   },
+   {
+    "w": "de",
+    "t": 3.958
+   },
+   {
+    "w": "leurs",
+    "t": 4.05
+   },
+   {
+    "w": "trente",
+    "t": 4.182
+   },
+   {
+    "w": "ans",
+    "t": 4.537
+   },
+   {
+    "w": "Léa",
+    "t": 5.076
+   },
+   {
+    "w": "embarque",
+    "t": 5.313
+   },
+   {
+    "w": "dans",
+    "t": 5.642
+   },
+   {
+    "w": "une",
+    "t": 5.761
+   },
+   {
+    "w": "fusée",
+    "t": 5.958
+   },
+   {
+    "w": "qui",
+    "t": 6.287
+   },
+   {
+    "w": "file",
+    "t": 6.471
+   },
+   {
+    "w": "à",
+    "t": 6.682
+   },
+   {
+    "w": "près",
+    "t": 6.747
+   },
+   {
+    "w": "de",
+    "t": 6.945
+   },
+   {
+    "w": "quatre-vingt-sept",
+    "t": 7.076
+   },
+   {
+    "w": "pour",
+    "t": 7.747
+   },
+   {
+    "w": "cent",
+    "t": 7.945
+   },
+   {
+    "w": "de",
+    "t": 8.089
+   },
+   {
+    "w": "la",
+    "t": 8.195
+   },
+   {
+    "w": "vitesse",
+    "t": 8.3
+   },
+   {
+    "w": "de",
+    "t": 8.695
+   },
+   {
+    "w": "la",
+    "t": 8.813
+   },
+   {
+    "w": "lumière",
+    "t": 8.879
+   },
+   {
+    "w": "Hugo",
+    "t": 10.418
+   },
+   {
+    "w": "lui",
+    "t": 11.076
+   },
+   {
+    "w": "reste",
+    "t": 11.616
+   },
+   {
+    "w": "sur",
+    "t": 11.945
+   },
+   {
+    "w": "Terre",
+    "t": 12.129
+   },
+   {
+    "w": "Quand",
+    "t": 13.537
+   },
+   {
+    "w": "Léa",
+    "t": 13.708
+   },
+   {
+    "w": "revient",
+    "t": 13.918
+   },
+   {
+    "w": "Hugo",
+    "t": 14.721
+   },
+   {
+    "w": "a",
+    "t": 14.984
+   },
+   {
+    "w": "fêté",
+    "t": 15.076
+   },
+   {
+    "w": "dix",
+    "t": 15.379
+   },
+   {
+    "w": "anniversaires",
+    "t": 15.524
+   },
+   {
+    "w": "mais",
+    "t": 16.537
+   },
+   {
+    "w": "Léa",
+    "t": 16.668
+   },
+   {
+    "w": "n'en",
+    "t": 16.892
+   },
+   {
+    "w": "a",
+    "t": 17.024
+   },
+   {
+    "w": "vécu",
+    "t": 17.142
+   },
+   {
+    "w": "que",
+    "t": 17.445
+   },
+   {
+    "w": "cinq",
+    "t": 17.629
+   },
+   {
+    "w": "Ce",
+    "t": 18.997
+   },
+   {
+    "w": "n'est",
+    "t": 19.221
+   },
+   {
+    "w": "pas",
+    "t": 19.353
+   },
+   {
+    "w": "de",
+    "t": 19.511
+   },
+   {
+    "w": "la",
+    "t": 19.616
+   },
+   {
+    "w": "science-fiction",
+    "t": 19.721
+   },
+   {
+    "w": "c'est",
+    "t": 20.629
+   },
+   {
+    "w": "ce",
+    "t": 20.774
+   },
+   {
+    "w": "que",
+    "t": 20.918
+   },
+   {
+    "w": "prédit",
+    "t": 21.063
+   },
+   {
+    "w": "la",
+    "t": 21.366
+   },
+   {
+    "w": "physique",
+    "t": 21.484
+   },
+   {
+    "w": "et",
+    "t": 22.261
+   },
+   {
+    "w": "ce",
+    "t": 22.326
+   },
+   {
+    "w": "que",
+    "t": 22.484
+   },
+   {
+    "w": "mesurent",
+    "t": 22.616
+   },
+   {
+    "w": "nos",
+    "t": 22.932
+   },
+   {
+    "w": "horloges",
+    "t": 23.05
+   },
+   {
+    "w": "atomiques",
+    "t": 23.418
+   },
+   {
+    "w": "Alors",
+    "t": 25.05
+   },
+   {
+    "w": "le",
+    "t": 25.839
+   },
+   {
+    "w": "temps",
+    "t": 25.958
+   },
+   {
+    "w": "est-il",
+    "t": 26.129
+   },
+   {
+    "w": "vraiment",
+    "t": 26.405
+   },
+   {
+    "w": "le",
+    "t": 26.734
+   },
+   {
+    "w": "même",
+    "t": 26.839
+   },
+   {
+    "w": "pour",
+    "t": 27.103
+   },
+   {
+    "w": "tout",
+    "t": 27.326
+   },
+   {
+    "w": "le",
+    "t": 27.484
+   },
+   {
+    "w": "monde",
+    "t": 27.576
+   }
+  ],
+  "cues": [
+   {
+    "text": "Imaginez deux jumeaux, Léa et Hugo.",
+    "start": 0.403,
+    "end": 2.587
+   },
+   {
+    "text": "Le jour de leurs trente ans,",
+    "start": 3.497,
+    "end": 4.695
+   },
+   {
+    "text": "Léa embarque dans une fusée qui file à près de",
+    "start": 5.076,
+    "end": 7.063
+   },
+   {
+    "text": "quatre-vingt-sept pour cent de la vitesse de la lumière.",
+    "start": 7.076,
+    "end": 9.497
+   },
+   {
+    "text": "Hugo, lui, reste sur Terre.",
+    "start": 10.418,
+    "end": 12.616
+   },
+   {
+    "text": "Quand Léa revient, Hugo a fêté dix anniversaires…",
+    "start": 13.537,
+    "end": 16.3
+   },
+   {
+    "text": "mais Léa n'en a vécu que cinq.",
+    "start": 16.537,
+    "end": 18.076
+   },
+   {
+    "text": "Ce n'est pas de la science-fiction : c'est ce que prédit la physique,",
+    "start": 18.997,
+    "end": 21.945
+   },
+   {
+    "text": "et ce que mesurent nos horloges atomiques.",
+    "start": 22.261,
+    "end": 24.129
+   },
+   {
+    "text": "Alors, le temps est-il vraiment le même pour tout le monde ?",
+    "start": 25.05,
+    "end": 27.984
+   }
+  ]
+ },
+ {
+  "id": "s2",
+  "audio": "audio/s2.mp3",
+  "audioDuration": 25.344,
+  "lead": 0.3,
+  "duration": 26.244000000000003,
+  "words": [
+   {
+    "w": "Pendant",
+    "t": 0.403
+   },
+   {
+    "w": "plus",
+    "t": 0.732
+   },
+   {
+    "w": "de",
+    "t": 0.903
+   },
+   {
+    "w": "deux",
+    "t": 1.061
+   },
+   {
+    "w": "siècles",
+    "t": 1.232
+   },
+   {
+    "w": "la",
+    "t": 1.929
+   },
+   {
+    "w": "réponse",
+    "t": 2.074
+   },
+   {
+    "w": "semblait",
+    "t": 2.482
+   },
+   {
+    "w": "évidente",
+    "t": 2.811
+   },
+   {
+    "w": "Pour",
+    "t": 4.405
+   },
+   {
+    "w": "Isaac",
+    "t": 4.629
+   },
+   {
+    "w": "Newton",
+    "t": 4.984
+   },
+   {
+    "w": "le",
+    "t": 5.918
+   },
+   {
+    "w": "temps",
+    "t": 6.05
+   },
+   {
+    "w": "s'écoule",
+    "t": 6.221
+   },
+   {
+    "w": "de",
+    "t": 6.629
+   },
+   {
+    "w": "façon",
+    "t": 6.774
+   },
+   {
+    "w": "uniforme",
+    "t": 7.089
+   },
+   {
+    "w": "indépendamment",
+    "t": 7.997
+   },
+   {
+    "w": "de",
+    "t": 8.603
+   },
+   {
+    "w": "tout",
+    "t": 8.747
+   },
+   {
+    "w": "Une",
+    "t": 9.932
+   },
+   {
+    "w": "seconde",
+    "t": 10.155
+   },
+   {
+    "w": "à",
+    "t": 10.563
+   },
+   {
+    "w": "Paris",
+    "t": 10.629
+   },
+   {
+    "w": "vaut",
+    "t": 10.945
+   },
+   {
+    "w": "une",
+    "t": 11.103
+   },
+   {
+    "w": "seconde",
+    "t": 11.221
+   },
+   {
+    "w": "à",
+    "t": 11.629
+   },
+   {
+    "w": "Tokyo",
+    "t": 11.695
+   },
+   {
+    "w": "sur",
+    "t": 12.445
+   },
+   {
+    "w": "la",
+    "t": 12.603
+   },
+   {
+    "w": "Lune",
+    "t": 12.695
+   },
+   {
+    "w": "ou",
+    "t": 12.892
+   },
+   {
+    "w": "au",
+    "t": 12.958
+   },
+   {
+    "w": "bout",
+    "t": 13.063
+   },
+   {
+    "w": "de",
+    "t": 13.221
+   },
+   {
+    "w": "la",
+    "t": 13.326
+   },
+   {
+    "w": "galaxie",
+    "t": 13.445
+   },
+   {
+    "w": "Le",
+    "t": 14.958
+   },
+   {
+    "w": "temps",
+    "t": 15.182
+   },
+   {
+    "w": "serait",
+    "t": 15.366
+   },
+   {
+    "w": "un",
+    "t": 15.642
+   },
+   {
+    "w": "grand",
+    "t": 15.8
+   },
+   {
+    "w": "métronome",
+    "t": 16.011
+   },
+   {
+    "w": "cosmique",
+    "t": 16.471
+   },
+   {
+    "w": "le",
+    "t": 17.353
+   },
+   {
+    "w": "même",
+    "t": 17.458
+   },
+   {
+    "w": "pour",
+    "t": 17.708
+   },
+   {
+    "w": "tous",
+    "t": 17.905
+   },
+   {
+    "w": "une",
+    "t": 18.589
+   },
+   {
+    "w": "simple",
+    "t": 18.708
+   },
+   {
+    "w": "toile",
+    "t": 19.063
+   },
+   {
+    "w": "de",
+    "t": 19.326
+   },
+   {
+    "w": "fond",
+    "t": 19.471
+   },
+   {
+    "w": "Cette",
+    "t": 20.668
+   },
+   {
+    "w": "idée",
+    "t": 21.011
+   },
+   {
+    "w": "colle",
+    "t": 21.208
+   },
+   {
+    "w": "parfaitement",
+    "t": 21.445
+   },
+   {
+    "w": "à",
+    "t": 21.997
+   },
+   {
+    "w": "notre",
+    "t": 22.063
+   },
+   {
+    "w": "intuition",
+    "t": 22.339
+   },
+   {
+    "w": "et",
+    "t": 23.103
+   },
+   {
+    "w": "pourtant",
+    "t": 23.168
+   },
+   {
+    "w": "elle",
+    "t": 23.971
+   },
+   {
+    "w": "est",
+    "t": 24.076
+   },
+   {
+    "w": "fausse",
+    "t": 24.142
+   }
+  ],
+  "cues": [
+   {
+    "text": "Pendant plus de deux siècles, la réponse semblait évidente.",
+    "start": 0.403,
+    "end": 3.482
+   },
+   {
+    "text": "Pour Isaac Newton, le temps s'écoule de façon uniforme, indépendamment de tout.",
+    "start": 4.405,
+    "end": 9.024
+   },
+   {
+    "text": "Une seconde à Paris vaut une seconde à Tokyo, sur la Lune ou au bout de la galaxie.",
+    "start": 9.932,
+    "end": 14.05
+   },
+   {
+    "text": "Le temps serait un grand métronome cosmique, le même pour tous,",
+    "start": 14.958,
+    "end": 18.339
+   },
+   {
+    "text": "une simple toile de fond.",
+    "start": 18.589,
+    "end": 19.747
+   },
+   {
+    "text": "Cette idée colle parfaitement à notre intuition…",
+    "start": 20.668,
+    "end": 22.905
+   },
+   {
+    "text": "et pourtant, elle est fausse.",
+    "start": 23.103,
+    "end": 24.721
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "audio": "audio/s3.mp3",
+  "audioDuration": 40.536,
+  "lead": 0.3,
+  "duration": 41.436,
+  "words": [
+   {
+    "w": "En",
+    "t": 0.403
+   },
+   {
+    "w": "mille",
+    "t": 0.574
+   },
+   {
+    "w": "neuf",
+    "t": 0.732
+   },
+   {
+    "w": "cent",
+    "t": 0.876
+   },
+   {
+    "w": "cinq",
+    "t": 1.034
+   },
+   {
+    "w": "un",
+    "t": 1.758
+   },
+   {
+    "w": "jeune",
+    "t": 1.837
+   },
+   {
+    "w": "employé",
+    "t": 2.047
+   },
+   {
+    "w": "du",
+    "t": 2.455
+   },
+   {
+    "w": "bureau",
+    "t": 2.587
+   },
+   {
+    "w": "des",
+    "t": 2.863
+   },
+   {
+    "w": "brevets",
+    "t": 2.982
+   },
+   {
+    "w": "de",
+    "t": 3.258
+   },
+   {
+    "w": "Berne",
+    "t": 3.403
+   },
+   {
+    "w": "Albert",
+    "t": 4.087
+   },
+   {
+    "w": "Einstein",
+    "t": 4.442
+   },
+   {
+    "w": "part",
+    "t": 5.376
+   },
+   {
+    "w": "d'un",
+    "t": 5.547
+   },
+   {
+    "w": "fait",
+    "t": 5.705
+   },
+   {
+    "w": "étrange",
+    "t": 5.889
+   },
+   {
+    "w": "la",
+    "t": 6.666
+   },
+   {
+    "w": "vitesse",
+    "t": 6.784
+   },
+   {
+    "w": "de",
+    "t": 7.166
+   },
+   {
+    "w": "la",
+    "t": 7.284
+   },
+   {
+    "w": "lumière",
+    "t": 7.363
+   },
+   {
+    "w": "est",
+    "t": 7.718
+   },
+   {
+    "w": "la",
+    "t": 7.758
+   },
+   {
+    "w": "même",
+    "t": 7.863
+   },
+   {
+    "w": "pour",
+    "t": 8.139
+   },
+   {
+    "w": "tous",
+    "t": 8.363
+   },
+   {
+    "w": "les",
+    "t": 8.521
+   },
+   {
+    "w": "observateurs",
+    "t": 8.639
+   },
+   {
+    "w": "quelle",
+    "t": 9.876
+   },
+   {
+    "w": "que",
+    "t": 10.074
+   },
+   {
+    "w": "soit",
+    "t": 10.245
+   },
+   {
+    "w": "leur",
+    "t": 10.416
+   },
+   {
+    "w": "vitesse",
+    "t": 10.561
+   },
+   {
+    "w": "Construisons",
+    "t": 12.168
+   },
+   {
+    "w": "une",
+    "t": 12.787
+   },
+   {
+    "w": "horloge",
+    "t": 12.932
+   },
+   {
+    "w": "très",
+    "t": 13.247
+   },
+   {
+    "w": "simple",
+    "t": 13.471
+   },
+   {
+    "w": "un",
+    "t": 14.037
+   },
+   {
+    "w": "grain",
+    "t": 14.116
+   },
+   {
+    "w": "de",
+    "t": 14.339
+   },
+   {
+    "w": "lumière",
+    "t": 14.445
+   },
+   {
+    "w": "qui",
+    "t": 14.813
+   },
+   {
+    "w": "rebondit",
+    "t": 14.984
+   },
+   {
+    "w": "entre",
+    "t": 15.458
+   },
+   {
+    "w": "deux",
+    "t": 15.721
+   },
+   {
+    "w": "miroirs",
+    "t": 15.839
+   },
+   {
+    "w": "Chaque",
+    "t": 17.379
+   },
+   {
+    "w": "aller-retour",
+    "t": 17.761
+   },
+   {
+    "w": "c'est",
+    "t": 18.682
+   },
+   {
+    "w": "un",
+    "t": 18.826
+   },
+   {
+    "w": "tic",
+    "t": 18.984
+   },
+   {
+    "w": "Maintenant",
+    "t": 20.405
+   },
+   {
+    "w": "faisons",
+    "t": 21.353
+   },
+   {
+    "w": "avancer",
+    "t": 21.668
+   },
+   {
+    "w": "cette",
+    "t": 22.089
+   },
+   {
+    "w": "horloge",
+    "t": 22.313
+   },
+   {
+    "w": "Vue",
+    "t": 23.8
+   },
+   {
+    "w": "de",
+    "t": 24.024
+   },
+   {
+    "w": "l'extérieur",
+    "t": 24.129
+   },
+   {
+    "w": "la",
+    "t": 25.221
+   },
+   {
+    "w": "lumière",
+    "t": 25.339
+   },
+   {
+    "w": "doit",
+    "t": 25.682
+   },
+   {
+    "w": "suivre",
+    "t": 25.879
+   },
+   {
+    "w": "une",
+    "t": 26.182
+   },
+   {
+    "w": "trajectoire",
+    "t": 26.3
+   },
+   {
+    "w": "en",
+    "t": 26.905
+   },
+   {
+    "w": "diagonale",
+    "t": 26.971
+   },
+   {
+    "w": "donc",
+    "t": 27.866
+   },
+   {
+    "w": "plus",
+    "t": 28.116
+   },
+   {
+    "w": "longue",
+    "t": 28.274
+   },
+   {
+    "w": "Comme",
+    "t": 29.603
+   },
+   {
+    "w": "elle",
+    "t": 29.853
+   },
+   {
+    "w": "ne",
+    "t": 29.932
+   },
+   {
+    "w": "peut",
+    "t": 30.063
+   },
+   {
+    "w": "pas",
+    "t": 30.221
+   },
+   {
+    "w": "aller",
+    "t": 30.379
+   },
+   {
+    "w": "plus",
+    "t": 30.629
+   },
+   {
+    "w": "vite",
+    "t": 30.813
+   },
+   {
+    "w": "chaque",
+    "t": 31.458
+   },
+   {
+    "w": "tic",
+    "t": 31.734
+   },
+   {
+    "w": "dure",
+    "t": 31.945
+   },
+   {
+    "w": "plus",
+    "t": 32.142
+   },
+   {
+    "w": "longtemps",
+    "t": 32.313
+   },
+   {
+    "w": "À",
+    "t": 33.682
+   },
+   {
+    "w": "quatre-vingt-sept",
+    "t": 33.853
+   },
+   {
+    "w": "pour",
+    "t": 34.524
+   },
+   {
+    "w": "cent",
+    "t": 34.721
+   },
+   {
+    "w": "de",
+    "t": 34.866
+   },
+   {
+    "w": "la",
+    "t": 34.971
+   },
+   {
+    "w": "vitesse",
+    "t": 35.076
+   },
+   {
+    "w": "de",
+    "t": 35.458
+   },
+   {
+    "w": "la",
+    "t": 35.576
+   },
+   {
+    "w": "lumière",
+    "t": 35.668
+   },
+   {
+    "w": "il",
+    "t": 36.537
+   },
+   {
+    "w": "s'écoule",
+    "t": 36.695
+   },
+   {
+    "w": "deux",
+    "t": 37.076
+   },
+   {
+    "w": "fois",
+    "t": 37.261
+   },
+   {
+    "w": "moins",
+    "t": 37.445
+   },
+   {
+    "w": "vite",
+    "t": 37.642
+   },
+   {
+    "w": "c'est",
+    "t": 38.182
+   },
+   {
+    "w": "exactement",
+    "t": 38.339
+   },
+   {
+    "w": "le",
+    "t": 38.905
+   },
+   {
+    "w": "voyage",
+    "t": 39.011
+   },
+   {
+    "w": "de",
+    "t": 39.392
+   },
+   {
+    "w": "Léa",
+    "t": 39.511
+   }
+  ],
+  "cues": [
+   {
+    "text": "En mille neuf cent cinq, un jeune employé du bureau des brevets de Berne,",
+    "start": 0.403,
+    "end": 3.732
+   },
+   {
+    "text": "Albert Einstein, part d'un fait étrange :",
+    "start": 4.087,
+    "end": 6.455
+   },
+   {
+    "text": "la vitesse de la lumière est la même pour tous les observateurs,",
+    "start": 6.666,
+    "end": 9.587
+   },
+   {
+    "text": "quelle que soit leur vitesse.",
+    "start": 9.876,
+    "end": 11.245
+   },
+   {
+    "text": "Construisons une horloge très simple :",
+    "start": 12.168,
+    "end": 13.813
+   },
+   {
+    "text": "un grain de lumière qui rebondit entre deux miroirs.",
+    "start": 14.037,
+    "end": 16.471
+   },
+   {
+    "text": "Chaque aller-retour, c'est un tic.",
+    "start": 17.379,
+    "end": 19.484
+   },
+   {
+    "text": "Maintenant, faisons avancer cette horloge.",
+    "start": 20.405,
+    "end": 22.879
+   },
+   {
+    "text": "Vue de l'extérieur, la lumière doit suivre une trajectoire en diagonale,",
+    "start": 23.8,
+    "end": 27.563
+   },
+   {
+    "text": "donc plus longue.",
+    "start": 27.866,
+    "end": 28.682
+   },
+   {
+    "text": "Comme elle ne peut pas aller plus vite, chaque tic dure plus longtemps.",
+    "start": 29.603,
+    "end": 32.761
+   },
+   {
+    "text": "À quatre-vingt-sept pour cent de la vitesse de la lumière,",
+    "start": 33.682,
+    "end": 36.195
+   },
+   {
+    "text": "il s'écoule deux fois moins vite : c'est exactement le voyage de Léa.",
+    "start": 36.537,
+    "end": 39.905
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "audio": "audio/s4.mp3",
+  "audioDuration": 34.8,
+  "lead": 0.3,
+  "duration": 35.699999999999996,
+  "words": [
+   {
+    "w": "La",
+    "t": 0.403
+   },
+   {
+    "w": "preuve",
+    "t": 0.639
+   },
+   {
+    "w": "tombe",
+    "t": 0.968
+   },
+   {
+    "w": "littéralement",
+    "t": 1.232
+   },
+   {
+    "w": "du",
+    "t": 1.811
+   },
+   {
+    "w": "ciel",
+    "t": 1.955
+   },
+   {
+    "w": "Quand",
+    "t": 3.326
+   },
+   {
+    "w": "les",
+    "t": 3.497
+   },
+   {
+    "w": "rayons",
+    "t": 3.616
+   },
+   {
+    "w": "cosmiques",
+    "t": 3.905
+   },
+   {
+    "w": "percutent",
+    "t": 4.339
+   },
+   {
+    "w": "la",
+    "t": 4.761
+   },
+   {
+    "w": "haute",
+    "t": 4.879
+   },
+   {
+    "w": "atmosphère",
+    "t": 5.037
+   },
+   {
+    "w": "vers",
+    "t": 6.024
+   },
+   {
+    "w": "quinze",
+    "t": 6.247
+   },
+   {
+    "w": "kilomètres",
+    "t": 6.511
+   },
+   {
+    "w": "d'altitude",
+    "t": 7.05
+   },
+   {
+    "w": "ils",
+    "t": 7.997
+   },
+   {
+    "w": "produisent",
+    "t": 8.129
+   },
+   {
+    "w": "des",
+    "t": 8.511
+   },
+   {
+    "w": "muons",
+    "t": 8.629
+   },
+   {
+    "w": "des",
+    "t": 9.234
+   },
+   {
+    "w": "cousins",
+    "t": 9.366
+   },
+   {
+    "w": "lourds",
+    "t": 9.708
+   },
+   {
+    "w": "de",
+    "t": 9.905
+   },
+   {
+    "w": "l'électron",
+    "t": 9.997
+   },
+   {
+    "w": "Un",
+    "t": 11.432
+   },
+   {
+    "w": "muon",
+    "t": 11.616
+   },
+   {
+    "w": "vit",
+    "t": 11.853
+   },
+   {
+    "w": "en",
+    "t": 12.024
+   },
+   {
+    "w": "moyenne",
+    "t": 12.116
+   },
+   {
+    "w": "deux",
+    "t": 12.511
+   },
+   {
+    "w": "microsecondes",
+    "t": 12.655
+   },
+   {
+    "w": "Même",
+    "t": 14.471
+   },
+   {
+    "w": "lancé",
+    "t": 14.787
+   },
+   {
+    "w": "à",
+    "t": 15.168
+   },
+   {
+    "w": "quatre-vingt-dix-neuf",
+    "t": 15.261
+   },
+   {
+    "w": "virgule",
+    "t": 16.037
+   },
+   {
+    "w": "huit",
+    "t": 16.366
+   },
+   {
+    "w": "pour",
+    "t": 16.603
+   },
+   {
+    "w": "cent",
+    "t": 16.8
+   },
+   {
+    "w": "de",
+    "t": 16.945
+   },
+   {
+    "w": "la",
+    "t": 17.05
+   },
+   {
+    "w": "vitesse",
+    "t": 17.155
+   },
+   {
+    "w": "de",
+    "t": 17.55
+   },
+   {
+    "w": "la",
+    "t": 17.668
+   },
+   {
+    "w": "lumière",
+    "t": 17.761
+   },
+   {
+    "w": "il",
+    "t": 18.616
+   },
+   {
+    "w": "ne",
+    "t": 18.708
+   },
+   {
+    "w": "devrait",
+    "t": 18.8
+   },
+   {
+    "w": "parcourir",
+    "t": 19.089
+   },
+   {
+    "w": "qu'environ",
+    "t": 19.668
+   },
+   {
+    "w": "six",
+    "t": 20.129
+   },
+   {
+    "w": "cents",
+    "t": 20.339
+   },
+   {
+    "w": "mètres",
+    "t": 20.524
+   },
+   {
+    "w": "avant",
+    "t": 20.8
+   },
+   {
+    "w": "de",
+    "t": 20.997
+   },
+   {
+    "w": "se",
+    "t": 21.142
+   },
+   {
+    "w": "désintégrer",
+    "t": 21.274
+   },
+   {
+    "w": "Pourtant",
+    "t": 22.918
+   },
+   {
+    "w": "on",
+    "t": 23.668
+   },
+   {
+    "w": "en",
+    "t": 23.734
+   },
+   {
+    "w": "détecte",
+    "t": 23.866
+   },
+   {
+    "w": "en",
+    "t": 24.287
+   },
+   {
+    "w": "masse",
+    "t": 24.366
+   },
+   {
+    "w": "au",
+    "t": 24.603
+   },
+   {
+    "w": "sol",
+    "t": 24.682
+   },
+   {
+    "w": "La",
+    "t": 26.05
+   },
+   {
+    "w": "raison",
+    "t": 26.261
+   },
+   {
+    "w": "à",
+    "t": 26.839
+   },
+   {
+    "w": "cette",
+    "t": 26.905
+   },
+   {
+    "w": "vitesse",
+    "t": 27.142
+   },
+   {
+    "w": "leur",
+    "t": 28.063
+   },
+   {
+    "w": "temps",
+    "t": 28.261
+   },
+   {
+    "w": "s'écoule",
+    "t": 28.418
+   },
+   {
+    "w": "environ",
+    "t": 28.826
+   },
+   {
+    "w": "seize",
+    "t": 29.168
+   },
+   {
+    "w": "fois",
+    "t": 29.432
+   },
+   {
+    "w": "plus",
+    "t": 29.616
+   },
+   {
+    "w": "lentement",
+    "t": 29.787
+   },
+   {
+    "w": "Leur",
+    "t": 31.182
+   },
+   {
+    "w": "courte",
+    "t": 31.458
+   },
+   {
+    "w": "vie",
+    "t": 31.774
+   },
+   {
+    "w": "suffit",
+    "t": 31.945
+   },
+   {
+    "w": "pour",
+    "t": 32.326
+   },
+   {
+    "w": "traverser",
+    "t": 32.537
+   },
+   {
+    "w": "toute",
+    "t": 33.089
+   },
+   {
+    "w": "l'atmosphère",
+    "t": 33.326
+   }
+  ],
+  "cues": [
+   {
+    "text": "La preuve tombe littéralement du ciel.",
+    "start": 0.403,
+    "end": 2.416
+   },
+   {
+    "text": "Quand les rayons cosmiques percutent la haute atmosphère,",
+    "start": 3.326,
+    "end": 5.734
+   },
+   {
+    "text": "vers quinze kilomètres d'altitude, ils produisent des muons,",
+    "start": 6.024,
+    "end": 8.932
+   },
+   {
+    "text": "des cousins lourds de l'électron.",
+    "start": 9.234,
+    "end": 10.511
+   },
+   {
+    "text": "Un muon vit en moyenne deux microsecondes.",
+    "start": 11.432,
+    "end": 13.55
+   },
+   {
+    "text": "Même lancé à quatre-vingt-dix-neuf virgule",
+    "start": 14.471,
+    "end": 16.353
+   },
+   {
+    "text": "huit pour cent de la vitesse de la lumière,",
+    "start": 16.366,
+    "end": 18.274
+   },
+   {
+    "text": "il ne devrait parcourir qu'environ six cents mètres avant de se désintégrer.",
+    "start": 18.616,
+    "end": 22.01
+   },
+   {
+    "text": "Pourtant, on en détecte en masse au sol.",
+    "start": 22.918,
+    "end": 25.142
+   },
+   {
+    "text": "La raison : à cette vitesse, leur temps s'écoule environ seize fois plus lentement.",
+    "start": 26.05,
+    "end": 30.274
+   },
+   {
+    "text": "Leur courte vie suffit pour traverser toute l'atmosphère.",
+    "start": 31.182,
+    "end": 34.155
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "audio": "audio/s5.mp3",
+  "audioDuration": 35.976,
+  "lead": 0.3,
+  "duration": 36.876,
+  "words": [
+   {
+    "w": "Dix",
+    "t": 0.403
+   },
+   {
+    "w": "ans",
+    "t": 0.653
+   },
+   {
+    "w": "plus",
+    "t": 0.811
+   },
+   {
+    "w": "tard",
+    "t": 0.995
+   },
+   {
+    "w": "Einstein",
+    "t": 1.639
+   },
+   {
+    "w": "va",
+    "t": 2.139
+   },
+   {
+    "w": "plus",
+    "t": 2.271
+   },
+   {
+    "w": "loin",
+    "t": 2.442
+   },
+   {
+    "w": "La",
+    "t": 3.668
+   },
+   {
+    "w": "gravité",
+    "t": 3.879
+   },
+   {
+    "w": "n'est",
+    "t": 4.379
+   },
+   {
+    "w": "pas",
+    "t": 4.524
+   },
+   {
+    "w": "une",
+    "t": 4.682
+   },
+   {
+    "w": "force",
+    "t": 4.892
+   },
+   {
+    "w": "mystérieuse",
+    "t": 5.208
+   },
+   {
+    "w": "c'est",
+    "t": 6.234
+   },
+   {
+    "w": "une",
+    "t": 6.392
+   },
+   {
+    "w": "déformation",
+    "t": 6.589
+   },
+   {
+    "w": "de",
+    "t": 7.221
+   },
+   {
+    "w": "l'espace",
+    "t": 7.339
+   },
+   {
+    "w": "et",
+    "t": 7.774
+   },
+   {
+    "w": "du",
+    "t": 7.839
+   },
+   {
+    "w": "temps",
+    "t": 7.997
+   },
+   {
+    "w": "Plus",
+    "t": 9.195
+   },
+   {
+    "w": "on",
+    "t": 9.392
+   },
+   {
+    "w": "est",
+    "t": 9.524
+   },
+   {
+    "w": "proche",
+    "t": 9.642
+   },
+   {
+    "w": "d'une",
+    "t": 9.918
+   },
+   {
+    "w": "masse",
+    "t": 10.103
+   },
+   {
+    "w": "plus",
+    "t": 10.853
+   },
+   {
+    "w": "le",
+    "t": 11.155
+   },
+   {
+    "w": "temps",
+    "t": 11.3
+   },
+   {
+    "w": "s'écoule",
+    "t": 11.484
+   },
+   {
+    "w": "lentement",
+    "t": 11.879
+   },
+   {
+    "w": "Votre",
+    "t": 13.287
+   },
+   {
+    "w": "tête",
+    "t": 13.695
+   },
+   {
+    "w": "vieillit",
+    "t": 13.918
+   },
+   {
+    "w": "un",
+    "t": 14.261
+   },
+   {
+    "w": "tout",
+    "t": 14.366
+   },
+   {
+    "w": "petit",
+    "t": 14.563
+   },
+   {
+    "w": "peu",
+    "t": 14.866
+   },
+   {
+    "w": "plus",
+    "t": 15.037
+   },
+   {
+    "w": "vite",
+    "t": 15.221
+   },
+   {
+    "w": "que",
+    "t": 15.432
+   },
+   {
+    "w": "vos",
+    "t": 15.576
+   },
+   {
+    "w": "pieds",
+    "t": 15.721
+   },
+   {
+    "w": "En",
+    "t": 17.037
+   },
+   {
+    "w": "mille",
+    "t": 17.221
+   },
+   {
+    "w": "neuf",
+    "t": 17.379
+   },
+   {
+    "w": "cent",
+    "t": 17.524
+   },
+   {
+    "w": "soixante",
+    "t": 17.655
+   },
+   {
+    "w": "et",
+    "t": 18.089
+   },
+   {
+    "w": "onze",
+    "t": 18.155
+   },
+   {
+    "w": "Joseph",
+    "t": 18.813
+   },
+   {
+    "w": "Hafele",
+    "t": 19.221
+   },
+   {
+    "w": "et",
+    "t": 19.524
+   },
+   {
+    "w": "Richard",
+    "t": 19.589
+   },
+   {
+    "w": "Keating",
+    "t": 19.958
+   },
+   {
+    "w": "ont",
+    "t": 20.418
+   },
+   {
+    "w": "embarqué",
+    "t": 20.497
+   },
+   {
+    "w": "des",
+    "t": 20.971
+   },
+   {
+    "w": "horloges",
+    "t": 21.103
+   },
+   {
+    "w": "atomiques",
+    "t": 21.458
+   },
+   {
+    "w": "au",
+    "t": 21.958
+   },
+   {
+    "w": "césium",
+    "t": 22.05
+   },
+   {
+    "w": "dans",
+    "t": 22.497
+   },
+   {
+    "w": "des",
+    "t": 22.629
+   },
+   {
+    "w": "avions",
+    "t": 22.747
+   },
+   {
+    "w": "de",
+    "t": 23.037
+   },
+   {
+    "w": "ligne",
+    "t": 23.168
+   },
+   {
+    "w": "pour",
+    "t": 23.813
+   },
+   {
+    "w": "deux",
+    "t": 23.997
+   },
+   {
+    "w": "tours",
+    "t": 24.142
+   },
+   {
+    "w": "du",
+    "t": 24.353
+   },
+   {
+    "w": "monde",
+    "t": 24.458
+   },
+   {
+    "w": "Comparées",
+    "t": 25.774
+   },
+   {
+    "w": "aux",
+    "t": 26.234
+   },
+   {
+    "w": "horloges",
+    "t": 26.313
+   },
+   {
+    "w": "restées",
+    "t": 26.695
+   },
+   {
+    "w": "au",
+    "t": 27.063
+   },
+   {
+    "w": "sol",
+    "t": 27.142
+   },
+   {
+    "w": "elles",
+    "t": 27.839
+   },
+   {
+    "w": "avaient",
+    "t": 27.958
+   },
+   {
+    "w": "perdu",
+    "t": 28.221
+   },
+   {
+    "w": "cinquante-neuf",
+    "t": 28.563
+   },
+   {
+    "w": "nanosecondes",
+    "t": 29.208
+   },
+   {
+    "w": "vers",
+    "t": 29.826
+   },
+   {
+    "w": "l'est",
+    "t": 30.024
+   },
+   {
+    "w": "et",
+    "t": 30.313
+   },
+   {
+    "w": "gagné",
+    "t": 30.379
+   },
+   {
+    "w": "deux",
+    "t": 30.721
+   },
+   {
+    "w": "cent",
+    "t": 30.892
+   },
+   {
+    "w": "soixante-treize",
+    "t": 31.024
+   },
+   {
+    "w": "vers",
+    "t": 31.642
+   },
+   {
+    "w": "l'ouest",
+    "t": 31.813
+   },
+   {
+    "w": "Exactement",
+    "t": 33.261
+   },
+   {
+    "w": "ce",
+    "t": 33.958
+   },
+   {
+    "w": "que",
+    "t": 34.116
+   },
+   {
+    "w": "prédisait",
+    "t": 34.274
+   },
+   {
+    "w": "la",
+    "t": 34.734
+   },
+   {
+    "w": "théorie",
+    "t": 34.853
+   }
+  ],
+  "cues": [
+   {
+    "text": "Dix ans plus tard, Einstein va plus loin.",
+    "start": 0.403,
+    "end": 2.758
+   },
+   {
+    "text": "La gravité n'est pas une force mystérieuse :",
+    "start": 3.668,
+    "end": 5.997
+   },
+   {
+    "text": "c'est une déformation de l'espace et du temps.",
+    "start": 6.234,
+    "end": 8.274
+   },
+   {
+    "text": "Plus on est proche d'une masse, plus le temps s'écoule lentement.",
+    "start": 9.195,
+    "end": 12.379
+   },
+   {
+    "text": "Votre tête vieillit un tout petit peu plus vite que vos pieds !",
+    "start": 13.287,
+    "end": 16.129
+   },
+   {
+    "text": "En mille neuf cent soixante et onze,",
+    "start": 17.037,
+    "end": 18.458
+   },
+   {
+    "text": "Joseph Hafele et Richard Keating ont embarqué des",
+    "start": 18.813,
+    "end": 21.089
+   },
+   {
+    "text": "horloges atomiques au césium dans des avions de ligne,",
+    "start": 21.103,
+    "end": 23.524
+   },
+   {
+    "text": "pour deux tours du monde.",
+    "start": 23.813,
+    "end": 24.853
+   },
+   {
+    "text": "Comparées aux horloges restées au sol,",
+    "start": 25.774,
+    "end": 27.484
+   },
+   {
+    "text": "elles avaient perdu cinquante-neuf nanosecondes vers",
+    "start": 27.839,
+    "end": 30.011
+   },
+   {
+    "text": "l'est et gagné deux cent soixante-treize vers l'ouest.",
+    "start": 30.024,
+    "end": 32.339
+   },
+   {
+    "text": "Exactement ce que prédisait la théorie.",
+    "start": 33.261,
+    "end": 35.366
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "audio": "audio/s6.mp3",
+  "audioDuration": 38.592,
+  "lead": 0.3,
+  "duration": 39.492,
+  "words": [
+   {
+    "w": "Et",
+    "t": 0.403
+   },
+   {
+    "w": "tout",
+    "t": 0.587
+   },
+   {
+    "w": "cela",
+    "t": 0.811
+   },
+   {
+    "w": "se",
+    "t": 1.074
+   },
+   {
+    "w": "joue",
+    "t": 1.232
+   },
+   {
+    "w": "dans",
+    "t": 1.389
+   },
+   {
+    "w": "votre",
+    "t": 1.521
+   },
+   {
+    "w": "poche",
+    "t": 1.797
+   },
+   {
+    "w": "Les",
+    "t": 3.274
+   },
+   {
+    "w": "satellites",
+    "t": 3.497
+   },
+   {
+    "w": "GPS",
+    "t": 3.945
+   },
+   {
+    "w": "tournent",
+    "t": 4.432
+   },
+   {
+    "w": "à",
+    "t": 4.708
+   },
+   {
+    "w": "une",
+    "t": 4.774
+   },
+   {
+    "w": "vingtaine",
+    "t": 4.892
+   },
+   {
+    "w": "de",
+    "t": 5.274
+   },
+   {
+    "w": "milliers",
+    "t": 5.392
+   },
+   {
+    "w": "de",
+    "t": 5.695
+   },
+   {
+    "w": "kilomètres",
+    "t": 5.826
+   },
+   {
+    "w": "d'altitude",
+    "t": 6.379
+   },
+   {
+    "w": "à",
+    "t": 7.287
+   },
+   {
+    "w": "près",
+    "t": 7.366
+   },
+   {
+    "w": "de",
+    "t": 7.563
+   },
+   {
+    "w": "quatre",
+    "t": 7.708
+   },
+   {
+    "w": "kilomètres",
+    "t": 8.024
+   },
+   {
+    "w": "par",
+    "t": 8.589
+   },
+   {
+    "w": "seconde",
+    "t": 8.787
+   },
+   {
+    "w": "Là-haut",
+    "t": 10.261
+   },
+   {
+    "w": "la",
+    "t": 11.024
+   },
+   {
+    "w": "gravité",
+    "t": 11.155
+   },
+   {
+    "w": "plus",
+    "t": 11.655
+   },
+   {
+    "w": "faible",
+    "t": 11.853
+   },
+   {
+    "w": "fait",
+    "t": 12.208
+   },
+   {
+    "w": "avancer",
+    "t": 12.353
+   },
+   {
+    "w": "leurs",
+    "t": 12.813
+   },
+   {
+    "w": "horloges",
+    "t": 12.971
+   },
+   {
+    "w": "d'environ",
+    "t": 13.366
+   },
+   {
+    "w": "quarante-cinq",
+    "t": 13.8
+   },
+   {
+    "w": "microsecondes",
+    "t": 14.313
+   },
+   {
+    "w": "par",
+    "t": 15.024
+   },
+   {
+    "w": "jour",
+    "t": 15.208
+   },
+   {
+    "w": "Leur",
+    "t": 16.603
+   },
+   {
+    "w": "vitesse",
+    "t": 16.866
+   },
+   {
+    "w": "elle",
+    "t": 17.761
+   },
+   {
+    "w": "les",
+    "t": 18.353
+   },
+   {
+    "w": "ralentit",
+    "t": 18.484
+   },
+   {
+    "w": "d'environ",
+    "t": 18.892
+   },
+   {
+    "w": "sept",
+    "t": 19.313
+   },
+   {
+    "w": "microsecondes",
+    "t": 19.563
+   },
+   {
+    "w": "Bilan",
+    "t": 21.392
+   },
+   {
+    "w": "trente-huit",
+    "t": 22.05
+   },
+   {
+    "w": "microsecondes",
+    "t": 22.418
+   },
+   {
+    "w": "d'avance",
+    "t": 23.142
+   },
+   {
+    "w": "chaque",
+    "t": 23.484
+   },
+   {
+    "w": "jour",
+    "t": 23.695
+   },
+   {
+    "w": "Or",
+    "t": 25.103
+   },
+   {
+    "w": "la",
+    "t": 25.313
+   },
+   {
+    "w": "lumière",
+    "t": 25.392
+   },
+   {
+    "w": "parcourt",
+    "t": 25.761
+   },
+   {
+    "w": "trente",
+    "t": 26.182
+   },
+   {
+    "w": "centimètres",
+    "t": 26.458
+   },
+   {
+    "w": "en",
+    "t": 27.037
+   },
+   {
+    "w": "une",
+    "t": 27.089
+   },
+   {
+    "w": "nanoseconde",
+    "t": 27.234
+   },
+   {
+    "w": "sans",
+    "t": 28.089
+   },
+   {
+    "w": "correction",
+    "t": 28.261
+   },
+   {
+    "w": "la",
+    "t": 29.221
+   },
+   {
+    "w": "position",
+    "t": 29.392
+   },
+   {
+    "w": "calculée",
+    "t": 29.892
+   },
+   {
+    "w": "dériverait",
+    "t": 30.339
+   },
+   {
+    "w": "d'une",
+    "t": 30.774
+   },
+   {
+    "w": "dizaine",
+    "t": 30.945
+   },
+   {
+    "w": "de",
+    "t": 31.326
+   },
+   {
+    "w": "kilomètres",
+    "t": 31.458
+   },
+   {
+    "w": "par",
+    "t": 32.037
+   },
+   {
+    "w": "jour",
+    "t": 32.234
+   },
+   {
+    "w": "C'est",
+    "t": 33.616
+   },
+   {
+    "w": "pourquoi",
+    "t": 33.879
+   },
+   {
+    "w": "les",
+    "t": 34.261
+   },
+   {
+    "w": "horloges",
+    "t": 34.379
+   },
+   {
+    "w": "des",
+    "t": 34.774
+   },
+   {
+    "w": "satellites",
+    "t": 34.918
+   },
+   {
+    "w": "sont",
+    "t": 35.405
+   },
+   {
+    "w": "volontairement",
+    "t": 35.537
+   },
+   {
+    "w": "réglées",
+    "t": 36.142
+   },
+   {
+    "w": "un",
+    "t": 36.484
+   },
+   {
+    "w": "peu",
+    "t": 36.576
+   },
+   {
+    "w": "plus",
+    "t": 36.747
+   },
+   {
+    "w": "lentes",
+    "t": 36.932
+   },
+   {
+    "w": "avant",
+    "t": 37.182
+   },
+   {
+    "w": "le",
+    "t": 37.353
+   },
+   {
+    "w": "lancement",
+    "t": 37.445
+   }
+  ],
+  "cues": [
+   {
+    "text": "Et tout cela se joue dans votre poche.",
+    "start": 0.403,
+    "end": 2.35
+   },
+   {
+    "text": "Les satellites GPS tournent à une vingtaine de milliers de kilomètres d'altitude,",
+    "start": 3.274,
+    "end": 6.984
+   },
+   {
+    "text": "à près de quatre kilomètres par seconde.",
+    "start": 7.287,
+    "end": 9.353
+   },
+   {
+    "text": "Là-haut,",
+    "start": 10.261,
+    "end": 10.682
+   },
+   {
+    "text": "la gravité plus faible fait avancer leurs horloges",
+    "start": 11.024,
+    "end": 13.353
+   },
+   {
+    "text": "d'environ quarante-cinq microsecondes par jour.",
+    "start": 13.366,
+    "end": 15.695
+   },
+   {
+    "text": "Leur vitesse, elle, les ralentit d'environ sept microsecondes.",
+    "start": 16.603,
+    "end": 20.471
+   },
+   {
+    "text": "Bilan : trente-huit microsecondes d'avance chaque jour.",
+    "start": 21.392,
+    "end": 24.182
+   },
+   {
+    "text": "Or la lumière parcourt trente centimètres en une nanoseconde : sans correction,",
+    "start": 25.103,
+    "end": 28.839
+   },
+   {
+    "text": "la position calculée dériverait d'une dizaine de kilomètres par jour.",
+    "start": 29.221,
+    "end": 32.708
+   },
+   {
+    "text": "C'est pourquoi les horloges des satellites sont",
+    "start": 33.616,
+    "end": 35.524
+   },
+   {
+    "text": "volontairement réglées un peu plus lentes avant le lancement.",
+    "start": 35.537,
+    "end": 37.971
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "audio": "audio/s7.mp3",
+  "audioDuration": 31.968,
+  "lead": 0.3,
+  "duration": 32.868,
+  "words": [
+   {
+    "w": "Autre",
+    "t": 0.403
+   },
+   {
+    "w": "mystère",
+    "t": 0.745
+   },
+   {
+    "w": "pourquoi",
+    "t": 1.547
+   },
+   {
+    "w": "le",
+    "t": 1.889
+   },
+   {
+    "w": "temps",
+    "t": 2.008
+   },
+   {
+    "w": "va-t-il",
+    "t": 2.179
+   },
+   {
+    "w": "toujours",
+    "t": 2.534
+   },
+   {
+    "w": "dans",
+    "t": 2.916
+   },
+   {
+    "w": "le",
+    "t": 3.021
+   },
+   {
+    "w": "même",
+    "t": 3.113
+   },
+   {
+    "w": "sens",
+    "t": 3.337
+   },
+   {
+    "w": "Les",
+    "t": 4.839
+   },
+   {
+    "w": "lois",
+    "t": 5.05
+   },
+   {
+    "w": "du",
+    "t": 5.234
+   },
+   {
+    "w": "mouvement",
+    "t": 5.353
+   },
+   {
+    "w": "elles",
+    "t": 6.103
+   },
+   {
+    "w": "fonctionnent",
+    "t": 6.655
+   },
+   {
+    "w": "aussi",
+    "t": 7.076
+   },
+   {
+    "w": "bien",
+    "t": 7.339
+   },
+   {
+    "w": "à",
+    "t": 7.55
+   },
+   {
+    "w": "l'endroit",
+    "t": 7.655
+   },
+   {
+    "w": "qu'à",
+    "t": 7.971
+   },
+   {
+    "w": "l'envers",
+    "t": 8.129
+   },
+   {
+    "w": "La",
+    "t": 9.629
+   },
+   {
+    "w": "réponse",
+    "t": 9.826
+   },
+   {
+    "w": "vient",
+    "t": 10.261
+   },
+   {
+    "w": "de",
+    "t": 10.458
+   },
+   {
+    "w": "la",
+    "t": 10.563
+   },
+   {
+    "w": "thermodynamique",
+    "t": 10.668
+   },
+   {
+    "w": "Il",
+    "t": 12.603
+   },
+   {
+    "w": "existe",
+    "t": 12.813
+   },
+   {
+    "w": "infiniment",
+    "t": 13.195
+   },
+   {
+    "w": "plus",
+    "t": 13.682
+   },
+   {
+    "w": "de",
+    "t": 13.958
+   },
+   {
+    "w": "façons",
+    "t": 14.116
+   },
+   {
+    "w": "d'être",
+    "t": 14.445
+   },
+   {
+    "w": "en",
+    "t": 14.721
+   },
+   {
+    "w": "désordre",
+    "t": 14.774
+   },
+   {
+    "w": "que",
+    "t": 15.287
+   },
+   {
+    "w": "d'être",
+    "t": 15.445
+   },
+   {
+    "w": "en",
+    "t": 15.721
+   },
+   {
+    "w": "ordre",
+    "t": 15.774
+   },
+   {
+    "w": "Un",
+    "t": 17.182
+   },
+   {
+    "w": "œuf",
+    "t": 17.353
+   },
+   {
+    "w": "entier",
+    "t": 17.563
+   },
+   {
+    "w": "c'est",
+    "t": 18.261
+   },
+   {
+    "w": "un",
+    "t": 18.418
+   },
+   {
+    "w": "arrangement",
+    "t": 18.563
+   },
+   {
+    "w": "rare",
+    "t": 19.05
+   },
+   {
+    "w": "un",
+    "t": 19.537
+   },
+   {
+    "w": "œuf",
+    "t": 19.589
+   },
+   {
+    "w": "cassé",
+    "t": 19.787
+   },
+   {
+    "w": "il",
+    "t": 20.603
+   },
+   {
+    "w": "y",
+    "t": 20.734
+   },
+   {
+    "w": "en",
+    "t": 20.826
+   },
+   {
+    "w": "a",
+    "t": 20.866
+   },
+   {
+    "w": "des",
+    "t": 20.984
+   },
+   {
+    "w": "milliards",
+    "t": 21.116
+   },
+   {
+    "w": "de",
+    "t": 21.471
+   },
+   {
+    "w": "milliards",
+    "t": 21.576
+   },
+   {
+    "w": "Le",
+    "t": 23.103
+   },
+   {
+    "w": "hasard",
+    "t": 23.313
+   },
+   {
+    "w": "pousse",
+    "t": 23.616
+   },
+   {
+    "w": "donc",
+    "t": 23.839
+   },
+   {
+    "w": "toujours",
+    "t": 24.063
+   },
+   {
+    "w": "vers",
+    "t": 24.445
+   },
+   {
+    "w": "le",
+    "t": 24.642
+   },
+   {
+    "w": "désordre",
+    "t": 24.747
+   },
+   {
+    "w": "ce",
+    "t": 25.589
+   },
+   {
+    "w": "que",
+    "t": 25.734
+   },
+   {
+    "w": "les",
+    "t": 25.853
+   },
+   {
+    "w": "physiciens",
+    "t": 25.971
+   },
+   {
+    "w": "appellent",
+    "t": 26.497
+   },
+   {
+    "w": "l'entropie",
+    "t": 26.787
+   },
+   {
+    "w": "Voilà",
+    "t": 28.313
+   },
+   {
+    "w": "pourquoi",
+    "t": 28.695
+   },
+   {
+    "w": "un",
+    "t": 29.116
+   },
+   {
+    "w": "œuf",
+    "t": 29.195
+   },
+   {
+    "w": "ne",
+    "t": 29.418
+   },
+   {
+    "w": "se",
+    "t": 29.576
+   },
+   {
+    "w": "reconstitue",
+    "t": 29.708
+   },
+   {
+    "w": "jamais",
+    "t": 30.392
+   },
+   {
+    "w": "tout",
+    "t": 30.708
+   },
+   {
+    "w": "seul",
+    "t": 30.905
+   }
+  ],
+  "cues": [
+   {
+    "text": "Autre mystère : pourquoi le temps va-t-il toujours dans le même sens ?",
+    "start": 0.403,
+    "end": 3.916
+   },
+   {
+    "text": "Les lois du mouvement, elles, fonctionnent aussi bien à l'endroit qu'à l'envers.",
+    "start": 4.839,
+    "end": 8.721
+   },
+   {
+    "text": "La réponse vient de la thermodynamique.",
+    "start": 9.629,
+    "end": 11.695
+   },
+   {
+    "text": "Il existe infiniment plus de façons d'être en désordre que d'être en ordre.",
+    "start": 12.603,
+    "end": 16.274
+   },
+   {
+    "text": "Un œuf entier, c'est un arrangement rare ; un œuf cassé,",
+    "start": 17.182,
+    "end": 20.26
+   },
+   {
+    "text": "il y en a des milliards de milliards.",
+    "start": 20.603,
+    "end": 22.182
+   },
+   {
+    "text": "Le hasard pousse donc toujours vers le désordre,",
+    "start": 23.103,
+    "end": 25.261
+   },
+   {
+    "text": "ce que les physiciens appellent l'entropie.",
+    "start": 25.589,
+    "end": 27.405
+   },
+   {
+    "text": "Voilà pourquoi un œuf ne se reconstitue jamais tout seul.",
+    "start": 28.313,
+    "end": 31.339
+   }
+  ]
+ },
+ {
+  "id": "s8",
+  "audio": "audio/s8.mp3",
+  "audioDuration": 31.008,
+  "lead": 0.3,
+  "duration": 31.908,
+  "words": [
+   {
+    "w": "Enfin",
+    "t": 0.403
+   },
+   {
+    "w": "il",
+    "t": 1.284
+   },
+   {
+    "w": "y",
+    "t": 1.416
+   },
+   {
+    "w": "a",
+    "t": 1.508
+   },
+   {
+    "w": "le",
+    "t": 1.547
+   },
+   {
+    "w": "temps",
+    "t": 1.679
+   },
+   {
+    "w": "que",
+    "t": 1.863
+   },
+   {
+    "w": "nous",
+    "t": 2.008
+   },
+   {
+    "w": "ressentons",
+    "t": 2.126
+   },
+   {
+    "w": "Notre",
+    "t": 3.629
+   },
+   {
+    "w": "cerveau",
+    "t": 4.063
+   },
+   {
+    "w": "ne",
+    "t": 4.379
+   },
+   {
+    "w": "possède",
+    "t": 4.497
+   },
+   {
+    "w": "pas",
+    "t": 4.905
+   },
+   {
+    "w": "de",
+    "t": 5.05
+   },
+   {
+    "w": "chronomètre",
+    "t": 5.182
+   },
+   {
+    "w": "interne",
+    "t": 5.721
+   },
+   {
+    "w": "il",
+    "t": 6.418
+   },
+   {
+    "w": "estime",
+    "t": 6.537
+   },
+   {
+    "w": "les",
+    "t": 6.879
+   },
+   {
+    "w": "durées",
+    "t": 6.984
+   },
+   {
+    "w": "à",
+    "t": 7.313
+   },
+   {
+    "w": "partir",
+    "t": 7.392
+   },
+   {
+    "w": "de",
+    "t": 7.774
+   },
+   {
+    "w": "notre",
+    "t": 7.892
+   },
+   {
+    "w": "attention",
+    "t": 8.195
+   },
+   {
+    "w": "et",
+    "t": 8.668
+   },
+   {
+    "w": "de",
+    "t": 8.761
+   },
+   {
+    "w": "nos",
+    "t": 8.879
+   },
+   {
+    "w": "souvenirs",
+    "t": 9.024
+   },
+   {
+    "w": "Dans",
+    "t": 10.524
+   },
+   {
+    "w": "une",
+    "t": 10.761
+   },
+   {
+    "w": "salle",
+    "t": 10.971
+   },
+   {
+    "w": "d'attente",
+    "t": 11.208
+   },
+   {
+    "w": "on",
+    "t": 11.997
+   },
+   {
+    "w": "surveille",
+    "t": 12.076
+   },
+   {
+    "w": "l'horloge",
+    "t": 12.458
+   },
+   {
+    "w": "et",
+    "t": 13.274
+   },
+   {
+    "w": "chaque",
+    "t": 13.353
+   },
+   {
+    "w": "minute",
+    "t": 13.642
+   },
+   {
+    "w": "s'étire",
+    "t": 13.971
+   },
+   {
+    "w": "Pendant",
+    "t": 15.458
+   },
+   {
+    "w": "une",
+    "t": 15.774
+   },
+   {
+    "w": "soirée",
+    "t": 15.892
+   },
+   {
+    "w": "entre",
+    "t": 16.221
+   },
+   {
+    "w": "amis",
+    "t": 16.445
+   },
+   {
+    "w": "les",
+    "t": 17.037
+   },
+   {
+    "w": "heures",
+    "t": 17.182
+   },
+   {
+    "w": "filent",
+    "t": 17.392
+   },
+   {
+    "w": "Mais",
+    "t": 18.747
+   },
+   {
+    "w": "avec",
+    "t": 18.984
+   },
+   {
+    "w": "le",
+    "t": 19.247
+   },
+   {
+    "w": "recul",
+    "t": 19.353
+   },
+   {
+    "w": "c'est",
+    "t": 20.155
+   },
+   {
+    "w": "l'inverse",
+    "t": 20.287
+   },
+   {
+    "w": "une",
+    "t": 20.984
+   },
+   {
+    "w": "semaine",
+    "t": 21.103
+   },
+   {
+    "w": "de",
+    "t": 21.445
+   },
+   {
+    "w": "vacances",
+    "t": 21.563
+   },
+   {
+    "w": "pleine",
+    "t": 21.997
+   },
+   {
+    "w": "de",
+    "t": 22.261
+   },
+   {
+    "w": "nouveautés",
+    "t": 22.366
+   },
+   {
+    "w": "laisse",
+    "t": 22.8
+   },
+   {
+    "w": "beaucoup",
+    "t": 23.011
+   },
+   {
+    "w": "de",
+    "t": 23.313
+   },
+   {
+    "w": "souvenirs",
+    "t": 23.458
+   },
+   {
+    "w": "et",
+    "t": 24.339
+   },
+   {
+    "w": "paraît",
+    "t": 24.405
+   },
+   {
+    "w": "plus",
+    "t": 24.695
+   },
+   {
+    "w": "longue",
+    "t": 24.879
+   },
+   {
+    "w": "qu'un",
+    "t": 25.103
+   },
+   {
+    "w": "mois",
+    "t": 25.287
+   },
+   {
+    "w": "de",
+    "t": 25.458
+   },
+   {
+    "w": "routine",
+    "t": 25.563
+   },
+   {
+    "w": "C'est",
+    "t": 27.089
+   },
+   {
+    "w": "aussi",
+    "t": 27.339
+   },
+   {
+    "w": "pour",
+    "t": 27.708
+   },
+   {
+    "w": "cela",
+    "t": 27.918
+   },
+   {
+    "w": "que",
+    "t": 28.182
+   },
+   {
+    "w": "les",
+    "t": 28.313
+   },
+   {
+    "w": "années",
+    "t": 28.418
+   },
+   {
+    "w": "semblent",
+    "t": 28.734
+   },
+   {
+    "w": "accélérer",
+    "t": 29.089
+   },
+   {
+    "w": "avec",
+    "t": 29.695
+   },
+   {
+    "w": "l'âge",
+    "t": 29.932
+   }
+  ],
+  "cues": [
+   {
+    "text": "Enfin, il y a le temps que nous ressentons.",
+    "start": 0.403,
+    "end": 2.705
+   },
+   {
+    "text": "Notre cerveau ne possède pas de chronomètre interne :",
+    "start": 3.629,
+    "end": 6.168
+   },
+   {
+    "text": "il estime les durées à partir de notre attention et de nos souvenirs.",
+    "start": 6.418,
+    "end": 9.616
+   },
+   {
+    "text": "Dans une salle d'attente, on surveille l'horloge, et chaque minute s'étire.",
+    "start": 10.524,
+    "end": 14.537
+   },
+   {
+    "text": "Pendant une soirée entre amis, les heures filent.",
+    "start": 15.458,
+    "end": 17.84
+   },
+   {
+    "text": "Mais avec le recul, c'est l'inverse :",
+    "start": 18.747,
+    "end": 20.787
+   },
+   {
+    "text": "une semaine de vacances pleine de nouveautés laisse beaucoup de souvenirs,",
+    "start": 20.984,
+    "end": 23.958
+   },
+   {
+    "text": "et paraît plus longue qu'un mois de routine.",
+    "start": 24.339,
+    "end": 26.182
+   },
+   {
+    "text": "C'est aussi pour cela que les années semblent accélérer avec l'âge.",
+    "start": 27.089,
+    "end": 30.379
+   }
+  ]
+ },
+ {
+  "id": "s9",
+  "audio": "audio/s9.mp3",
+  "audioDuration": 24.24,
+  "lead": 0.3,
+  "duration": 25.14,
+  "words": [
+   {
+    "w": "Alors",
+    "t": 0.403
+   },
+   {
+    "w": "le",
+    "t": 1.192
+   },
+   {
+    "w": "temps",
+    "t": 1.311
+   },
+   {
+    "w": "passe-t-il",
+    "t": 1.482
+   },
+   {
+    "w": "pareil",
+    "t": 1.903
+   },
+   {
+    "w": "pour",
+    "t": 2.245
+   },
+   {
+    "w": "tout",
+    "t": 2.468
+   },
+   {
+    "w": "le",
+    "t": 2.613
+   },
+   {
+    "w": "monde",
+    "t": 2.705
+   },
+   {
+    "w": "Non",
+    "t": 4.024
+   },
+   {
+    "w": "Il",
+    "t": 5.287
+   },
+   {
+    "w": "ralentit",
+    "t": 5.524
+   },
+   {
+    "w": "quand",
+    "t": 5.932
+   },
+   {
+    "w": "on",
+    "t": 6.116
+   },
+   {
+    "w": "va",
+    "t": 6.287
+   },
+   {
+    "w": "vite",
+    "t": 6.432
+   },
+   {
+    "w": "il",
+    "t": 7.037
+   },
+   {
+    "w": "ralentit",
+    "t": 7.195
+   },
+   {
+    "w": "près",
+    "t": 7.616
+   },
+   {
+    "w": "des",
+    "t": 7.813
+   },
+   {
+    "w": "masses",
+    "t": 7.932
+   },
+   {
+    "w": "il",
+    "t": 8.682
+   },
+   {
+    "w": "ne",
+    "t": 8.787
+   },
+   {
+    "w": "coule",
+    "t": 8.905
+   },
+   {
+    "w": "que",
+    "t": 9.129
+   },
+   {
+    "w": "dans",
+    "t": 9.274
+   },
+   {
+    "w": "un",
+    "t": 9.405
+   },
+   {
+    "w": "seul",
+    "t": 9.563
+   },
+   {
+    "w": "sens",
+    "t": 9.813
+   },
+   {
+    "w": "à",
+    "t": 10.116
+   },
+   {
+    "w": "cause",
+    "t": 10.195
+   },
+   {
+    "w": "du",
+    "t": 10.432
+   },
+   {
+    "w": "désordre",
+    "t": 10.55
+   },
+   {
+    "w": "et",
+    "t": 11.405
+   },
+   {
+    "w": "notre",
+    "t": 11.458
+   },
+   {
+    "w": "cerveau",
+    "t": 11.813
+   },
+   {
+    "w": "le",
+    "t": 12.129
+   },
+   {
+    "w": "contracte",
+    "t": 12.234
+   },
+   {
+    "w": "ou",
+    "t": 12.734
+   },
+   {
+    "w": "le",
+    "t": 12.787
+   },
+   {
+    "w": "dilate",
+    "t": 12.905
+   },
+   {
+    "w": "selon",
+    "t": 13.261
+   },
+   {
+    "w": "ce",
+    "t": 13.55
+   },
+   {
+    "w": "que",
+    "t": 13.708
+   },
+   {
+    "w": "nous",
+    "t": 13.839
+   },
+   {
+    "w": "vivons",
+    "t": 13.958
+   },
+   {
+    "w": "Le",
+    "t": 15.261
+   },
+   {
+    "w": "temps",
+    "t": 15.484
+   },
+   {
+    "w": "n'est",
+    "t": 15.642
+   },
+   {
+    "w": "pas",
+    "t": 15.761
+   },
+   {
+    "w": "une",
+    "t": 15.932
+   },
+   {
+    "w": "toile",
+    "t": 16.129
+   },
+   {
+    "w": "de",
+    "t": 16.392
+   },
+   {
+    "w": "fond",
+    "t": 16.537
+   },
+   {
+    "w": "immuable",
+    "t": 16.721
+   },
+   {
+    "w": "c'est",
+    "t": 17.418
+   },
+   {
+    "w": "un",
+    "t": 17.563
+   },
+   {
+    "w": "acteur",
+    "t": 17.708
+   },
+   {
+    "w": "de",
+    "t": 18.116
+   },
+   {
+    "w": "l'Univers",
+    "t": 18.234
+   },
+   {
+    "w": "Et",
+    "t": 19.774
+   },
+   {
+    "w": "la",
+    "t": 19.918
+   },
+   {
+    "w": "prochaine",
+    "t": 20.05
+   },
+   {
+    "w": "fois",
+    "t": 20.458
+   },
+   {
+    "w": "que",
+    "t": 20.668
+   },
+   {
+    "w": "vous",
+    "t": 20.813
+   },
+   {
+    "w": "ouvrez",
+    "t": 20.918
+   },
+   {
+    "w": "votre",
+    "t": 21.208
+   },
+   {
+    "w": "GPS",
+    "t": 21.484
+   },
+   {
+    "w": "pensez",
+    "t": 22.432
+   },
+   {
+    "w": "à",
+    "t": 22.8
+   },
+   {
+    "w": "Einstein",
+    "t": 22.879
+   }
+  ],
+  "cues": [
+   {
+    "text": "Alors, le temps passe-t-il pareil pour tout le monde ?",
+    "start": 0.403,
+    "end": 3.1
+   },
+   {
+    "text": "Non.",
+    "start": 4.024,
+    "end": 4.379
+   },
+   {
+    "text": "Il ralentit quand on va vite, il ralentit près des masses,",
+    "start": 5.287,
+    "end": 8.379
+   },
+   {
+    "text": "il ne coule que dans un seul sens à cause du désordre,",
+    "start": 8.682,
+    "end": 11.037
+   },
+   {
+    "text": "et notre cerveau le contracte ou le dilate selon ce que nous vivons.",
+    "start": 11.405,
+    "end": 14.339
+   },
+   {
+    "text": "Le temps n'est pas une toile de fond immuable : c'est un acteur de l'Univers.",
+    "start": 15.261,
+    "end": 18.853
+   },
+   {
+    "text": "Et la prochaine fois que vous ouvrez votre GPS, pensez à Einstein.",
+    "start": 19.774,
+    "end": 23.629
+   }
+  ]
+ }
+]

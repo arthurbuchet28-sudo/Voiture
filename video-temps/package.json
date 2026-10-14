@@ -1,0 +1,28 @@
+{
+  "name": "video-temps",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vidéo « Le temps passe-t-il pareil pour tout le monde ? » (Remotion)",
+  "scripts": {
+    "tts": "python3 tts/generate.py",
+    "studio": "remotion studio",
+    "render": "remotion render Temps out/le-temps.mp4 --codec=h264 --crf=18",
+    "render:sub": "remotion render TempsSousTitres out/le-temps-sous-titres.mp4 --codec=h264 --crf=18",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@remotion/cli": "^4.0.535",
+    "@remotion/fonts": "^4.0.535",
+    "@remotion/transitions": "^4.0.535",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.535"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.535",
+    "@remotion/renderer": "^4.0.535",
+    "@types/react": "^19.1.0",
+    "typescript": "^5.9.3"
+  }
+}

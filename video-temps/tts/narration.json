@@ -1,0 +1,38 @@
+[
+ {
+  "id": "s1",
+  "text": "Imaginez deux jumeaux, Léa et Hugo. Le jour de leurs trente ans, Léa embarque dans une fusée qui file à près de quatre-vingt-sept pour cent de la vitesse de la lumière. Hugo, lui, reste sur Terre. Quand Léa revient, Hugo a fêté dix anniversaires… mais Léa n'en a vécu que cinq. Ce n'est pas de la science-fiction : c'est ce que prédit la physique, et ce que mesurent nos horloges atomiques. Alors, le temps est-il vraiment le même pour tout le monde ?"
+ },
+ {
+  "id": "s2",
+  "text": "Pendant plus de deux siècles, la réponse semblait évidente. Pour Isaac Newton, le temps s'écoule de façon uniforme, indépendamment de tout. Une seconde à Paris vaut une seconde à Tokyo, sur la Lune ou au bout de la galaxie. Le temps serait un grand métronome cosmique, le même pour tous, une simple toile de fond. Cette idée colle parfaitement à notre intuition… et pourtant, elle est fausse."
+ },
+ {
+  "id": "s3",
+  "text": "En mille neuf cent cinq, un jeune employé du bureau des brevets de Berne, Albert Einstein, part d'un fait étrange : la vitesse de la lumière est la même pour tous les observateurs, quelle que soit leur vitesse. Construisons une horloge très simple : un grain de lumière qui rebondit entre deux miroirs. Chaque aller-retour, c'est un tic. Maintenant, faisons avancer cette horloge. Vue de l'extérieur, la lumière doit suivre une trajectoire en diagonale, donc plus longue. Comme elle ne peut pas aller plus vite, chaque tic dure plus longtemps. À quatre-vingt-sept pour cent de la vitesse de la lumière, il s'écoule deux fois moins vite : c'est exactement le voyage de Léa."
+ },
+ {
+  "id": "s4",
+  "text": "La preuve tombe littéralement du ciel. Quand les rayons cosmiques percutent la haute atmosphère, vers quinze kilomètres d'altitude, ils produisent des muons, des cousins lourds de l'électron. Un muon vit en moyenne deux microsecondes. Même lancé à quatre-vingt-dix-neuf virgule huit pour cent de la vitesse de la lumière, il ne devrait parcourir qu'environ six cents mètres avant de se désintégrer. Pourtant, on en détecte en masse au sol. La raison : à cette vitesse, leur temps s'écoule environ seize fois plus lentement. Leur courte vie suffit pour traverser toute l'atmosphère."
+ },
+ {
+  "id": "s5",
+  "text": "Dix ans plus tard, Einstein va plus loin. La gravité n'est pas une force mystérieuse : c'est une déformation de l'espace et du temps. Plus on est proche d'une masse, plus le temps s'écoule lentement. Votre tête vieillit un tout petit peu plus vite que vos pieds ! En mille neuf cent soixante et onze, Joseph Hafele et Richard Keating ont embarqué des horloges atomiques au césium dans des avions de ligne, pour deux tours du monde. Comparées aux horloges restées au sol, elles avaient perdu cinquante-neuf nanosecondes vers l'est et gagné deux cent soixante-treize vers l'ouest. Exactement ce que prédisait la théorie."
+ },
+ {
+  "id": "s6",
+  "text": "Et tout cela se joue dans votre poche. Les satellites GPS tournent à une vingtaine de milliers de kilomètres d'altitude, à près de quatre kilomètres par seconde. Là-haut, la gravité plus faible fait avancer leurs horloges d'environ quarante-cinq microsecondes par jour. Leur vitesse, elle, les ralentit d'environ sept microsecondes. Bilan : trente-huit microsecondes d'avance chaque jour. Or la lumière parcourt trente centimètres en une nanoseconde : sans correction, la position calculée dériverait d'une dizaine de kilomètres par jour. C'est pourquoi les horloges des satellites sont volontairement réglées un peu plus lentes avant le lancement."
+ },
+ {
+  "id": "s7",
+  "text": "Autre mystère : pourquoi le temps va-t-il toujours dans le même sens ? Les lois du mouvement, elles, fonctionnent aussi bien à l'endroit qu'à l'envers. La réponse vient de la thermodynamique. Il existe infiniment plus de façons d'être en désordre que d'être en ordre. Un œuf entier, c'est un arrangement rare ; un œuf cassé, il y en a des milliards de milliards. Le hasard pousse donc toujours vers le désordre, ce que les physiciens appellent l'entropie. Voilà pourquoi un œuf ne se reconstitue jamais tout seul."
+ },
+ {
+  "id": "s8",
+  "text": "Enfin, il y a le temps que nous ressentons. Notre cerveau ne possède pas de chronomètre interne : il estime les durées à partir de notre attention et de nos souvenirs. Dans une salle d'attente, on surveille l'horloge, et chaque minute s'étire. Pendant une soirée entre amis, les heures filent. Mais avec le recul, c'est l'inverse : une semaine de vacances pleine de nouveautés laisse beaucoup de souvenirs, et paraît plus longue qu'un mois de routine. C'est aussi pour cela que les années semblent accélérer avec l'âge."
+ },
+ {
+  "id": "s9",
+  "text": "Alors, le temps passe-t-il pareil pour tout le monde ? Non. Il ralentit quand on va vite, il ralentit près des masses, il ne coule que dans un seul sens à cause du désordre, et notre cerveau le contracte ou le dilate selon ce que nous vivons. Le temps n'est pas une toile de fond immuable : c'est un acteur de l'Univers. Et la prochaine fois que vous ouvrez votre GPS, pensez à Einstein."
+ }
+]

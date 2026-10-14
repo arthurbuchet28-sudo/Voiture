@@ -5,11 +5,11 @@ Voix : `fr-FR-HenriNeural`, débit −5 % · Style : fond bleu nuit `#0B1426`, a
 
 > Règle appliquée partout : l'écran n'affiche que des titres courts (≤ 8 mots), des chiffres et des schémas. La voix off ne lit jamais ces textes : elle explique, illustre et chiffre.
 
-Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mots/min). Les durées seront recalées sur les fichiers audio réels (ffprobe + 0,7 s de respiration).
+Durée totale réelle : **4 min 59,2 s** (≈ 780 mots). Chaque scène = 0,3 s d'amorce + durée mesurée de la voix (ffprobe) + 0,6 s de respiration. La voix off écrit les nombres en toutes lettres pour une prononciation sûre.
 
 ---
 
-## Scène 1 — Accroche : le paradoxe des jumeaux · ≈ 32 s
+## Scène 1 — Accroche : le paradoxe des jumeaux · 29,5 s (voix 28,6 s)
 
 **Texte à l'écran**
 - « Deux jumeaux. Deux horloges. »
@@ -18,7 +18,7 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 - Titre : « Le temps passe-t-il pareil pour tout le monde ? »
 
 **Voix off**
-> Imaginez deux jumeaux, Léa et Hugo. Le jour de leurs trente ans, Léa embarque dans une fusée qui file à près de 87 % de la vitesse de la lumière. Hugo, lui, reste sur Terre. Quand Léa revient, Hugo a fêté dix anniversaires… mais Léa n'en a vécu que cinq. Ce n'est pas de la science-fiction : c'est ce que prédit la physique, et ce qu'on mesure tous les jours avec des horloges atomiques. Alors, le temps est-il vraiment le même pour tout le monde ?
+> Imaginez deux jumeaux, Léa et Hugo. Le jour de leurs trente ans, Léa embarque dans une fusée qui file à près de quatre-vingt-sept pour cent de la vitesse de la lumière. Hugo, lui, reste sur Terre. Quand Léa revient, Hugo a fêté dix anniversaires… mais Léa n'en a vécu que cinq. Ce n'est pas de la science-fiction : c'est ce que prédit la physique, et ce que mesurent nos horloges atomiques. Alors, le temps est-il vraiment le même pour tout le monde ?
 
 **Visuels / animations**
 - Fond étoilé en léger parallaxe. Deux silhouettes stylisées (cyan pour Léa, orange pour Hugo) côte à côte, chacune surmontée d'une horloge circulaire.
@@ -29,15 +29,16 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 2 — Le temps de Newton · ≈ 27 s
+## Scène 2 — Le temps de Newton · 26,2 s (voix 25,3 s)
 
 **Texte à l'écran**
 - « Newton, 1687 »
 - « Un temps absolu, universel »
 - « Une seule horloge pour l'Univers »
+- « … vraiment ? » (sur « elle est fausse »)
 
 **Voix off**
-> Pendant plus de deux siècles, la réponse semblait évidente. Pour Isaac Newton, le temps s'écoule de façon uniforme, sans aucun lien avec ce qui se passe dans le monde. Une seconde à Paris vaut une seconde à Tokyo, sur la Lune ou au bout de la galaxie. Le temps serait un grand métronome cosmique, le même pour tous, une simple toile de fond sur laquelle se déroulent les événements. Cette idée colle parfaitement à notre intuition… et pourtant, elle est fausse.
+> Pendant plus de deux siècles, la réponse semblait évidente. Pour Isaac Newton, le temps s'écoule de façon uniforme, indépendamment de tout. Une seconde à Paris vaut une seconde à Tokyo, sur la Lune ou au bout de la galaxie. Le temps serait un grand métronome cosmique, le même pour tous, une simple toile de fond. Cette idée colle parfaitement à notre intuition… et pourtant, elle est fausse.
 
 **Visuels / animations**
 - Une carte du monde stylisée (contours simplifiés en SVG, dessinés à la main) se trace progressivement.
@@ -47,17 +48,18 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 3 — Relativité restreinte (1905) · ≈ 40 s
+## Scène 3 — Relativité restreinte (1905) · 41,4 s (voix 40,5 s)
 
 **Texte à l'écran**
 - « Einstein, 1905 »
 - « c = 300 000 km/s, pour tous »
 - « Horloge à lumière »
+- Étiquettes : « au repos · N tics », « en mouvement · N tics », « trajet court / trajet long », « t = γ · t₀ », « 87 % de c → γ = 2 »
 - « Plus vite → temps plus lent »
 - Formule : « γ = 1 / √(1 − v²/c²) »
 
 **Voix off**
-> En 1905, un jeune employé du bureau des brevets de Berne, Albert Einstein, part d'un fait étrange : la vitesse de la lumière est la même pour tous les observateurs, quelle que soit leur vitesse. Pour en voir la conséquence, construisons une horloge très simple : un grain de lumière qui rebondit entre deux miroirs. Chaque aller-retour, c'est un tic. Maintenant, faisons avancer cette horloge. Vue de l'extérieur, la lumière doit suivre une trajectoire en diagonale, donc plus longue. Comme elle ne peut pas aller plus vite, chaque tic dure plus longtemps. Le temps de l'horloge en mouvement ralentit. À 87 % de la vitesse de la lumière, il s'écoule deux fois moins vite : c'est exactement le voyage de Léa.
+> En mille neuf cent cinq, un jeune employé du bureau des brevets de Berne, Albert Einstein, part d'un fait étrange : la vitesse de la lumière est la même pour tous les observateurs, quelle que soit leur vitesse. Construisons une horloge très simple : un grain de lumière qui rebondit entre deux miroirs. Chaque aller-retour, c'est un tic. Maintenant, faisons avancer cette horloge. Vue de l'extérieur, la lumière doit suivre une trajectoire en diagonale, donc plus longue. Comme elle ne peut pas aller plus vite, chaque tic dure plus longtemps. À quatre-vingt-sept pour cent de la vitesse de la lumière, il s'écoule deux fois moins vite : c'est exactement le voyage de Léa.
 
 **Visuels / animations**
 - Schéma central : deux miroirs horizontaux (traits cyan), un photon (point lumineux avec halo) qui rebondit verticalement ; un compteur de tics à côté.
@@ -68,16 +70,17 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 4 — La preuve par les muons · ≈ 32 s
+## Scène 4 — La preuve par les muons · 35,7 s (voix 34,8 s)
 
 **Texte à l'écran**
+- « Rayons cosmiques → muons »
 - « Muons : 2,2 microsecondes de vie »
 - « Sans relativité : ~660 m »
 - « Avec relativité : > 10 km »
 - « Détectés au sol ✓ »
 
 **Voix off**
-> La preuve tombe littéralement du ciel. Quand les rayons cosmiques percutent la haute atmosphère, vers quinze kilomètres d'altitude, ils produisent des muons, des cousins lourds de l'électron. Un muon vit en moyenne deux microsecondes. Même lancé à 99,8 % de la vitesse de la lumière, il ne devrait parcourir qu'environ six cents mètres avant de se désintégrer. Pourtant, nos détecteurs en reçoivent en masse au niveau du sol. La raison : à cette vitesse, leur temps s'écoule environ seize fois plus lentement. Leur courte vie suffit pour traverser toute l'atmosphère.
+> La preuve tombe littéralement du ciel. Quand les rayons cosmiques percutent la haute atmosphère, vers quinze kilomètres d'altitude, ils produisent des muons, des cousins lourds de l'électron. Un muon vit en moyenne deux microsecondes. Même lancé à quatre-vingt-dix-neuf virgule huit pour cent de la vitesse de la lumière, il ne devrait parcourir qu'environ six cents mètres avant de se désintégrer. Pourtant, on en détecte en masse au sol. La raison : à cette vitesse, leur temps s'écoule environ seize fois plus lentement. Leur courte vie suffit pour traverser toute l'atmosphère.
 
 **Visuels / animations**
 - Coupe verticale de l'atmosphère : dégradé du noir (haut) au bleu (bas), échelle d'altitude à gauche (0 → 15 km), sol stylisé avec un détecteur.
@@ -87,16 +90,17 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 5 — Relativité générale (1915) · ≈ 37 s
+## Scène 5 — Relativité générale (1915) · 36,9 s (voix 36,0 s)
 
 **Texte à l'écran**
 - « Einstein, 1915 : la gravité courbe le temps »
 - « Près d'une masse, le temps ralentit »
 - « Hafele-Keating, 1971 »
-- « Vers l'est : −59 ns · Vers l'ouest : +273 ns »
+- « Vers l'est : −59 ns » · « Vers l'ouest : +273 ns »
+- « ✓ prédit : −40 ± 23 ns et +275 ± 21 ns »
 
 **Voix off**
-> Dix ans plus tard, Einstein va plus loin. La gravité n'est pas une force mystérieuse : c'est une déformation de l'espace et du temps. Plus on est proche d'une masse, plus le temps s'écoule lentement. Votre tête vieillit un tout petit peu plus vite que vos pieds ! En 1971, Joseph Hafele et Richard Keating ont embarqué des horloges atomiques au césium dans des avions de ligne, pour deux tours du monde. Comparées aux horloges restées au sol, elles avaient perdu cinquante-neuf nanosecondes vers l'est et gagné deux cent soixante-treize vers l'ouest, en accord avec les prédictions, qui combinent vitesse et altitude.
+> Dix ans plus tard, Einstein va plus loin. La gravité n'est pas une force mystérieuse : c'est une déformation de l'espace et du temps. Plus on est proche d'une masse, plus le temps s'écoule lentement. Votre tête vieillit un tout petit peu plus vite que vos pieds ! En mille neuf cent soixante et onze, Joseph Hafele et Richard Keating ont embarqué des horloges atomiques au césium dans des avions de ligne, pour deux tours du monde. Comparées aux horloges restées au sol, elles avaient perdu cinquante-neuf nanosecondes vers l'est et gagné deux cent soixante-treize vers l'ouest. Exactement ce que prédisait la théorie.
 
 **Visuels / animations**
 - Grille d'espace-temps en perspective (lignes cyan). Une sphère lumineuse orange descend et creuse la grille en entonnoir (déformation animée, calculée point par point).
@@ -106,17 +110,20 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 6 — Le GPS au quotidien · ≈ 37 s
+## Scène 6 — Le GPS au quotidien · 39,5 s (voix 38,6 s)
 
 **Texte à l'écran**
-- « GPS : 20 200 km d'altitude »
+- « GPS : relativité au quotidien »
+- « GPS : 20 200 km d'altitude » · « ~3,9 km/s »
 - « Gravité : +45 µs/jour »
 - « Vitesse : −7 µs/jour »
 - « Total : +38 µs/jour »
+- « 1 ns ↔ 30 cm de lumière »
 - « Sans correction : ~11 km/jour »
+- « Corrigé avant le lancement » + « horloge réglée au sol : 10,229 999 995 43 MHz »
 
 **Voix off**
-> Tout cela a une application concrète, dans votre poche. Les satellites GPS tournent à une vingtaine de milliers de kilomètres d'altitude, à près de quatre kilomètres par seconde. Là-haut, la gravité plus faible fait avancer leurs horloges d'environ quarante-cinq microsecondes par jour. Leur vitesse, elle, les ralentit d'environ sept microsecondes. Bilan : trente-huit microsecondes d'avance chaque jour. Or la lumière parcourt trente centimètres en une nanoseconde : sans correction, la position calculée dériverait d'une dizaine de kilomètres par jour. C'est pourquoi les horloges des satellites sont volontairement réglées un peu plus lentes avant le lancement.
+> Et tout cela se joue dans votre poche. Les satellites GPS tournent à une vingtaine de milliers de kilomètres d'altitude, à près de quatre kilomètres par seconde. Là-haut, la gravité plus faible fait avancer leurs horloges d'environ quarante-cinq microsecondes par jour. Leur vitesse, elle, les ralentit d'environ sept microsecondes. Bilan : trente-huit microsecondes d'avance chaque jour. Or la lumière parcourt trente centimètres en une nanoseconde : sans correction, la position calculée dériverait d'une dizaine de kilomètres par jour. C'est pourquoi les horloges des satellites sont volontairement réglées un peu plus lentes avant le lancement.
 
 **Visuels / animations**
 - Terre en rotation lente au centre (cercle avec continents simplifiés), orbite elliptique en pointillés, 4 à 6 satellites (SVG : corps + panneaux solaires) qui tournent.
@@ -126,12 +133,13 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 7 — La flèche du temps · ≈ 30 s
+## Scène 7 — La flèche du temps · 32,9 s (voix 32,0 s)
 
 **Texte à l'écran**
 - « Pourquoi le temps n'a qu'un sens ? »
 - « Entropie : le désordre augmente »
 - « ▶ normal · ◀ absurde »
+- Étiquettes : « ordre : rare », « désordre : innombrable »
 
 **Voix off**
 > Autre mystère : pourquoi le temps va-t-il toujours dans le même sens ? Les lois du mouvement, elles, fonctionnent aussi bien à l'endroit qu'à l'envers. La réponse vient de la thermodynamique. Il existe infiniment plus de façons d'être en désordre que d'être en ordre. Un œuf entier, c'est un arrangement rare ; un œuf cassé, il y en a des milliards de milliards. Le hasard pousse donc toujours vers le désordre, ce que les physiciens appellent l'entropie. Voilà pourquoi un œuf ne se reconstitue jamais tout seul.
@@ -143,7 +151,7 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 8 — Le temps perçu · ≈ 32 s
+## Scène 8 — Le temps perçu · 31,9 s (voix 31,0 s)
 
 **Texte à l'écran**
 - « Le cerveau n'a pas d'horloge »
@@ -152,7 +160,7 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 - « Nouveaux souvenirs = période plus longue »
 
 **Voix off**
-> Enfin, il y a le temps que nous ressentons. Notre cerveau ne possède pas de chronomètre interne : il estime les durées à partir de notre attention et de nos souvenirs. Dans une salle d'attente, on surveille l'horloge, et chaque minute s'étire. Pendant une soirée entre amis, les heures filent. Mais en regardant en arrière, c'est l'inverse : une semaine de vacances pleine de nouveautés laisse beaucoup de souvenirs, et paraît plus longue qu'un mois de routine. C'est aussi pour cela que les années semblent accélérer avec l'âge.
+> Enfin, il y a le temps que nous ressentons. Notre cerveau ne possède pas de chronomètre interne : il estime les durées à partir de notre attention et de nos souvenirs. Dans une salle d'attente, on surveille l'horloge, et chaque minute s'étire. Pendant une soirée entre amis, les heures filent. Mais avec le recul, c'est l'inverse : une semaine de vacances pleine de nouveautés laisse beaucoup de souvenirs, et paraît plus longue qu'un mois de routine. C'est aussi pour cela que les années semblent accélérer avec l'âge.
 
 **Visuels / animations**
 - Grand sablier au centre (SVG, verre cyan, sable orange) ; le sable coule à débit variable.
@@ -162,7 +170,7 @@ Durée totale estimée : **≈ 4 min 35 s** (≈ 690 mots de voix off à ~150 mo
 
 ---
 
-## Scène 9 — Conclusion · ≈ 28 s
+## Scène 9 — Conclusion · 25,1 s (voix 24,2 s)
 
 **Texte à l'écran**
 - « Vitesse · Gravité · Entropie · Esprit »
