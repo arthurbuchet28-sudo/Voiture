@@ -8,3 +8,4 @@ out/*
 
 # La vidéo finale est versionnée
 !out/w16-explication.mp4
+!out/miniature.png

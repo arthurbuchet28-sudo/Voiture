@@ -23,6 +23,15 @@ npm run render           # = npx remotion render W16Explication out/w16-explicat
 npx remotion still W16Explication out/image.png --frame=300   # une seule image, pour vérifier
 ```
 
+## Miniature
+
+`out/miniature.png` (1280×720, format YouTube) est générée par la composition `Miniature`
+(`src/Miniature.tsx`, textes modifiables dans `MINIATURE` en haut du fichier) :
+
+```bash
+npm run miniature
+```
+
 ## Modifier la voix off
 
 1. Modifiez le texte dans **`src/voix-off.json`** : une liste de phrases (ou groupes de phrases)

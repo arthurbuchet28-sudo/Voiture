@@ -26,6 +26,7 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render": "remotion render W16Explication out/w16-explication.mp4 --codec=h264"
+    "render": "remotion render W16Explication out/w16-explication.mp4 --codec=h264",
+    "miniature": "remotion still Miniature out/miniature.png"
   }
 }
