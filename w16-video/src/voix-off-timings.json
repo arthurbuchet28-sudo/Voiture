@@ -1,0 +1,162 @@
+{
+  "intro": {
+    "fichier": "voix/intro.wav",
+    "duree": 10.085,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 3.057
+      },
+      {
+        "debut": 3.407,
+        "fin": 10.085
+      }
+    ]
+  },
+  "pourquoiW": {
+    "fichier": "voix/pourquoiW.wav",
+    "duree": 19.994,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 5.612
+      },
+      {
+        "debut": 5.962,
+        "fin": 12.176
+      },
+      {
+        "debut": 12.526,
+        "fin": 15.627
+      },
+      {
+        "debut": 15.977,
+        "fin": 19.994
+      }
+    ]
+  },
+  "compacite": {
+    "fichier": "voix/compacite.wav",
+    "duree": 16.08,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 6.909
+      },
+      {
+        "debut": 7.259,
+        "fin": 10.968
+      },
+      {
+        "debut": 11.318,
+        "fin": 16.08
+      }
+    ]
+  },
+  "quatreTemps": {
+    "fichier": "voix/quatreTemps.wav",
+    "duree": 26.177,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 3.648
+      },
+      {
+        "debut": 3.998,
+        "fin": 7.914
+      },
+      {
+        "debut": 8.264,
+        "fin": 11.586
+      },
+      {
+        "debut": 11.936,
+        "fin": 18.607
+      },
+      {
+        "debut": 18.957,
+        "fin": 22.203
+      },
+      {
+        "debut": 22.553,
+        "fin": 26.177
+      }
+    ]
+  },
+  "turbos": {
+    "fichier": "voix/turbos.wav",
+    "duree": 26.979,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 3.908
+      },
+      {
+        "debut": 4.258,
+        "fin": 6.408
+      },
+      {
+        "debut": 7.258,
+        "fin": 13.287
+      },
+      {
+        "debut": 13.637,
+        "fin": 17.862
+      },
+      {
+        "debut": 18.212,
+        "fin": 26.979
+      }
+    ]
+  },
+  "refroidissement": {
+    "fichier": "voix/refroidissement.wav",
+    "duree": 10.083,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 2.45
+      },
+      {
+        "debut": 3.0,
+        "fin": 10.083
+      }
+    ]
+  },
+  "chiffres": {
+    "fichier": "voix/chiffres.wav",
+    "duree": 15.979,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 5.028
+      },
+      {
+        "debut": 5.378,
+        "fin": 8.774
+      },
+      {
+        "debut": 9.124,
+        "fin": 11.557
+      },
+      {
+        "debut": 12.124,
+        "fin": 15.979
+      }
+    ]
+  },
+  "conclusion": {
+    "fichier": "voix/conclusion.wav",
+    "duree": 7.065,
+    "segments": [
+      {
+        "debut": 0.0,
+        "fin": 2.688
+      },
+      {
+        "debut": 3.038,
+        "fin": 7.065
+      }
+    ]
+  }
+}

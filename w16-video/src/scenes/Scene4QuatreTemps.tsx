@@ -1,5 +1,5 @@
 import { interpolate, interpolateColors, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, DUREES, TEXTES } from "../config";
+import { COLORS, reperes, TEXTES } from "../config";
 import { FONT_TEXTE, FONT_TITRE } from "../fonts";
 import { Fond } from "../components/Fond";
 import { SousTitres } from "../components/SousTitres";
@@ -8,6 +8,23 @@ import { surPolyligne } from "../components/geometrie";
 import { fr } from "../components/texte";
 
 const T = TEXTES.quatreTemps;
+// Début de chaque phrase de voix off (s) : 0 intro, 1 admission, 2 compression, 3 combustion,
+// 4 échappement, 5 soupapes
+const R = reperes("quatreTemps").map((r) => r.debut);
+/** Après le premier cycle commenté, le moteur continue de tourner : un demi-tour en… (s) */
+const DEMI_TOUR_LIBRE = 1.2;
+
+/**
+ * Angle de vilebrequin (radians) à l'instant t : immobile au point mort haut pendant l'intro,
+ * puis un demi-tour par temps, chaque demi-tour durant le temps de sa phrase de voix off.
+ */
+const angleVilebrequin = (t: number) => {
+  if (t < R[1]) return 0;
+  for (let k = 0; k < 4; k++) {
+    if (t < R[k + 2]) return Math.PI * (k + (t - R[k + 1]) / (R[k + 2] - R[k + 1]));
+  }
+  return Math.PI * (4 + (t - R[5]) / DEMI_TOUR_LIBRE);
+};
 
 // Géométrie du cylindre (coupe)
 const CX = 700;
@@ -70,12 +87,12 @@ const Etiquette: React.FC<{
 export const Scene4QuatreTemps: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const dureePhase = (DUREES.quatreTemps / 4) * fps;
-
-  // Angle de vilebrequin : un demi-tour par temps, 0 = point mort haut au début de l'admission
-  const theta = (frame / dureePhase) * Math.PI;
-  const phase = Math.min(3, Math.floor(frame / dureePhase));
-  const u = Math.min(1, (frame - phase * dureePhase) / dureePhase); // avancement dans le temps
+  // Angle de vilebrequin : 0 = point mort haut au début de l'admission
+  const theta = angleVilebrequin(frame / fps);
+  const demiTours = theta / Math.PI;
+  const phase = Math.floor(demiTours) % 4; // 0 admission … 3 échappement
+  const u = demiTours - Math.floor(demiTours); // avancement dans le temps en cours
+  const phaseListe = frame / fps < R[1] ? -1 : phase; // aucun temps surligné pendant l'intro
 
   const maneton = { x: CX + MANETON * Math.sin(theta), y: CY - MANETON * Math.cos(theta) };
   const axePiston =
@@ -105,7 +122,7 @@ export const Scene4QuatreTemps: React.FC = () => {
         })
       : null;
 
-  const badge = spring({ frame: frame - 20, fps, config: { damping: 200 } });
+  const badge = spring({ frame: frame - Math.round(R[5] * fps), fps, config: { damping: 200 } });
   const intro = spring({ frame, fps, config: { damping: 200 } });
 
   return (
@@ -188,7 +205,7 @@ export const Scene4QuatreTemps: React.FC = () => {
       {/* Liste des 4 temps */}
       <div style={{ position: "absolute", left: 1180, top: 210, width: 620, opacity: intro }}>
         {T.phases.map((nom, i) => {
-          const actif = i === phase;
+          const actif = i === phaseListe;
           return (
             <div
               key={nom}
@@ -230,7 +247,7 @@ export const Scene4QuatreTemps: React.FC = () => {
         </div>
       </div>
 
-      <SousTitres items={T.sousTitres} />
+      <SousTitres scene="quatreTemps" items={T.sousTitres} />
     </Fond>
   );
 };

@@ -1,5 +1,5 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, TEXTES } from "../config";
+import { COLORS, reperes, TEXTES } from "../config";
 import { FONT_TEXTE, FONT_TITRE } from "../fonts";
 import { Fond } from "../components/Fond";
 import { SousTitres } from "../components/SousTitres";
@@ -7,6 +7,8 @@ import { TitreScene } from "../components/TitreScene";
 import { fr } from "../components/texte";
 
 const T = TEXTES.compacite;
+// Début de chaque phrase de voix off (s) : 0 V16 très long, 1 W16 plus court, 2 conclusion
+const V = reperes("compacite").map((r) => r.debut);
 
 // Vue de dessus schématique : cercles = cylindres. Pas entre deux cylindres d'une rangée.
 const PAS = 64;
@@ -31,7 +33,7 @@ const BLOCS: Bloc[] = [
   },
   {
     y: 395,
-    debut: 1.4,
+    debut: V[0] + 3.2,
     rangees: [
       { dy: 0, dx: 0, n: 6, couleur: COLORS.argentFonce },
       { dy: 58, dx: 22, n: 6, couleur: COLORS.argentFonce },
@@ -39,7 +41,7 @@ const BLOCS: Bloc[] = [
   },
   {
     y: 575,
-    debut: 5,
+    debut: V[1],
     rangees: [
       { dy: 0, dx: 0, n: 4, couleur: COLORS.bleu },
       { dy: 50, dx: 32, n: 4, couleur: COLORS.bleuClair },
@@ -59,11 +61,11 @@ export const Scene3Compacite: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const longueurV12 = dimensions(BLOCS[1]).largeur;
-  const repere = interpolate(frame, [6.2 * fps, 7 * fps], [0, 1], {
+  const repere = interpolate(frame, [(V[2] + 0.3) * fps, (V[2] + 1.1) * fps], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const message = spring({ frame: frame - Math.round(5.8 * fps), fps, config: { damping: 200 } });
+  const message = spring({ frame: frame - Math.round(V[2] * fps), fps, config: { damping: 200 } });
 
   return (
     <Fond>
@@ -192,7 +194,7 @@ export const Scene3Compacite: React.FC = () => {
         {fr(T.message)}
       </div>
 
-      <SousTitres items={T.sousTitres} />
+      <SousTitres scene="compacite" items={T.sousTitres} />
     </Fond>
   );
 };

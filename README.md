@@ -154,4 +154,4 @@ src/
 ## Vidéo : le moteur W16
 
 Le dossier [`w16-video/`](w16-video/) contient un projet Remotion indépendant (vidéo explicative de
-75 s sur le moteur W16). Voir [`w16-video/README.md`](w16-video/README.md).
+2 min 20 commentée en voix off sur le moteur W16). Voir [`w16-video/README.md`](w16-video/README.md).

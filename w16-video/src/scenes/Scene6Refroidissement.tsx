@@ -1,5 +1,5 @@
 import { interpolate, interpolateColors, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, TEXTES } from "../config";
+import { COLORS, DUREES, reperes, TEXTES } from "../config";
 import { FONT_TITRE } from "../fonts";
 import { Fond } from "../components/Fond";
 import { SousTitres } from "../components/SousTitres";
@@ -7,6 +7,8 @@ import { TitreScene } from "../components/TitreScene";
 import { fr } from "../components/texte";
 
 const T = TEXTES.refroidissement;
+// Phrases de voix off : 0 la chaleur, 1 les radiateurs
+const R = reperes("refroidissement").map((r) => r.debut);
 
 const CX = 960;
 const CY = 540;
@@ -51,14 +53,14 @@ export const Scene6Refroidissement: React.FC = () => {
   const { fps } = useVideoConfig();
   const sec = frame / fps;
 
-  // 0–4 s : la chaleur monte ; 4–8 s : les radiateurs apparaissent et évacuent la chaleur
-  const chaleur = interpolate(sec, [0, 3.5], [0.25, 1], { extrapolateRight: "clamp" });
+  // Phrase 0 : la chaleur monte ; phrase 1 : les radiateurs apparaissent et évacuent la chaleur
+  const chaleur = interpolate(sec, [0, R[1]], [0.25, 1], { extrapolateRight: "clamp" });
   const pulsation = 0.85 + 0.15 * Math.sin(frame * 0.25);
-  const flux = interpolate(sec, [4.2, 5], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const refroidi = interpolate(sec, [5, 8], [0, 0.55], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const flux = interpolate(sec, [R[1] + 0.6, R[1] + 1.4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const refroidi = interpolate(sec, [R[1] + 1.4, DUREES.refroidissement], [0, 0.55], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const temperature = chaleur - refroidi;
 
-  const compteur = RADIATEURS.filter((_, i) => frame >= Math.round(3.6 * fps) + i * 3 + 6).length;
+  const compteur = RADIATEURS.filter((_, i) => frame >= Math.round(R[1] * fps) + i * 3 + 6).length;
   const intro = spring({ frame, fps, config: { damping: 200 } });
 
   return (
@@ -109,7 +111,7 @@ export const Scene6Refroidissement: React.FC = () => {
 
         {/* radiateurs */}
         {RADIATEURS.map((r, i) => {
-          const p = spring({ frame: frame - Math.round(3.6 * fps) - i * 3, fps, config: { damping: 15 } });
+          const p = spring({ frame: frame - Math.round(R[1] * fps) - i * 3, fps, config: { damping: 15 } });
           return <Radiateur key={i} x={r.x} y={r.y} p={Math.min(1, p)} froid={flux} />;
         })}
 
@@ -150,7 +152,7 @@ export const Scene6Refroidissement: React.FC = () => {
       </svg>
 
       <TitreScene numero={6} titre={T.titre} />
-      <SousTitres items={T.sousTitres} />
+      <SousTitres scene="refroidissement" items={T.sousTitres} />
     </Fond>
   );
 };

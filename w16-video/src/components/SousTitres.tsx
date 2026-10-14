@@ -1,15 +1,28 @@
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, FONDU_SOUS_TITRE, type SousTitre } from "../config";
+import { COLORS, DUREES, FONDU_SOUS_TITRE, reperes, type CleScene, type SousTitre } from "../config";
 import { FONT_TEXTE } from "../fonts";
 import { fr } from "./texte";
 
+/**
+ * Horaires (secondes depuis le début de la scène) de chaque sous-titre : il apparaît au début
+ * de sa phrase de voix off et reste jusqu'au sous-titre suivant ou jusqu'à la fin de la scène.
+ */
+export const horairesSousTitres = (scene: CleScene, items: readonly SousTitre[]) => {
+  const r = reperes(scene);
+  return items.map((st, i) => ({
+    lignes: st.lignes,
+    de: r[st.phrase].debut,
+    a: i + 1 < items.length ? r[items[i + 1].phrase].debut : DUREES[scene],
+  }));
+};
+
 /** Affiche le sous-titre actif en bas de l'écran, avec fondu d'entrée et de sortie. */
-export const SousTitres: React.FC<{ items: readonly SousTitre[] }> = ({ items }) => {
+export const SousTitres: React.FC<{ scene: CleScene; items: readonly SousTitre[] }> = ({ scene, items }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   return (
     <>
-      {items.map((st, i) => {
+      {horairesSousTitres(scene, items).map((st, i) => {
         const de = Math.round(st.de * fps);
         const a = Math.round(st.a * fps);
         if (frame < de || frame >= a) return null;

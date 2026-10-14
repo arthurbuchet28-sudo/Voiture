@@ -3,6 +3,8 @@
  * Les durées sont en secondes. La durée totale de la vidéo est calculée automatiquement.
  */
 
+import TIMINGS from "./voix-off-timings.json";
+
 // ─── Format ──────────────────────────────────────────────────────────────────
 export const VIDEO = {
   id: "W16Explication",
@@ -35,19 +37,45 @@ export const FONTS = {
   texte: "Inter",
 } as const;
 
-// ─── Durées des scènes (secondes) ───────────────────────────────────────────
-// La somme donne la durée totale (75 s). Les fondus entre scènes ne raccourcissent pas
-// la vidéo : chaque scène est prolongée de la durée du fondu (voir W16Video.tsx).
-export const DUREES = {
-  intro: 8,
-  pourquoiW: 12,
-  compacite: 10,
-  quatreTemps: 12,
-  turbos: 14,
-  refroidissement: 8,
-  chiffres: 7,
-  conclusion: 4,
-} as const;
+// ─── Voix off et durées des scènes ──────────────────────────────────────────
+// Le texte de la voix off est dans src/voix-off.json. Après modification, régénérez l'audio :
+//   python3 voix-off/generer.py
+// Cela produit public/voix/<scène>.wav et src/voix-off-timings.json (durée et horaire de
+// chaque phrase). Les durées des scènes en découlent automatiquement :
+//   durée = VOIX_DEBUT + durée de la voix + MARGE_FIN
+// Les fondus entre scènes ne raccourcissent pas la vidéo : chaque scène est prolongée de la
+// durée du fondu (voir W16Video.tsx), qui commence donc après la marge de fin.
+
+/** Délai entre le début d'une scène et le début de sa voix off, en secondes. */
+export const VOIX_DEBUT = 0.4;
+
+/** Silence après la dernière phrase d'une scène, avant le fondu, en secondes. */
+export const MARGE_FIN: Record<CleScene, number> = {
+  intro: 0.5,
+  pourquoiW: 0.5,
+  compacite: 0.5,
+  quatreTemps: 0.5,
+  turbos: 0.5,
+  refroidissement: 0.5,
+  chiffres: 0.5,
+  conclusion: 1.3, // laisse le temps au fondu au noir final
+};
+
+export type CleScene = keyof typeof TIMINGS;
+
+const versImage = (s: number) => Math.ceil(s * VIDEO.fps) / VIDEO.fps;
+
+/** Durée de chaque scène en secondes (calculée depuis la voix off). */
+export const DUREES = Object.fromEntries(
+  (Object.keys(TIMINGS) as CleScene[]).map((cle) => [
+    cle,
+    versImage(VOIX_DEBUT + TIMINGS[cle].duree + MARGE_FIN[cle]),
+  ]),
+) as Record<CleScene, number>;
+
+/** Début et fin de chaque phrase de la voix off, en secondes depuis le début de la scène. */
+export const reperes = (cle: CleScene) =>
+  TIMINGS[cle].segments.map((s) => ({ debut: VOIX_DEBUT + s.debut, fin: VOIX_DEBUT + s.fin }));
 
 /** Durée du fondu entre deux scènes, en secondes. */
 export const TRANSITION_S = 0.5;
@@ -56,19 +84,22 @@ export const TRANSITION_S = 0.5;
 export const FONDU_SOUS_TITRE = 8;
 
 // ─── Audio ───────────────────────────────────────────────────────────────────
-// Piste prévue mais vide. Déposez vos fichiers dans public/ puis indiquez leur nom ici,
-// par exemple musique: "musique.mp3". null = pas de son.
-export const AUDIO: { musique: string | null; voixOff: string | null; volumeMusique: number } = {
+// La voix off est ajoutée automatiquement (public/voix/). Musique de fond facultative :
+// déposez un fichier dans public/ puis indiquez son nom, par exemple musique: "musique.mp3".
+// Le volume reste bas pour ne pas couvrir la voix.
+export const AUDIO: { voixOff: boolean; volumeVoix: number; musique: string | null; volumeMusique: number } = {
+  voixOff: true,
+  volumeVoix: 1,
   musique: null,
-  voixOff: null,
-  volumeMusique: 0.35,
+  volumeMusique: 0.08,
 };
 
 // ─── Textes ──────────────────────────────────────────────────────────────────
-// Sous-titres : `de` et `a` en secondes depuis le début de la scène (au moins 3 s d'affichage).
-// Gardez `a` ≤ durée de la scène pour éviter qu'il chevauche le sous-titre suivant pendant le fondu.
-// Chaque entrée de `lignes` est une ligne à l'écran (12 mots maximum).
-export type SousTitre = { de: number; a: number; lignes: string[] };
+// Sous-titres : `phrase` = numéro (à partir de 0) de la phrase de voix off (src/voix-off.json)
+// sur laquelle le sous-titre apparaît. Il reste affiché jusqu'au sous-titre suivant, ou jusqu'à
+// la fin de la scène. Chaque entrée de `lignes` est une ligne à l'écran (12 mots maximum).
+// Un contrôle au démarrage vérifie que chaque sous-titre reste au moins 3 s à l'écran.
+export type SousTitre = { phrase: number; lignes: string[] };
 
 export const TEXTES = {
   intro: {
@@ -81,17 +112,10 @@ export const TEXTES = {
     vueDessus: "Vue de dessus",
     vueDessusDetail: "4 rangées × 4 cylindres",
     sousTitres: [
-      { de: 0, a: 4, lignes: ["Un moteur en V classique : deux rangées de cylindres."] },
-      {
-        de: 4,
-        a: 8,
-        lignes: ["Rapprochées à seulement 15°, deux rangées forment un VR8."],
-      },
-      {
-        de: 8,
-        a: 12,
-        lignes: ["Deux VR8 assemblés en V à 90° forment le « W ».", "4 rangées de 4 cylindres = 16 cylindres."],
-      },
+      { phrase: 0, lignes: ["Un moteur en V classique : deux rangées de cylindres."] },
+      { phrase: 1, lignes: ["Rapprochées à seulement 15°, deux rangées forment un VR8."] },
+      { phrase: 2, lignes: ["Deux VR8 assemblés en V à 90° forment le « W »."] },
+      { phrase: 3, lignes: ["4 rangées de 4 cylindres = 16 cylindres."] },
     ] as SousTitre[],
   },
   compacite: {
@@ -104,12 +128,8 @@ export const TEXTES = {
     repereV12: "longueur d'un V12",
     message: "Autant de cylindres qu'un V16, dans un encombrement proche d'un V12",
     sousTitres: [
-      { de: 0, a: 5, lignes: ["Un V16 aligne 8 cylindres par rangée : il est très long."] },
-      {
-        de: 5,
-        a: 10,
-        lignes: ["Le W16 est plus large, mais bien plus court qu'un V16."],
-      },
+      { phrase: 0, lignes: ["Un V16 aligne 8 cylindres par rangée : il est très long."] },
+      { phrase: 1, lignes: ["Le W16 est plus large, mais bien plus court qu'un V16."] },
     ] as SousTitre[],
   },
   quatreTemps: {
@@ -125,10 +145,11 @@ export const TEXTES = {
     },
     soupapes: ["4 soupapes par cylindre", "× 16 cylindres = 64 soupapes"],
     sousTitres: [
-      { de: 0, a: 3, lignes: ["Admission : le piston descend et aspire l'air et l'essence."] },
-      { de: 3, a: 6, lignes: ["Compression : le piston remonte et comprime le mélange."] },
-      { de: 6, a: 9, lignes: ["Combustion : l'étincelle enflamme le mélange, le piston est repoussé."] },
-      { de: 9, a: 12, lignes: ["Échappement : le piston remonte et chasse les gaz brûlés."] },
+      { phrase: 1, lignes: ["Admission : le piston descend et aspire l'air et l'essence."] },
+      { phrase: 2, lignes: ["Compression : le piston remonte et comprime le mélange."] },
+      { phrase: 3, lignes: ["Combustion : l'étincelle enflamme le mélange, le piston est repoussé."] },
+      { phrase: 4, lignes: ["Échappement : le piston remonte et chasse les gaz brûlés."] },
+      { phrase: 5, lignes: ["4 soupapes par cylindre : 64 soupapes au total."] },
     ] as SousTitre[],
   },
   turbos: {
@@ -153,16 +174,14 @@ export const TEXTES = {
       quatre: "4 turbos actifs",
     },
     sousTitres: [
-      { de: 0, a: 3.5, lignes: ["L'air frais est aspiré puis comprimé par les turbocompresseurs."] },
-      { de: 3.5, a: 7, lignes: ["Refroidi, l'air plus dense entre dans les cylindres."] },
+      { phrase: 1, lignes: ["L'air frais est aspiré puis comprimé par les turbocompresseurs."] },
+      { phrase: 2, lignes: ["Refroidi, l'air plus dense entre dans les cylindres."] },
       {
-        de: 7,
-        a: 10.5,
+        phrase: 3,
         lignes: ["Les gaz d'échappement font tourner les turbines,", "qui entraînent les compresseurs."],
       },
       {
-        de: 10.5,
-        a: 14,
+        phrase: 4,
         lignes: ["Sur la Chiron : 2 turbos à bas régime,", "puis les 4 au-delà d'environ 3 800 tr/min."],
       },
     ] as SousTitre[],
@@ -172,10 +191,9 @@ export const TEXTES = {
     moteur: "Moteur W16",
     compteur: "radiateurs",
     sousTitres: [
-      { de: 0, a: 4, lignes: ["Autant de puissance produit énormément de chaleur."] },
+      { phrase: 0, lignes: ["Autant de puissance produit énormément de chaleur."] },
       {
-        de: 4,
-        a: 8,
+        phrase: 1,
         lignes: ["Une dizaine de radiateurs refroidissent le moteur, l'huile,", "la boîte et l'air de suralimentation."],
       },
     ] as SousTitre[],

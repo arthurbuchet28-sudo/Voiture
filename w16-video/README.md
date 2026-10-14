@@ -1,6 +1,7 @@
-# Le moteur W16 en 75 secondes
+# Le moteur W16 en 2 minutes 20
 
-Vidéo explicative (1920×1080, 30 fps, H.264) réalisée avec [Remotion](https://www.remotion.dev).
+Vidéo explicative commentée en voix off (1920×1080, 30 fps, H.264 + AAC) réalisée avec
+[Remotion](https://www.remotion.dev). Voix : fr-FR-DeniseNeural, générée avec edge-tts.
 Tous les visuels sont des schémas SVG animés dessinés dans le code : aucun logo, aucune photo.
 
 Rendu final : `out/w16-explication.mp4`.
@@ -22,35 +23,50 @@ npm run render           # = npx remotion render W16Explication out/w16-explicat
 npx remotion still W16Explication out/image.png --frame=300   # une seule image, pour vérifier
 ```
 
-## Modifier les textes, durées et couleurs
+## Modifier la voix off
 
-Tout se règle dans **`src/config.ts`** :
-
-| Bloc       | Contenu                                                                 |
-|------------|-------------------------------------------------------------------------|
-| `DUREES`   | durée de chaque scène, en secondes. La durée totale est leur somme.     |
-| `TRANSITION_S` | durée des fondus entre scènes (ils ne raccourcissent pas la vidéo). |
-| `TEXTES`   | titres, étiquettes et sous-titres de chaque scène.                      |
-| `CHIFFRES` | fiche technique et puissances de la scène 7.                            |
-| `COLORS`, `FONTS` | palette et polices.                                              |
-
-Les sous-titres sont donnés sous la forme `{ de, a, lignes }`, en secondes depuis le début de la
-scène. Chaque entrée de `lignes` est une ligne à l'écran (les lignes ne passent jamais à la ligne
-automatiquement : restez sous 12 mots environ). Gardez `a` inférieur ou égal à la durée de la scène,
-sinon le sous-titre chevauche celui de la scène suivante pendant le fondu.
-
-Si vous allongez une scène, pensez à décaler les sous-titres et, si besoin, les animations de
-la scène (les instants clés sont exprimés en secondes en haut de chaque fichier `src/scenes/*.tsx`).
-
-## Ajouter une voix off ou une musique
-
-La vidéo est rendue sans son, avec deux pistes prévues :
-
-1. Déposez vos fichiers dans `public/` (par exemple `public/musique.mp3`, `public/voix.mp3`).
-2. Dans `src/config.ts`, renseignez `AUDIO` :
-   ```ts
-   export const AUDIO = { musique: "musique.mp3", voixOff: "voix.mp3", volumeMusique: 0.35 };
+1. Modifiez le texte dans **`src/voix-off.json`** : une liste de phrases (ou groupes de phrases)
+   par scène. Vous pouvez aussi y changer la voix, le débit (`"debit": "-5%"` pour ralentir) et la
+   pause entre phrases.
+2. Régénérez l'audio (Python 3, ffmpeg et `pip install edge-tts` requis, accès Internet nécessaire) :
+   ```bash
+   python3 voix-off/generer.py
    ```
+   Le script crée `public/voix/<scène>.wav` (silences de début et de fin supprimés) et
+   `src/voix-off-timings.json` (durée de chaque scène et horaire de chaque phrase).
+3. Relancez `npm run render`.
+
+**Les durées des scènes s'adaptent toutes seules à la voix :**
+`durée = VOIX_DEBUT (0,4 s) + durée de la voix + MARGE_FIN (0,5 s)`. Aucune phrase n'est coupée,
+et le fondu vers la scène suivante commence après la marge.
+
+**Les animations et les sous-titres sont calés sur les phrases.** Par exemple, l'ouverture du
+« W » démarre avec la phrase « Puis on assemble deux VR8… », et chaque temps du piston dure le temps
+de sa phrase. Si vous ajoutez ou supprimez une phrase, vérifiez les numéros de phrase utilisés en haut
+des fichiers `src/scenes/*.tsx` et dans les sous-titres de `config.ts`.
+
+## Modifier les sous-titres, couleurs et chiffres
+
+Dans **`src/config.ts`** :
+
+| Bloc        | Contenu                                                               |
+|-------------|-----------------------------------------------------------------------|
+| `TEXTES`    | titres, étiquettes et sous-titres affichés.                           |
+| `CHIFFRES`  | fiche technique et puissances de la scène 7.                          |
+| `VOIX_DEBUT`, `MARGE_FIN` | silences avant et après la voix de chaque scène.        |
+| `AUDIO`     | volume de la voix, musique de fond facultative.                       |
+| `COLORS`, `FONTS` | palette et polices.                                             |
+
+Un sous-titre s'écrit `{ phrase, lignes }` : il apparaît au début de la phrase de voix off numéro
+`phrase` (en partant de 0) et reste jusqu'au sous-titre suivant. Chaque entrée de `lignes` est une
+ligne à l'écran (12 mots maximum, pas de retour à la ligne automatique). Le studio et le rendu
+refusent de démarrer si un sous-titre reste moins de 3 s à l'écran.
+
+## Ajouter une musique de fond
+
+1. Déposez le fichier dans `public/` (par exemple `public/musique.mp3`).
+2. Dans `src/config.ts`, renseignez `AUDIO.musique: "musique.mp3"`. Le volume par défaut
+   (`volumeMusique: 0.08`) la laisse nettement sous la voix ; elle boucle si elle est trop courte.
 3. Relancez `npm run render`.
 
 Utilisez uniquement des sons libres de droits ou dont vous détenez les droits.
@@ -59,21 +75,27 @@ Utilisez uniquement des sons libres de droits ou dont vous détenez les droits.
 
 ```
 src/
-  config.ts            réglages (durées, couleurs, textes, chiffres, audio)
-  Root.tsx             déclaration de la composition (durée = somme des scènes)
+  config.ts            réglages (couleurs, textes, chiffres, audio) ; durées calculées
+  voix-off.json        texte de la voix off
+  voix-off-timings.json  horaires générés (ne pas modifier à la main)
+  Root.tsx             déclaration de la composition et contrôles (durée, sous-titres)
   W16Video.tsx         enchaînement des scènes et fondus
   fonts.ts             polices Montserrat et Inter (public/fonts/, licence SIL OFL)
   components/          fond, titres, sous-titres, schéma du moteur, arcs d'angle…
   scenes/              une scène par fichier (Scene1Intro … Scene8Conclusion)
+public/voix/           voix off, un fichier par scène
+voix-off/generer.py    génération de la voix off (edge-tts)
 ```
 
-| # | Scène              | Début | Durée |
-|---|--------------------|-------|-------|
-| 1 | Introduction       | 0 s   | 8 s   |
-| 2 | Pourquoi un « W » ?| 8 s   | 12 s  |
-| 3 | Compacité          | 20 s  | 10 s  |
-| 4 | Le cycle à 4 temps | 30 s  | 12 s  |
-| 5 | Quatre turbos      | 42 s  | 14 s  |
-| 6 | Refroidissement    | 56 s  | 8 s   |
-| 7 | Chiffres clés      | 64 s  | 7 s   |
-| 8 | Conclusion         | 71 s  | 4 s   |
+Durées actuelles (elles suivent la voix off) :
+
+| # | Scène               | Début   | Durée  |
+|---|---------------------|---------|--------|
+| 1 | Introduction        | 0:00    | 11,0 s |
+| 2 | Pourquoi un « W » ? | 0:11    | 20,9 s |
+| 3 | Compacité           | 0:31,9  | 17,0 s |
+| 4 | Le cycle à 4 temps  | 0:48,9  | 27,1 s |
+| 5 | Quatre turbos       | 1:16    | 27,9 s |
+| 6 | Refroidissement     | 1:43,9  | 11,0 s |
+| 7 | Chiffres clés       | 1:54,9  | 16,9 s |
+| 8 | Conclusion          | 2:11,8  | 8,8 s  |

@@ -1,11 +1,15 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig, Easing } from "remotion";
-import { CHIFFRES, COLORS, TEXTES } from "../config";
+import { CHIFFRES, COLORS, reperes, TEXTES } from "../config";
 import { FONT_TEXTE, FONT_TITRE } from "../fonts";
 import { Fond } from "../components/Fond";
 import { TitreScene } from "../components/TitreScene";
 import { fr, nombreFr } from "../components/texte";
 
 const T = TEXTES.chiffres;
+// Phrases de voix off : 0 fiche technique, 1 Veyron, 2 Chiron, 3 Super Sport 300+ / Mistral
+const R = reperes("chiffres").map((r) => r.debut);
+/** Dans la phrase 0, chaque chiffre est annoncé à peu près toutes les 0,95 s après « En résumé ». */
+const ANNONCE_FICHE = (i: number) => R[0] + 1.1 + i * 0.95;
 const MAX_CH = Math.max(...CHIFFRES.puissances.map((p) => p.ch));
 
 /** Compteur qui défile de 0 à `valeur` entre `debut` et `debut + duree` (en images). */
@@ -22,7 +26,7 @@ const Tuile: React.FC<{ index: number }> = ({ index }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const item = CHIFFRES.fiche[index];
-  const debut = 8 + index * 6;
+  const debut = Math.round(ANNONCE_FICHE(index) * fps);
   const p = spring({ frame: frame - debut, fps, config: { damping: 200 } });
   const v = useCompteur(item.valeur, debut, 40);
   return (
@@ -54,7 +58,7 @@ const BarrePuissance: React.FC<{ index: number }> = ({ index }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const item = CHIFFRES.puissances[index];
-  const debut = 40 + index * 12;
+  const debut = Math.round((R[index + 1] + 0.2) * fps);
   const p = spring({ frame: frame - debut, fps, config: { damping: 200 } });
   const v = useCompteur(item.ch, debut, 50);
   const LARGEUR_MAX = 900;

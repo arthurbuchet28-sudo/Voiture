@@ -1,0 +1,52 @@
+{
+  "voix": "fr-FR-DeniseNeural",
+  "debit": "+0%",
+  "pauseEntreSegments": 0.35,
+  "scenes": {
+    "intro": [
+      "Seize cylindres, quatre turbos, plus de mille chevaux.",
+      "Voici le W16, le moteur des hypercars Bugatti. Mais comment fonctionne-t-il, au juste ?"
+    ],
+    "pourquoiW": [
+      "D'abord, pourquoi un W ? Un moteur en V classique, c'est deux rangées de cylindres.",
+      "Ici, on rapproche deux rangées à seulement quinze degrés : elles forment un bloc très compact, qu'on appelle un VR8.",
+      "Puis on assemble deux VR8 en V, à quatre-vingt-dix degrés.",
+      "Résultat : quatre rangées de quatre cylindres, qui dessinent un W."
+    ],
+    "compacite": [
+      "L'intérêt ? Gagner de la place. Un V16 aligne huit cylindres par rangée, alors il est très long.",
+      "Le W16, lui, est plus large, mais bien plus court.",
+      "On a donc autant de cylindres qu'un V16, dans l'encombrement d'un V12, ou presque."
+    ],
+    "quatreTemps": [
+      "Zoomons sur un seul cylindre. Tout se joue en quatre temps.",
+      "D'abord l'admission : le piston descend, et aspire l'air et l'essence.",
+      "Puis la compression : il remonte, et comprime le mélange.",
+      "Vient la combustion : une étincelle enflamme le mélange, qui repousse le piston. C'est là que naît la puissance.",
+      "Enfin, l'échappement : le piston chasse les gaz brûlés.",
+      "Avec quatre soupapes par cylindre, le moteur en compte soixante-quatre."
+    ],
+    "turbos": [
+      "Pour respirer, le W16 compte sur quatre turbocompresseurs.",
+      "L'air frais est aspiré, puis comprimé.",
+      "Il passe ensuite dans des refroidisseurs : plus froid, il est plus dense, et le moteur peut en avaler davantage.",
+      "Et ce sont les gaz d'échappement qui font tourner les turbines, et donc les compresseurs.",
+      "Sur la Chiron, deux turbos suffisent à bas régime, pour plus de réactivité. Au-delà de trois mille huit cents tours environ, les quatre soufflent ensemble."
+    ],
+    "refroidissement": [
+      "Toute cette puissance dégage énormément de chaleur.",
+      "Alors la voiture embarque une dizaine de radiateurs : pour le moteur, l'huile, la boîte de vitesses, et l'air qui sort des turbos."
+    ],
+    "chiffres": [
+      "En résumé : huit litres, seize cylindres, soixante-quatre soupapes, et quatre turbos.",
+      "Mille un chevaux pour la Veyron, en 2005 : du jamais vu.",
+      "Mille cinq cents pour la Chiron, en 2016.",
+      "Et mille six cents pour la Chiron Super Sport trois cents plus, et la Mistral."
+    ],
+    "conclusion": [
+      "Le W16 restera un chef-d'œuvre d'ingénierie.",
+      "En 2024, il a laissé sa place au V16 hybride de la Tourbillon."
+    ]
+  },
+  "dureeMinSegment": 3.0
+}

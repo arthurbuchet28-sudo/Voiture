@@ -1,7 +1,8 @@
 import { linearTiming, TransitionSeries } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
-import { AbsoluteFill, Audio, staticFile } from "remotion";
-import { AUDIO, COLORS, DUREES, TRANSITION_S, VIDEO } from "./config";
+import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
+import TIMINGS from "./voix-off-timings.json";
+import { AUDIO, COLORS, DUREES, TRANSITION_S, VIDEO, VOIX_DEBUT, type CleScene } from "./config";
 import { Scene1Intro } from "./scenes/Scene1Intro";
 import { Scene2PourquoiW } from "./scenes/Scene2PourquoiW";
 import { Scene3Compacite } from "./scenes/Scene3Compacite";
@@ -12,7 +13,7 @@ import { Scene7Chiffres } from "./scenes/Scene7Chiffres";
 import { Scene8Conclusion } from "./scenes/Scene8Conclusion";
 
 /** Ordre des scènes. Chaque clé renvoie à une durée de DUREES (config.ts). */
-const SCENES: { cle: keyof typeof DUREES; Composant: React.FC }[] = [
+const SCENES: { cle: CleScene; Composant: React.FC }[] = [
   { cle: "intro", Composant: Scene1Intro },
   { cle: "pourquoiW", Composant: Scene2PourquoiW },
   { cle: "compacite", Composant: Scene3Compacite },
@@ -33,6 +34,9 @@ const images = (s: number) => Math.round(s * VIDEO.fps);
  * raccourcissent donc pas la vidéo et chaque scène commence à l'instant prévu.
  */
 export const DUREE_TOTALE_IMAGES = SCENES.reduce((s, sc) => s + images(DUREES[sc.cle]), 0);
+
+/** Image de début de chaque scène dans la vidéo complète. */
+const DEBUTS = SCENES.map((_, i) => SCENES.slice(0, i).reduce((s, sc) => s + images(DUREES[sc.cle]), 0));
 
 export const W16Video: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: COLORS.fond }}>
@@ -59,8 +63,15 @@ export const W16Video: React.FC = () => (
         return elements;
       })}
     </TransitionSeries>
-    {/* Pistes audio prévues : renseignez AUDIO dans config.ts */}
-    {AUDIO.musique ? <Audio src={staticFile(AUDIO.musique)} volume={AUDIO.volumeMusique} /> : null}
-    {AUDIO.voixOff ? <Audio src={staticFile(AUDIO.voixOff)} /> : null}
+    {/* Voix off : un fichier par scène, calé sur le début de la scène + VOIX_DEBUT */}
+    {AUDIO.voixOff
+      ? SCENES.map(({ cle }, i) => (
+          <Sequence key={cle} from={DEBUTS[i] + images(VOIX_DEBUT)} layout="none" name={`Voix ${cle}`}>
+            <Audio src={staticFile(TIMINGS[cle].fichier)} volume={AUDIO.volumeVoix} />
+          </Sequence>
+        ))
+      : null}
+    {/* Musique de fond facultative, nettement sous la voix (voir AUDIO dans config.ts) */}
+    {AUDIO.musique ? <Audio src={staticFile(AUDIO.musique)} volume={AUDIO.volumeMusique} loop /> : null}
   </AbsoluteFill>
 );

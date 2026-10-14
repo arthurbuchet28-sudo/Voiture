@@ -1,5 +1,5 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, TEXTES } from "../config";
+import { COLORS, reperes, TEXTES } from "../config";
 import { FONT_TEXTE, FONT_TITRE } from "../fonts";
 import { Fond } from "../components/Fond";
 import { SousTitres } from "../components/SousTitres";
@@ -10,6 +10,11 @@ import { fr, nombreFr } from "../components/texte";
 const T = TEXTES.turbos;
 const E = T.etiquettes;
 const S = T.sequentiel;
+// Phrases de voix off : 0 intro, 1 compression, 2 refroidissement, 3 turbines, 4 séquentiel
+const PHRASES = reperes("turbos");
+const R = PHRASES.map((r) => r.debut);
+// Dans la phrase 4, « Au-delà de 3 800 tours… » commence vers 52 % de la phrase.
+const SEUIL_S = R[4] + 0.52 * (PHRASES[4].fin - R[4]);
 
 // Schéma : ligne froide en haut (gauche → droite), ligne chaude en bas (droite → gauche)
 const Y_FROID = 270;
@@ -84,17 +89,18 @@ export const Scene5Turbos: React.FC = () => {
   const { fps } = useVideoConfig();
   const sec = frame / fps;
 
-  // Mise en avant (0 → 1) des éléments commentés par le sous-titre en cours.
-  // Étapes : 0 compression, 1 refroidissement/cylindres, 2 échappement/turbines ; ensuite tout est allumé.
+  // Mise en avant (0 → 1) des éléments commentés par la voix off. Étapes : 0 compression,
+  // 1 refroidissement/cylindres, 2 échappement/turbines. Avant et après, tout est allumé.
   const FENETRES: [number, number][] = [
-    [0, 3.5],
-    [3.5, 7],
-    [7, 10.5],
+    [R[1], R[2]],
+    [R[2], R[3]],
+    [R[3], R[4]],
   ];
   const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
   const lisse = (etapes: number[]) =>
     Math.max(
-      interpolate(sec, [10.3, 10.8], [0, 1], clamp),
+      interpolate(sec, [R[1] - 0.3, R[1]], [1, 0], clamp),
+      interpolate(sec, [R[4] - 0.2, R[4] + 0.3], [0, 1], clamp),
       ...etapes.map((e) => {
         const [a, b] = FENETRES[e];
         return interpolate(sec, [a - 0.3, a, b - 0.15, b + 0.15], [0, 1, 1, 0], clamp);
@@ -112,15 +118,16 @@ export const Scene5Turbos: React.FC = () => {
       return <circle key={i} cx={p.x} cy={p.y} r={r} fill={couleur} opacity={0.9} />;
     });
 
-  // Panneau séquentiel (à partir de 10,5 s)
-  const debutSeq = Math.round(10.2 * fps);
+  // Panneau séquentiel : le régime monte et franchit le seuil quand la voix l'annonce
+  const debutSeq = Math.round(R[4] * fps);
   const panneau = spring({ frame: frame - debutSeq, fps, config: { damping: 200 } });
-  const regime = interpolate(frame, [debutSeq + 15, debutSeq + 15 + 2.8 * fps], [1500, 6500], {
+  const montee = { de: R[4] + 1, seuil: SEUIL_S };
+  const regime = interpolate(sec, [montee.de, montee.seuil], [1500, S.seuil], {
     extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
   });
+  const regimeAffiche = Math.min(6500, regime);
   const tousActifs = regime >= S.seuil;
-  const imageSeuil = interpolate(S.seuil, [1500, 6500], [debutSeq + 15, debutSeq + 15 + 2.8 * fps]);
+  const imageSeuil = Math.round(SEUIL_S * fps);
   const bascule = spring({ frame: frame - imageSeuil, fps, config: { damping: 14 } });
   const BARRE = { x: 720, l: 1060 };
 
@@ -292,13 +299,13 @@ export const Scene5Turbos: React.FC = () => {
             fontWeight={700}
             fontSize={30}
           >
-            {`${nombreFr(Math.round(regime / 50) * 50)} tr/min · ${tousActifs ? S.quatre : S.deux}`}
+            {`${nombreFr(Math.round(regimeAffiche / 50) * 50)} tr/min · ${tousActifs ? S.quatre : S.deux}`}
           </text>
           <rect x={BARRE.x} y={766} width={BARRE.l} height={26} rx={13} fill="rgba(255,255,255,0.06)" />
           <rect
             x={BARRE.x}
             y={766}
-            width={(BARRE.l * (regime - 0)) / 7000}
+            width={(BARRE.l * regimeAffiche) / 7000}
             height={26}
             rx={13}
             fill={tousActifs ? COLORS.bleu : COLORS.bleuProfond}
@@ -326,7 +333,7 @@ export const Scene5Turbos: React.FC = () => {
       </svg>
 
       <TitreScene numero={5} titre={T.titre} />
-      <SousTitres items={T.sousTitres} />
+      <SousTitres scene="turbos" items={T.sousTitres} />
     </Fond>
   );
 };

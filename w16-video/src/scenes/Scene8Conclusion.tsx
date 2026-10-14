@@ -1,17 +1,18 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, TEXTES } from "../config";
+import { COLORS, reperes, TEXTES } from "../config";
 import { FONT_TITRE } from "../fonts";
 import { Fond } from "../components/Fond";
 import { SilhouetteW16 } from "../components/MoteurFace";
 import { fr } from "../components/texte";
 
 const T = TEXTES.conclusion;
+const R = reperes("conclusion").map((r) => r.debut);
 
 export const Scene8Conclusion: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const l1 = spring({ frame: frame - 4, fps, config: { damping: 200 } });
-  const l2 = spring({ frame: frame - 14, fps, config: { damping: 200 } });
+  const l1 = spring({ frame: frame - Math.round(R[0] * fps), fps, config: { damping: 200 } });
+  const l2 = spring({ frame: frame - Math.round(R[1] * fps), fps, config: { damping: 200 } });
   // Fondu au noir sur les 20 dernières images
   const noir = interpolate(frame, [durationInFrames - 20, durationInFrames - 1], [0, 1], {
     extrapolateLeft: "clamp",

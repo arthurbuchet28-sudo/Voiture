@@ -1,5 +1,5 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, TEXTES } from "../config";
+import { COLORS, reperes, TEXTES } from "../config";
 import { FONT_TEXTE, FONT_TITRE } from "../fonts";
 import { ArcAngle } from "../components/ArcAngle";
 import { Fond } from "../components/Fond";
@@ -10,6 +10,8 @@ import { polaire } from "../components/geometrie";
 import { fr } from "../components/texte";
 
 const T = TEXTES.pourquoiW;
+// Début de chaque phrase de voix off (s) : 0 V classique, 1 VR8 à 15°, 2 deux VR8 à 90°, 3 résultat
+const R = reperes("pourquoiW").map((r) => r.debut);
 
 // Centre du vilebrequin (vue de face)
 const CX = 700;
@@ -24,20 +26,20 @@ export const Scene2PourquoiW: React.FC = () => {
   const { fps } = useVideoConfig();
   const s = (sec: number) => Math.round(sec * fps);
 
-  // Étape A (0–4 s) : V classique ; B (4–8 s) : fermeture à 15° ; C (8–12 s) : ouverture à 90°
+  // Étapes calées sur la voix : V classique, puis fermeture à 15°, puis ouverture à 90°
   const apparition = spring({ frame, fps, config: { damping: 200 } });
-  const fermeture = spring({ frame: frame - s(4.2), fps, config: { damping: 18, mass: 1.2 } });
-  const ouverture = spring({ frame: frame - s(8.2), fps, config: { damping: 18, mass: 1.2 } });
+  const fermeture = spring({ frame: frame - s(R[1] + 0.3), fps, config: { damping: 18, mass: 1.2 } });
+  const ouverture = spring({ frame: frame - s(R[2] + 0.3), fps, config: { damping: 18, mass: 1.2 } });
 
   const demiVR = interpolate(fermeture, [0, 1], [30, 7.5]); // demi-angle entre 2 rangées
   const g = interpolate(ouverture, [0, 1], [0, 45]); // demi-angle entre les 2 VR8
-  const vr2 = interpolate(frame, [s(8), s(8.4)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const vr2 = interpolate(frame, [s(R[2]), s(R[2] + 0.4)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
-  const arc15 = interpolate(frame, [s(5.2), s(6.2)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const arc90 = interpolate(frame, [s(9.3), s(10.3)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const etape = frame < s(4) ? 0 : frame < s(8) ? 1 : 2;
+  const arc15 = interpolate(frame, [s(R[1] + 1.8), s(R[1] + 2.6)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const arc90 = interpolate(frame, [s(R[2] + 1.6), s(R[2] + 2.5)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const etape = frame < s(R[1]) ? 0 : frame < s(R[2]) ? 1 : 2;
   const pillule = spring({
-    frame: frame - [0, s(4), s(8)][etape],
+    frame: frame - [0, s(R[1]), s(R[2])][etape],
     fps,
     config: { damping: 200 },
     durationInFrames: 15,
@@ -54,7 +56,7 @@ export const Scene2PourquoiW: React.FC = () => {
   const axe = (a: number) => polaire(CX, CY, 495, a);
 
   // Vue de dessus : 4 colonnes (rangées) × 4 cylindres, les rangées d'un VR8 sont décalées
-  const vueDessus = interpolate(frame, [s(9.5), s(10.2)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const vueDessus = interpolate(frame, [s(R[3]), s(R[3] + 0.7)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const colonnes = [
     { x: 0, dy: 0, c: C_VR1[0] },
     { x: 62, dy: 34, c: C_VR1[1] },
@@ -94,7 +96,7 @@ export const Scene2PourquoiW: React.FC = () => {
           {colonnes.map((col, i) =>
             [0, 1, 2, 3].map((j) => {
               const k = i * 4 + j;
-              const p = interpolate(frame, [s(9.8) + k * 2, s(9.8) + k * 2 + 8], [0, 1], {
+              const p = interpolate(frame, [s(R[3] + 0.3) + k * 2, s(R[3] + 0.3) + k * 2 + 8], [0, 1], {
                 extrapolateLeft: "clamp",
                 extrapolateRight: "clamp",
               });
@@ -155,7 +157,7 @@ export const Scene2PourquoiW: React.FC = () => {
         <div style={{ fontSize: 34, fontWeight: 700, fontFamily: FONT_TITRE }}>{fr(T.vueDessusDetail)}</div>
       </div>
 
-      <SousTitres items={T.sousTitres} />
+      <SousTitres scene="pourquoiW" items={T.sousTitres} />
     </Fond>
   );
 };
