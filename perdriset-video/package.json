@@ -7,11 +7,13 @@
     "dev": "remotion studio",
     "render": "remotion render Perdriset out/perdriset-motoculture.mp4",
     "still": "remotion still Perdriset out/still.png",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "render:fun": "remotion render PerdrisetFun out/perdriset-motoculture-fun.mp4"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",
     "@remotion/cli": "4.0.536",
+    "@remotion/transitions": "4.0.536",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "remotion": "4.0.536"

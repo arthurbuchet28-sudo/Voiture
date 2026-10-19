@@ -24,3 +24,28 @@ npm run render   # rendu final → out/perdriset-motoculture.mp4
 
 **Modifier** : tous les textes, les couleurs (`accent` et `accent2`, extraites du logo) et les durées se règlent dans `src/config.ts`.
 Les visuels se trouvent dans `public/`. Ils viennent de perdriset.fr, et le logo a été agrandi ×3 (Lanczos).
+
+---
+
+# Version ludique et dynamique — `PerdrisetFun` (28 s)
+
+Composition `PerdrisetFun` (même format : 1920×1080, 60 fps, H.264), dans `src/fun/`. Elle réutilise `src/lib/`, `src/components/` et `src/theme.ts`.
+Le rythme est calé sur 120 BPM (un temps = 30 frames). Les ressorts rebondissent, avec du squash & stretch. L'enchaînement utilise `@remotion/transitions` (`TransitionSeries`) et 9 présentations personnalisées : `src/fun/transitions/presentations.tsx`.
+
+```bash
+npm run render:fun   # → out/perdriset-motoculture-fun.mp4
+```
+
+| Raccord | Transition |
+|---|---|
+| Accroche → Logo | passage de tondeuse qui révèle la scène suivante |
+| Logo → Tondre | zoom dans la roue dentée du « P » |
+| Tondre → Scier & couper | coup de scie en diagonale |
+| Scier & couper → Nettoyer | souffle de feuilles |
+| Nettoyer → Entretenir | volet en forme de roue dentée |
+| Entretenir → Marques | whip pan avec flou de mouvement |
+| Marques → Services | les cartes tombent, la suite surgit du bas |
+| Services → Confiance | la dernière ligne devient la carte du compteur |
+| Confiance → Fin | pluie de feuilles |
+
+**Modifier** : textes et durées (scènes et transitions, en frames) dans `src/fun/config.ts`.
