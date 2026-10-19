@@ -38,7 +38,7 @@ export const CONFIG = {
 
   // Scène 4 : marques (texte stylisé, pas de logos)
   brandsEyebrow: "Nos marques phares",
-  brands: ["Stihl", "Honda", "John Deere", "Cub Cadet", "Iseki", "Ego", "Kress", "Segway"],
+  brands: ["Stihl", "Grin", "Pubert", "Cub Cadet", "Iseki", "Ego", "Kress", "Segway"],
 
   // Scène 5 : services
   servicesTitle: "Nos services",
