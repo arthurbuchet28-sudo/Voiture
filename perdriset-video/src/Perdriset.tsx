@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { Background, Grain } from "./components/Background";
 import { Camera, SceneDef, SceneTimeline } from "./lib/timeline";
 import { CONFIG, sec } from "./config";
@@ -33,5 +33,7 @@ export const Perdriset: React.FC = () => (
       <SceneTimeline scenes={SCENES} pad={PAD} />
     </Camera>
     <Grain />
+    {/* Musique originale (scripts/musique.py), calée sur les changements de scène */}
+    <Audio src={staticFile("musique.wav")} />
   </AbsoluteFill>
 );

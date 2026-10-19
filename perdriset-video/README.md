@@ -4,7 +4,14 @@ Composition `Perdriset` (1920×1080, 60 fps, 1680 frames, H.264 CRF 16, `yuv420p
 Elle reprend le style, l'architecture et les utilitaires de la pub « Promptly » (`PubSite`) :
 fondus enchaînés flou + zoom, caméra globale qui ne s'arrête jamais, ressorts, flou de mouvement,
 traînées néon, particules qui convergent, grain et vignettage. Police Inter.
-Comme pour Promptly, la vidéo n'a pas de piste audio.
+Musique : composition originale générée par `scripts/musique.py` (synthèse, donc libre de droits), 120 BPM.
+Une montée amène le logo, un impact le marque, des « whoosh » accompagnent chaque changement de scène, et un impact final ouvre l'appel à l'action.
+Le mastering donne `public/musique.wav` (−16 LUFS, crête −1,5 dBTP) :
+
+```bash
+python3 scripts/musique.py /tmp/musique-brute.wav
+ffmpeg -i /tmp/musique-brute.wav -af "aecho=0.8:0.6:60|120:0.25|0.15,highpass=f=30,atrim=0:28,afade=t=out:st=27.4:d=0.6,loudnorm=I=-16:TP=-1.5:LRA=9" -ar 44100 -c:a pcm_s16le public/musique.wav
+```
 
 ```bash
 npm install
